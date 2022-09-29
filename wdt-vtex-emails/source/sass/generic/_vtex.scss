@@ -1,0 +1,66 @@
+table {
+  color: $color-dark;
+}
+
+a {
+  color: $color-dark;
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+.p20 {
+  padding: 20px !important;
+}
+
+.p40 {
+  padding: 20px !important;
+}
+
+.color-white {
+  color: $color-white !important;
+}
+
+.bg-green {
+  background-color: $color-green !important;
+}
+
+.bg-light-gray {
+  background-color: #f6fafd !important;
+}
+
+.b--light-gray, .b--light-silver {
+  border-color: $email-bg-color !important;
+}
+
+.bg-moon-gray {
+  background-color: $color-green !important;
+  color: $color-white !important;
+}
+
+.mw5-5 {
+  max-width: 24rem;
+}
+
+.mw6-5 {
+  max-width: 40rem;
+}
+
+.access-key {
+  margin: 1rem auto;
+  border-radius: 200px;
+}
+
+.access-title {
+  font-size: 14px;
+  color: $color-white;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.access-code {
+  font-size: 36px;
+  color: $color-white;
+}

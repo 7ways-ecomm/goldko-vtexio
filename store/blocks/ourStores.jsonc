@@ -1,0 +1,10 @@
+{
+    "store.custom#our-stores": {
+        "blocks": [
+            "flex-layout.row#our-stores-1"
+        ]
+    },
+    "flex-layout.row#our-stores-1": {
+        "children": ["our-stores"]
+    }
+}

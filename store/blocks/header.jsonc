@@ -1,0 +1,1565 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#accept-cookies",
+      "wdt-custom-product-first-purchase",
+      "flex-layout.row#header-sup-1",
+      "flex-layout.row#desktop",
+      "wdt-data-layer"
+    ]
+  },
+  "flex-layout.row#accept-cookies": {
+    "children": [
+      "accept-cookies"
+    ]
+  },
+  "flex-layout.row#header-sup-1": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "header-sup-1"
+    },
+    "children": [
+      "rich-text#banner-header-frete",
+      "flex-layout.row#container-links-ruler-top"
+    ]
+  },
+  "flex-layout.row#container-links-ruler-top": {
+    "children": [
+      // "link#franqueado-link",
+      "link#revendedor-link",
+      "rich-text#header-sup-2-2"
+    ],
+    "props": {
+      "blockClass": [
+        "container-links-ruler-top"
+      ],
+      "colGap": 7
+    }
+  },
+  "link#franqueado-link": {
+    "props": {
+      "blockClass": [
+        "franqueado-revendedor"
+      ],
+      "label": "Quer ser franqueado?",
+      "href": "/seja-um-franqueado"
+    }
+  },
+  "link#revendedor-link": {
+    "props": {
+      "blockClass": [
+        "franqueado-revendedor"
+      ],
+      "label": "Quer ser revendedor?",
+      "href": "/seja-um-revendedor"
+    }
+  },
+  "rich-text#header-sup-2-2": {
+    "props": {
+      "text": "[Visite nosso blog](/blog)",
+      "blockClass": "onde-encontrar-gk"
+    }
+  },
+  "rich-text#banner-header-frete": {
+    "props": {
+      "text": "[Dúvidas, comentários, sugestões?](mailto:alo@goldko.com.br) [alo@goldko.com.br](mailto:alo@goldko.com.br)",
+      "blockClass": "banner-header-sup-frete"
+    }
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "blockClass": "header-main-row-desktop"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#menu-desktop",
+      // "flex-layout.row#header-sup-ganhe",
+      "flex-layout.col#search-bar-desktop",
+      "flex-layout.col#utils-desktop"
+    ]
+  },
+  "flex-layout.row#header-sup-ganhe": {
+    "props": {
+      "blockClass": "header-sup-ganhe",
+      "width": "15%"
+    },
+    "children": [
+      "rich-text#header-sup-ganhe"
+    ]
+  },
+  "rich-text#header-sup-ganhe": {
+    "props": {
+      "text": "[GANHE R$20](/)",
+      "blockClass": [
+        "header-sup-ganhe",
+        "header-granhe-20",
+        "ganhe-drawer-menu"
+      ]
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "width": "13%"
+    },
+    "children": [
+      "logo"
+    ]
+  },
+  "flex-layout.col#menu-desktop": {
+    "props": {
+      "width": "57%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#menu-header-1"
+    ]
+  },
+  "flex-layout.col#search-bar-desktop": {
+    "props": {
+      "width": "20%"
+    },
+    "children": [
+      "search-bar"
+    ]
+  },
+  "search-bar": {
+    "props": {
+      "placeholder": "O que você procura ?"
+    }
+  },
+  "flex-layout.col#utils-desktop": {
+    "props": {
+      "width": "10%",
+      "blockClass": "utils-desktop"
+    },
+    "children": [
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "login": {
+    "props": {
+      "showPasswordVerificationIntoTooltip": false
+    }
+  },
+  "login-content": {
+    "props": {
+      "showPasswordVerificationIntoTooltip": false
+    }
+  },
+  "vtex.menu@2.x:submenu#atendimento-header": {
+    "children": [
+      "rich-text#info-sac-footer"
+    ]
+  },
+  "image#menu-header": {
+    "props": {
+      "src": "https://uvline.myvtex.com/arquivos/menu-header.png"
+    }
+  },
+  //MENU HEADER -- INIT
+  //Mobile - INIT
+  "vtex.menu@2.x:menu#menu-header-mobile-1": {
+    "props": {
+      "blockClass": [
+        "top-menu",
+        "top-menu-mobile"
+      ]
+    },
+    "children": [
+      "menu-item#pascoa-mobile",
+      "menu-item#chocolates-mobile",
+      "menu-item#cafes-mobile",
+      "menu-item#combos-mobile",
+      // "menu-item#displays-mobile", 
+      "menu-item#presentes-mobile",
+      "menu-item#lifestyle-mobile",
+      "menu-item#por-que-goldko-mobile"
+    ]
+  },
+  "menu-item#chocolates-mobile": {
+    "props": {
+      "id": "menu-item-chocolates-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-mobile",
+      "itemProps": {
+        "type": "internal",
+        "href": "/chocolates",
+        "noFollow": false,
+        "tagTitle": "chocolates",
+        "text": "chocolates"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#chocolates-mobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#chocolates-mobile": {
+    "props": {
+      "blockClass": "submenu-mobile"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#chocolates-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#chocolates-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item-todos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/chocolates",
+            "tagTitle": "Todos",
+            "text": "Todos"
+          }
+        },
+        {
+          "id": "menu-item-bombom",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/bombom",
+            "tagTitle": "Bombom",
+            "text": "Bombom"
+          }
+        },
+        {
+          "id": "menu-item-marshmallow",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/marshmallow",
+            "tagTitle": "Marshmallow",
+            "text": "Marshmallow"
+          }
+        },
+        {
+          "id": "menu-item-ao-leite",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/ao leite",
+            "tagTitle": "Ao Leite",
+            "text": "Ao Leite"
+          }
+        },
+        {
+          "id": "menu-item-cacau-intenso",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/cacau intenso",
+            "tagTitle": "Cacau Intenso",
+            "text": "Cacau Intenso"
+          }
+        },
+        {
+          "id": "menu-item-branco",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/branco",
+            "tagTitle": "Branco",
+            "text": "Branco"
+          }
+        },
+        {
+          "id": "menu-item-laskas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/laskas",
+            "tagTitle": "Laskas",
+            "text": "Laskas"
+          }
+        },
+        {
+          "id": "menu-item-vegano",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/vegano",
+            "tagTitle": "vegano",
+            "text": "vegano"
+          }
+        }
+      ]
+    }
+  },
+  "menu-item#cafes-mobile": {
+    "props": {
+      "id": "menu-item-cafes-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-mobile",
+      "itemProps": {
+        "type": "internal",
+        "href": "/cafes",
+        "noFollow": false,
+        "tagTitle": "cafes",
+        "text": "cafés"
+      }
+    }
+  },
+  "menu-item#pascoa-mobile": {
+    "props": {
+      "id": "menu-item-pascoa-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-mobile",
+      "itemProps": {
+        "type": "internal",
+        "href": "/pascoa",
+        "noFollow": false,
+        "tagTitle": "páscoa",
+        "text": ""
+      }
+    }
+  },
+  "menu-item#combos-mobile": {
+    "props": {
+      "id": "menu-item-combos-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-mobile",
+      "itemProps": {
+        "type": "internal",
+        "href": "/combos",
+        "noFollow": false,
+        "tagTitle": "combos",
+        "text": "combos"
+      }
+    }
+  },
+  "menu-item#displays-mobile": {
+    "props": {
+      "id": "menu-item-displays-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-mobile",
+      "itemProps": {
+        "type": "internal",
+        "href": "/displays",
+        "noFollow": false,
+        "tagTitle": "displays",
+        "text": "displays"
+      }
+    }
+  },
+  "menu-item#presentes-mobile": {
+    "props": {
+      "id": "menu-item-presentes-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-mobile",
+      "itemProps": {
+        "type": "internal",
+        "href": "/presentes",
+        "noFollow": false,
+        "tagTitle": "presentes",
+        "text": "presentes"
+      }
+    }
+  },
+  "menu-item#lifestyle-mobile": {
+    "title": "Menu Lifestyle",
+    "props": {
+      "id": "menu-item-lifestyle-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-mobile",
+      "itemProps": {
+        "type": "internal",
+        "href": "/lifestyle",
+        "noFollow": false,
+        "tagTitle": "Lifestyle",
+        "text": "Lifestyle"
+      }
+    }
+  },
+  "menu-item#por-que-goldko-mobile": {
+    "props": {
+      "id": "menu-item-por-que-goldko-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-mobile",
+      "itemProps": {
+        "type": "internal",
+        "href": "/por-que-goldko",
+        "noFollow": false,
+        "tagTitle": "Por quê Goldko",
+        "text": "Por quê Goldko"
+      }
+    }
+  },
+  //Mobile - END
+  //Desktop - INIT
+  "vtex.menu@2.x:menu#menu-header-1": {
+    "props": {
+      "blockClass": "top-menu"
+    },
+    "children": [
+      "menu-item#pascoa",
+      "menu-item#chocolates",
+      "menu-item#cafes",
+      "menu-item#combos",
+      // "menu-item#displays",
+      "menu-item#presentes",
+      "menu-item#lifestyle",
+      "menu-item#por-que-goldko"
+    ]
+  },
+  "menu-item#chocolates": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/chocolates",
+        "noFollow": false,
+        "tagTitle": "chocolates",
+        "text": "chocolates"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#chocolates"
+    ] // Defining a submenu
+  },
+  "vtex.menu@2.x:submenu#chocolates": {
+    "children": [
+      // "tab-layout#submenu-chocolates"
+      "vtex.menu@2.x:menu#submenu-chocolates"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-chocolates": {
+    "children": [
+      "menu-item#submenu-bombom",
+      "menu-item#submenu-marshmallow",
+      "menu-item#submenu-ao-leite",
+      "menu-item#submenu-cacau-intenso",
+      "menu-item#submenu-branco",
+      "menu-item#submenu-laskas",
+      "menu-item#submenu-vegano"
+    ]
+  },
+  "menu-item#submenu-branco": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/branco",
+        "noFollow": false,
+        "tagTitle": "Branco",
+        "text": "Branco"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#submenu-branco"
+    ]
+  },
+  "vtex.menu@2.x:submenu#submenu-branco": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-branco"
+    ]
+  },
+  "menu-item#submenu-ao-leite": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ao leite",
+        "noFollow": false,
+        "tagTitle": "Ao Leite",
+        "text": "Ao Leite"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#submenu-ao-leite"
+    ]
+  },
+  "vtex.menu@2.x:submenu#submenu-ao-leite": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-ao-leite"
+    ]
+  },
+  "menu-item#submenu-cacau-intenso": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cacau intenso",
+        "noFollow": false,
+        "tagTitle": "Cacau Intenso",
+        "text": "Cacau Intenso"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#submenu-cacau-intenso"
+    ]
+  },
+  "vtex.menu@2.x:submenu#submenu-cacau-intenso": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-cacau-intenso"
+    ]
+  },
+  "menu-item#submenu-vegano": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/vegano",
+        "noFollow": false,
+        "tagTitle": "Vegano",
+        "text": "Vegano"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#submenu-vegano"
+    ]
+  },
+  "vtex.menu@2.x:submenu#submenu-vegano": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-vegano"
+    ]
+  },
+  "menu-item#submenu-marshmallow": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/marshmallow",
+        "noFollow": false,
+        "tagTitle": "Marshmallow",
+        "text": "Marshmallow"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#submenu-marshmallow"
+    ]
+  },
+  "vtex.menu@2.x:submenu#submenu-marshmallow": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-marshmallow"
+    ]
+  },
+  "menu-item#submenu-bombom": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bombom",
+        "noFollow": false,
+        "tagTitle": "Bombom",
+        "text": "Bombom"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#submenu-bombom"
+    ]
+  },
+  "vtex.menu@2.x:submenu#submenu-bombom": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-bombom"
+    ]
+  },
+  "menu-item#submenu-laskas": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/laskas",
+        "noFollow": false,
+        "tagTitle": "Laskas",
+        "text": "Laskas"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#submenu-laskas"
+    ]
+  },
+  "vtex.menu@2.x:submenu#submenu-laskas": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-laskas"
+    ]
+  },
+  "tab-layout#submenu-chocolates": {
+    "children": [
+      "tab-list#submenu-chocolates",
+      "tab-content#submenu-chocolates"
+    ],
+    "props": {
+      "blockClass": "submenu-chocolates",
+      "defaultActiveTabId": "submenu-ao-leite"
+    }
+  },
+  // init Tab List
+  "tab-list#submenu-chocolates": {
+    "children": [
+      "tab-list.item#submenu-branco",
+      "tab-list.item#submenu-ao-leite",
+      "tab-list.item#submenu-cacau-intenso",
+      "tab-list.item#submenu-vegano",
+      "tab-list.item#submenu-marshmallow",
+      "tab-list.item#submenu-bombom",
+      "tab-list.item#submenu-laskas"
+    ],
+    "props": {
+      "blockClass": "submenu-chocolates"
+    }
+  },
+  "tab-list.item#submenu-branco": {
+    "props": {
+      "tabId": "submenu-branco",
+      "label": "branco",
+      "defaultActiveTab": true,
+      "blockClass": "tab-list-chocolates"
+    }
+  },
+  "tab-list.item#submenu-ao-leite": {
+    "props": {
+      "tabId": "submenu-ao-leite",
+      "label": "ao leite",
+      "defaultActiveTab": true,
+      "blockClass": "tab-list-chocolates"
+    }
+  },
+  "tab-list.item#submenu-cacau-intenso": {
+    "props": {
+      "tabId": "submenu-cacau-intenso",
+      "label": "cacau intenso",
+      "defaultActiveTab": true,
+      "blockClass": "tab-list-chocolates"
+    }
+  },
+  "tab-list.item#submenu-vegano": {
+    "props": {
+      "tabId": "submenu-vegano",
+      "label": "vegano",
+      "defaultActiveTab": true,
+      "blockClass": "tab-list-chocolates"
+    }
+  },
+  "tab-list.item#submenu-marshmallow": {
+    "props": {
+      "tabId": "submenu-marshmallow",
+      "label": "Marshmallow",
+      "defaultActiveTab": true,
+      "blockClass": "tab-list-chocolates"
+    }
+  },
+  "tab-list.item#submenu-bombom": {
+    "props": {
+      "tabId": "submenu-bombom",
+      "label": "Bombom",
+      "defaultActiveTab": true,
+      "blockClass": "tab-list-chocolates"
+    }
+  },
+  "tab-list.item#submenu-laskas": {
+    "props": {
+      "tabId": "submenu-laskas",
+      "label": "Laskas",
+      "defaultActiveTab": true,
+      "blockClass": "tab-list-chocolates"
+    }
+  },
+  // end Tab List
+  // init Tab Content 
+  "tab-content#submenu-chocolates": {
+    "children": [
+      "tab-content.item#submenu-chocolates-branco",
+      "tab-content.item#submenu-chocolates-ao-leite",
+      "tab-content.item#submenu-chocolates-cacau-intenso",
+      "tab-content.item#submenu-chocolates-vegano",
+      "tab-content.item#submenu-chocolates-marshmallow",
+      "tab-content.item#submenu-chocolates-bombom",
+      "tab-content.item#submenu-chocolates-laskas"
+    ]
+  },
+  // end Tab Content 
+  // init Tab items
+  // init Branco
+  "tab-content.item#submenu-chocolates-branco": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-branco"
+    ],
+    "props": {
+      "tabId": "submenu-branco"
+    }
+  },
+  "flex-layout.row#submenu-chocolates-branco": {
+    "children": [
+      "flex-layout.col#submenu-chocolates-branco-text-buttons",
+      "flex-layout.col#submenu-chocolates-branco-images"
+    ]
+  },
+  "flex-layout.col#submenu-chocolates-branco-text-buttons": {
+    "props": {
+      "blockClass": "submenu-text-button-container"
+    },
+    "children": [
+      "rich-text#submenu-chocolates-branco-text",
+      "flex-layout.row#submenu-chocolates-branco-buttons"
+    ]
+  },
+  "rich-text#submenu-chocolates-branco-text": {
+    "props": {
+      "blockClass": "text-submenu",
+      "text": "Você achava que chocolate branco era tudo igual né?\n A nossa versão super cremosa, aveludada e gostosa vai te surpreender."
+    }
+  },
+  "flex-layout.row#submenu-chocolates-branco-buttons": {
+    "props": {
+      "blockClass": "submenu-button-container"
+    },
+    "children": [
+      "link#button-text-branco-1"
+      // "link#button-text-branco-2"
+    ]
+  },
+  "link#button-text-branco-1": {
+    "props": {
+      "href": "/branco",
+      "label": "Compre já",
+      "blockClass": "submenu-button"
+    }
+  },
+  // "link#button-text-branco-2":{
+  //   "props": {
+  //     "href": "/",
+  //     "label": "deli +",
+  //     "blockClass": "submenu-button"
+  //   }
+  // },
+  "flex-layout.col#submenu-chocolates-branco-images": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-branco-images"
+    ]
+  },
+  "flex-layout.row#submenu-chocolates-branco-images": {
+    "props": {
+      "blockClass": "submenu-images"
+    },
+    "children": [
+      "image#submenu-chocolates-branco-1",
+      "image#submenu-chocolates-branco-2"
+    ]
+  },
+  "image#submenu-chocolates-branco-1": {
+    "props": {
+      "src": "https://goldko.vtexassets.com/arquivos/GK-site-Menu---branco-min.png"
+    }
+  },
+  "image#submenu-chocolates-branco-2": {
+    "props": {
+      "src": "https://goldko.vtexassets.com/arquivos/GK-site-Menu---branco-2-min.png"
+    }
+  },
+  // end Branco
+  // init Ao leite
+  "tab-content.item#submenu-chocolates-ao-leite": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-ao-leite"
+    ],
+    "props": {
+      "tabId": "submenu-ao-leite"
+    }
+  },
+  "flex-layout.row#submenu-chocolates-ao-leite": {
+    "children": [
+      "flex-layout.col#submenu-chocolates-ao-leite-text-buttons",
+      "flex-layout.col#submenu-chocolates-ao-leite-images"
+    ]
+  },
+  "flex-layout.col#submenu-chocolates-ao-leite-text-buttons": {
+    "props": {
+      "blockClass": "submenu-text-button-container"
+    },
+    "children": [
+      "rich-text#submenu-chocolates-ao-leite-text",
+      "flex-layout.row#submenu-chocolates-ao-leite-buttons"
+    ]
+  },
+  "rich-text#submenu-chocolates-ao-leite-text": {
+    "props": {
+      "blockClass": "text-submenu",
+      "text": "Para quem não abre mão daquele gostinho mais adocicado, numa versão **mágica** e sem açúcar."
+    }
+  },
+  "flex-layout.row#submenu-chocolates-ao-leite-buttons": {
+    "props": {
+      "blockClass": "submenu-button-container"
+    },
+    "children": [
+      "link#button-ao-leite-1"
+      // "link#button-ao-leite-2"
+    ]
+  },
+  "link#button-ao-leite-1": {
+    "props": {
+      "href": "/ao leite",
+      "label": "Compre já",
+      "blockClass": "submenu-button"
+    }
+  },
+  // "link#button-ao-leite-2":{
+  //   "props": {
+  //     "href": "/",
+  //     "label": "deli +",
+  //     "blockClass": "submenu-button"
+  //   }
+  // },
+  "flex-layout.col#submenu-chocolates-ao-leite-images": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-ao-leite-images"
+    ]
+  },
+  "flex-layout.row#submenu-chocolates-ao-leite-images": {
+    "props": {
+      "blockClass": "submenu-images"
+    },
+    "children": [
+      "image#submenu-chocolates-ao-leite-1",
+      "image#submenu-chocolates-ao-leite-2"
+    ]
+  },
+  "image#submenu-chocolates-ao-leite-1": {
+    "props": {
+      "src": "https://goldko.vtexassets.com/arquivos/GK-site-Menu---ao-leite-min.png"
+    }
+  },
+  "image#submenu-chocolates-ao-leite-2": {
+    "props": {
+      "src": "https://goldko.vtexassets.com/arquivos/GK-site-Menu---ao-leite-2-min.png"
+    }
+  },
+  // fim Ao leite
+  // init cacau intenso
+  "tab-content.item#submenu-chocolates-cacau-intenso": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-cacau-intenso"
+    ],
+    "props": {
+      "tabId": "submenu-cacau-intenso"
+    }
+  },
+  "flex-layout.row#submenu-chocolates-cacau-intenso": {
+    "children": [
+      "flex-layout.col#submenu-chocolates-cacau-intenso-text-buttons",
+      "flex-layout.col#submenu-chocolates-cacau-intenso-images"
+    ]
+  },
+  "flex-layout.col#submenu-chocolates-cacau-intenso-text-buttons": {
+    "props": {
+      "blockClass": "submenu-text-button-container"
+    },
+    "children": [
+      "rich-text#submenu-chocolates-cacau-intenso-text",
+      "flex-layout.row#submenu-chocolates-cacau-intenso-buttons"
+    ]
+  },
+  "rich-text#submenu-chocolates-cacau-intenso-text": {
+    "props": {
+      "blockClass": "text-submenu",
+      "text": "Você é do time que curte muuuuuuuito cacau? Aqui estão seus novos favoritos.\n\n Chocolates cheios de antioxidantes, flavonoides e todas aquelas coisas maravilhosas que as nutris recomendam para uma alimentação balanceada, em uma gama de intensidades diferentes de cacau."
+    }
+  },
+  "flex-layout.row#submenu-chocolates-cacau-intenso-buttons": {
+    "props": {
+      "blockClass": "submenu-button-container"
+    },
+    "children": [
+      "link#button-cacau-intenso-1"
+      // "link#button-cacau-intenso-2"
+    ]
+  },
+  "link#button-cacau-intenso-1": {
+    "props": {
+      "href": "/cacau intenso",
+      "label": "Compre já",
+      "blockClass": "submenu-button"
+    }
+  },
+  // "link#button-cacau-intenso-2":{
+  //   "props": {
+  //     "href": "/",
+  //     "label": "deli +",
+  //     "blockClass": "submenu-button"
+  //   }
+  // },
+  "flex-layout.col#submenu-chocolates-cacau-intenso-images": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-cacau-intenso-images"
+    ]
+  },
+  "flex-layout.row#submenu-chocolates-cacau-intenso-images": {
+    "props": {
+      "blockClass": "submenu-images"
+    },
+    "children": [
+      "image#submenu-chocolates-cacau-intenso-1",
+      "image#submenu-chocolates-cacau-intenso-2"
+    ]
+  },
+  "image#submenu-chocolates-cacau-intenso-1": {
+    "props": {
+      "src": "https://goldko.vtexassets.com/arquivos/GK-site-Menu---alto-teor-de-cacau-min.png"
+    }
+  },
+  "image#submenu-chocolates-cacau-intenso-2": {
+    "props": {
+      "src": "https://goldko.vtexassets.com/arquivos/GK-site-Menu---alto-teor-de-cacau-2-min.png"
+    }
+  },
+  // end cacau intenso
+  // init vegano
+  "tab-content.item#submenu-chocolates-vegano": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-vegano"
+    ],
+    "props": {
+      "tabId": "submenu-vegano"
+    }
+  },
+  "flex-layout.row#submenu-chocolates-vegano": {
+    "children": [
+      "flex-layout.col#submenu-chocolates-vegano-text-buttons",
+      "flex-layout.col#submenu-chocolates-vegano-images"
+    ]
+  },
+  "flex-layout.col#submenu-chocolates-vegano-text-buttons": {
+    "props": {
+      "blockClass": "submenu-text-button-container"
+    },
+    "children": [
+      "rich-text#submenu-chocolates-vegano-text",
+      "flex-layout.row#submenu-chocolates-vegano-buttons"
+    ]
+  },
+  "rich-text#submenu-chocolates-vegano-text": {
+    "props": {
+      "blockClass": "text-submenu",
+      "text": "Nossa linha de chocolates veganos, são feitos com muito cacau. Temos também versões com leite de coco e leite de arroz, com muito sabor e preservando a textura cremosa e o sabor surreal, que modéstia parte é com a gente mesmo :)"
+    }
+  },
+  "flex-layout.row#submenu-chocolates-vegano-buttons": {
+    "props": {
+      "blockClass": "submenu-button-container"
+    },
+    "children": [
+      "link#button-vegano-1"
+      // "link#button-vegano-2"
+    ]
+  },
+  "link#button-vegano-1": {
+    "props": {
+      "href": "/vegano",
+      "label": "Compre já",
+      "blockClass": "submenu-button"
+    }
+  },
+  // "link#button-vegano-2":{
+  //   "props": {
+  //     "href": "/",
+  //     "label": "deli +",
+  //     "blockClass": "submenu-button"
+  //   }
+  // },
+  "flex-layout.col#submenu-chocolates-vegano-images": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-vegano-images"
+    ]
+  },
+  "flex-layout.row#submenu-chocolates-vegano-images": {
+    "props": {
+      "blockClass": "submenu-images"
+    },
+    "children": [
+      "image#submenu-chocolates-vegano-1",
+      "image#submenu-chocolates-vegano-2"
+    ]
+  },
+  "image#submenu-chocolates-vegano-1": {
+    "props": {
+      "src": "https://goldko.vtexassets.com/arquivos/GK-site-Menu---plant-based-min.png"
+    }
+  },
+  "image#submenu-chocolates-vegano-2": {
+    "props": {
+      "src": "https://goldko.vtexassets.com/arquivos/GK-site-Menu---plant-based-2-min.png"
+    }
+  },
+  // end vegano
+  // init marshmallow
+  "tab-content.item#submenu-chocolates-marshmallow": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-marshmallow"
+    ],
+    "props": {
+      "tabId": "submenu-marshmallow"
+    }
+  },
+  "flex-layout.row#submenu-chocolates-marshmallow": {
+    "props": {
+      "blockClass": "submenu-text-button-container"
+    },
+    "children": [
+      "flex-layout.col#submenu-chocolates-marshmallow-text-buttons",
+      "flex-layout.col#submenu-chocolates-marshmallow-images"
+    ]
+  },
+  "flex-layout.col#submenu-chocolates-marshmallow-text-buttons": {
+    "props": {
+      "blockClass": "submenu-text-button-container"
+    },
+    "children": [
+      "rich-text#submenu-chocolates-marshmallow-text",
+      "flex-layout.row#submenu-chocolates-marshmallow-buttons"
+    ]
+  },
+  "rich-text#submenu-chocolates-marshmallow-text": {
+    "props": {
+      "blockClass": "text-submenu",
+      "text": "Orgulhosamente apresentamos o único marshmallow zero adição de açúcares mega fofinho do planeta."
+    }
+  },
+  "flex-layout.row#submenu-chocolates-marshmallow-buttons": {
+    "props": {
+      "blockClass": "submenu-button-container"
+    },
+    "children": [
+      "link#button-marshmallow-1"
+      // "link#button-marshmallow-2"
+    ]
+  },
+  "link#button-marshmallow-1": {
+    "props": {
+      "href": "/marshmallow",
+      "label": "Compre já",
+      "blockClass": "submenu-button"
+    }
+  },
+  // "link#button-marshmallow-2":{
+  //   "props": {
+  //     "href": "/",
+  //     "label": "deli +",
+  //     "blockClass": "submenu-button"
+  //   }
+  // },
+  "flex-layout.col#submenu-chocolates-marshmallow-images": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-marshmallow-images"
+    ]
+  },
+  "flex-layout.row#submenu-chocolates-marshmallow-images": {
+    "props": {
+      "blockClass": "submenu-images"
+    },
+    "children": [
+      "image#submenu-chocolates-marshmallow-1",
+      "image#submenu-chocolates-marshmallow-2"
+    ]
+  },
+  "image#submenu-chocolates-marshmallow-1": {
+    "props": {
+      "src": "https://goldko.vtexassets.com/arquivos/GK-site-Menu---marshmallow-min.png"
+    }
+  },
+  "image#submenu-chocolates-marshmallow-2": {
+    "props": {
+      "src": "https://goldko.vtexassets.com/arquivos/GK-site-Menu---marshmallow-2-min.png"
+    }
+  },
+  // end marshmallow
+  // init bombom
+  "tab-content.item#submenu-chocolates-bombom": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-bombom"
+    ],
+    "props": {
+      "tabId": "submenu-bombom"
+    }
+  },
+  "flex-layout.row#submenu-chocolates-bombom": {
+    "children": [
+      "flex-layout.col#submenu-chocolates-bombom-text-buttons",
+      "flex-layout.col#submenu-chocolates-bombom-images"
+    ]
+  },
+  "flex-layout.col#submenu-chocolates-bombom-text-buttons": {
+    "props": {
+      "blockClass": "submenu-text-button-container"
+    },
+    "children": [
+      "rich-text#submenu-chocolates-bombom-text",
+      "flex-layout.row#submenu-chocolates-bombom-buttons"
+    ]
+  },
+  "rich-text#submenu-chocolates-bombom-text": {
+    "props": {
+      "blockClass": "text-submenu",
+      "text": "Nossos bombons são feitos de muita cremosidade, são 5 opções de sabores surreais e especiais. Garantimos mordidas mágicas a qualquer hora do dia."
+    }
+  },
+  "flex-layout.row#submenu-chocolates-bombom-buttons": {
+    "props": {
+      "blockClass": "submenu-button-container"
+    },
+    "children": [
+      "link#button-bombom-1"
+      // "link#button-bombom-2"
+    ]
+  },
+  "link#button-bombom-1": {
+    "props": {
+      "href": "/bombom",
+      "label": "Compre já",
+      "blockClass": "submenu-button"
+    }
+  },
+  // "link#button-bombom-2":{
+  //   "props": {
+  //     "href": "/",
+  //     "label": "deli +",
+  //     "blockClass": "submenu-button"
+  //   }
+  // },
+  "flex-layout.col#submenu-chocolates-bombom-images": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-bombom-images"
+    ]
+  },
+  "flex-layout.row#submenu-chocolates-bombom-images": {
+    "props": {
+      "blockClass": "submenu-images"
+    },
+    "children": [
+      "image#submenu-chocolates-bombom-1",
+      "image#submenu-chocolates-bombom-2"
+    ]
+  },
+  "image#submenu-chocolates-bombom-1": {
+    "props": {
+      "src": "https://goldko.vtexassets.com/arquivos/GK-site-Menu---bombom-min.png"
+    }
+  },
+  "image#submenu-chocolates-bombom-2": {
+    "props": {
+      "src": "https://goldko.vtexassets.com/arquivos/GK-site-Menu---bombom-2-min.png"
+    }
+  },
+  // end bombom
+  // init laskas
+  "tab-content.item#submenu-chocolates-laskas": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-laskas"
+    ],
+    "props": {
+      "tabId": "submenu-laskas"
+    }
+  },
+  "flex-layout.row#submenu-chocolates-laskas": {
+    "children": [
+      "flex-layout.col#submenu-chocolates-laskas-text-buttons",
+      "flex-layout.col#submenu-chocolates-laskas-images"
+    ]
+  },
+  "flex-layout.col#submenu-chocolates-laskas-text-buttons": {
+    "props": {
+      "blockClass": "submenu-text-button-container"
+    },
+    "children": [
+      "rich-text#submenu-chocolates-laskas-text",
+      "flex-layout.row#submenu-chocolates-laskas-buttons"
+    ]
+  },
+  "rich-text#submenu-chocolates-laskas-text": {
+    "props": {
+      "blockClass": "text-submenu",
+      "text": "Nossos bombons são feitos de muita cremosidade, são 5 opções de sabores surreais e especiais. Garantimos mordidas mágicas a qualquer hora do dia."
+    }
+  },
+  "flex-layout.row#submenu-chocolates-laskas-buttons": {
+    "props": {
+      "blockClass": "submenu-button-container"
+    },
+    "children": [
+      "link#button-laskas-1"
+      // "link#button-laskas-2"
+    ]
+  },
+  "link#button-laskas-1": {
+    "props": {
+      "href": "/laskas",
+      "label": "Compre já",
+      "blockClass": "submenu-button"
+    }
+  },
+  // "link#button-laskas-2":{
+  //   "props": {
+  //     "href": "/",
+  //     "label": "deli +",
+  //     "blockClass": "submenu-button"
+  //   }
+  // },
+  "flex-layout.col#submenu-chocolates-laskas-images": {
+    "children": [
+      "flex-layout.row#submenu-chocolates-laskas-images"
+    ]
+  },
+  "flex-layout.row#submenu-chocolates-laskas-images": {
+    "props": {
+      "blockClass": "submenu-images"
+    },
+    "children": [
+      "image#submenu-chocolates-laskas-1",
+      "image#submenu-chocolates-laskas-2"
+    ]
+  },
+  "image#submenu-chocolates-laskas-1": {
+    "props": {
+      "src": "https://goldko.vtexassets.com/arquivos/GK-site-Menu---bombom-min.png"
+    }
+  },
+  "image#submenu-chocolates-laskas-2": {
+    "props": {
+      "src": "https://goldko.vtexassets.com/arquivos/GK-site-Menu---bombom-2-min.png"
+    }
+  },
+  // end bombom
+  // end Tab items
+  "menu-item#cafes": {
+    "props": {
+      "id": "menu-item-cafes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-cafes",
+      "itemProps": {
+        "type": "internal",
+        "href": "/cafes",
+        "noFollow": false,
+        "tagTitle": "cafes",
+        "text": "cafés"
+      }
+    }
+  },
+  "menu-item#pascoa": {
+    "props": {
+      "id": "menu-item-pascoa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-pascoa",
+      "itemProps": {
+        "type": "internal",
+        "href": "/pascoa",
+        "noFollow": false,
+        "tagTitle": "páscoa",
+        "text": ""
+      }
+    }
+  },
+  "menu-item#combos": {
+    "props": {
+      "id": "menu-item-combos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-combos",
+      "itemProps": {
+        "type": "internal",
+        "href": "/combos",
+        "noFollow": false,
+        "tagTitle": "combos",
+        "text": "combos"
+      }
+    }
+  },
+  "menu-item#displays": {
+    "props": {
+      "id": "menu-item-displays",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-displays",
+      "itemProps": {
+        "type": "internal",
+        "href": "/displays",
+        "noFollow": false,
+        "tagTitle": "displays",
+        "text": "displays"
+      }
+    }
+  },
+  "menu-item#presentes": {
+    "props": {
+      "id": "menu-item-presentes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-presentes",
+      "itemProps": {
+        "type": "internal",
+        "href": "/presentes",
+        "noFollow": false,
+        "tagTitle": "presentes",
+        "text": "presentes"
+      }
+    }
+  },
+  "menu-item#lifestyle": {
+    "title": "Menu Lifestyle",
+    "props": {
+      "id": "menu-item-lifestyle",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-lifestyle",
+      "itemProps": {
+        "type": "internal",
+        "href": "/lifestyle",
+        "noFollow": false,
+        "tagTitle": "lifestyle",
+        "text": "lifestyle"
+      }
+    }
+  },
+  "menu-item#por-que-goldko": {
+    "props": {
+      "id": "menu-item-por-que-goldko",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-por-que-goldko",
+      "itemProps": {
+        "type": "internal",
+        "href": "/por-que-goldko",
+        "noFollow": false,
+        "tagTitle": "Por quê Goldko",
+        "text": "Por quê Goldko"
+      }
+    }
+  },
+  //Desktop - END
+  //MENU HEADER -- END
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "logo": {
+    "props": {
+      "title": "Chocolate para todos os dias, o dia todo",
+      "href": "/",
+      "url": "assets/goldko.svg",
+      "blockClass": "logo-header"
+    }
+  },
+  "header-layout.mobile": {
+    "children": [
+      "flex-layout.row#accept-cookies",
+      "wdt-custom-product-first-purchase",
+      "flex-layout.row#mobile",
+      "wdt-data-layer"
+    ]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "flex-layout.row#row-1-header-mobile",
+      "search-bar"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile"
+    }
+  },
+  "flex-layout.row#row-1-header-mobile": {
+    "props": {
+      "blockClass": "1-header-mobile",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#menu-mobile",
+      "flex-layout.col#utils-mobile"
+    ]
+  },
+  "flex-layout.col#menu-mobile": {
+    "props": {
+      "width": "20%",
+      "blockClass": "container-menu-logo"
+    },
+    "children": [
+      "drawer#mobile",
+      "logo"
+    ]
+  },
+  "flex-layout.col#utils-mobile": {
+    "props": {
+      "width": "20%",
+      "blockClass": "utils-mobile"
+    },
+    "children": [
+      // "login",
+      "minicart.v2"
+    ]
+  },
+  "drawer#mobile": {
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": "mobile"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#menu-header-mobile-1",
+      //"rich-text#header-sup-ganhe",
+      "rich-text#my-account"
+    ]
+  },
+  "rich-text#my-account": {
+    "props": {
+      "text": "[Minha Conta](/account) [Meus Pedidos](/account#/orders)",
+      "blockClass": "my-account"
+    }
+  },
+  //MINICART - init
+  "minicart.v2": {
+    "children": [
+      "minicart-base-content"
+    ]
+  },
+  "minicart-base-content": {
+    "blocks": [
+      "minicart-empty-state"
+    ],
+    "children": [
+      "minicart-product-list",
+      "flex-layout.row#minicart-footer"
+    ]
+  },
+  "flex-layout.row#minicart-footer": {
+    "props": {
+      "blockClass": "minicart-footer"
+    },
+    "children": [
+      "flex-layout.col#minicart-footer"
+    ]
+  },
+  "flex-layout.col#minicart-footer": {
+    "children": [
+      "minicart-summary",
+      "minicart-checkout-button"
+    ]
+  },
+  "minicart-product-list": {
+    "blocks": [
+      "product-list#minicart"
+    ]
+  },
+  "product-list#minicart": {
+    "blocks": [
+      "product-list-content-mobile"
+    ]
+  },
+  "minicart-summary": {
+    "blocks": [
+      "checkout-summary.compact#minicart"
+    ]
+  },
+  "checkout-summary.compact#minicart": {
+    "children": [
+      "summary-totalizers#minicart"
+    ],
+    "props": {
+      "totalizersToShow": [
+        "Items",
+        "Discounts"
+      ]
+    }
+  },
+  "summary-totalizers#minicart": {
+    "props": {
+      "showTotal": true,
+      "showDeliveryTotal": false
+    }
+  },
+  "minicart-empty-state": {
+    "children": [
+      "flex-layout.row#empty-state"
+    ]
+  },
+  "flex-layout.row#empty-state": {
+    "children": [
+      "flex-layout.col#empty-state"
+    ]
+  },
+  "flex-layout.col#empty-state": {
+    "children": [
+      "rich-text#minicart-default-empty-state"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "rowGap": 0
+    }
+  },
+  "rich-text#minicart-default-empty-state": {
+    "props": {
+      "text": "Seu carrinho está vazio :("
+    }
+  }
+  //MINICART - end
+}

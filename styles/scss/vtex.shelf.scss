@@ -1,0 +1,71 @@
+@import "variables";
+
+.relatedProducts {
+    margin: 0;
+    padding: 0 40px 25px;
+    background-color: $lightBlue;
+    @media (max-width: $maxMobile) {
+        padding: 0 15px 15px;
+        height: 450px;
+        overflow: auto;
+    }
+    .title {
+        color: $light;
+        margin: 0 0 20px;
+        font-size: $size6;
+        text-align: center;
+        font-weight: $regular;
+        text-transform: uppercase;
+        @media (max-width: $maxMobile) {
+            margin: 0;
+            font-size: $size5;
+        }
+    }
+    :global(.vtex-slider-0-x-dotsContainer) {
+        display: none !important;
+    }
+    .arrow {
+        outline: 0;
+        &.arrowLeft {
+            left: -25px;
+        }
+        &.arrowRight {
+            right: -25px;
+        }
+    }
+    .shelfContentContainer {
+        :global(.vtex-slider-0-x-sliderFrame) {
+            @media (max-width: $maxMobile) {
+                width: 100% !important;
+                transform: unset !important;
+                transition: unset !important;
+                will-change: unset !important;
+
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            .slide {
+                max-width: 25%;
+                padding-bottom: 15px;
+                @media (max-width: $maxMobile) {
+                    width: 100% !important;
+                    max-width: 100%;
+                    height: unset;
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+        .arrow {
+            .caretIcon {
+                color: $light;
+            }
+            @media (max-width: $maxMobile) {
+                display: none !important;
+            }
+        }
+    }
+}

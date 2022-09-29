@@ -1,0 +1,669 @@
+{
+  "store.home": {
+    "blocks": [
+      "rich-text#home-page-title-SEO",
+      "list-context.image-list#main-carousel",
+      "flex-layout.row#header-sup",
+      "slider-layout#header-sup-mobile",
+      "flex-layout.row#home-banners-highlight",
+      "rich-text#collection-title-1",
+      "flex-layout.row#shelf-1",
+      // "flex-layout.row#promotional-banners-home-1",
+      "rich-text#collection-title-2",
+      "flex-layout.row#shelf-2",
+      "flex-layout.row#home-banners-highlight-2",
+      "rich-text#collection-title-10",
+      "flex-layout.row#shelf-combos",
+      "blog-preview",
+      "trustvox-store-note",
+      // "rich-text#collection-title-4",
+      "responsive-layout.desktop#recipe",
+      "responsive-layout.mobile#recipe",
+      "info-card#manifest-goldko",
+      "flex-layout.row#newsletter"
+    ]
+  },
+  "rich-text#home-page-title-SEO": {
+    "props": {
+      "blockClass": "home-page-title-SEO",
+      "text": "# Goldko - Chocolate para todos os dias, o dia todo"
+    }
+  },
+  "slider-layout#header-sup-mobile": {
+    "props": {
+      "blockClass": "header-sup-mobile",
+      "autoplay": {
+        "timeout": 5000,
+        "autoplay": false,
+        "stopOnHover": false,
+        "showPaginationDots": "never",
+        "showNavigationArrows": "always"
+      },
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 2,
+        "phone": 1
+      }
+    },
+    "children": [
+      "link#information-ruler-1",
+      // "link#information-ruler-3",
+      "link#information-ruler-2",
+      "link#information-ruler-44"
+    ]
+  },
+  "responsive-layout.desktop#recipe": {
+    "children": [
+      "list-context.product-list#recipe-1-2"
+    ]
+  },
+  "responsive-layout.mobile#recipe": {
+    "children": [
+      "list-context.product-list#recipe-1-mobile-1-1"
+    ]
+  },
+  "list-context.product-list#recipe-1-2": {
+    "blocks": [
+      "product-summary.shelf#horizontal"
+    ],
+    "children": [
+      "slider-layout#recipe"
+    ],
+    "props": {
+      "maxItems": 3,
+      "collection": "9999"
+    }
+  },
+  "list-context.product-list#recipe-1-mobile-1-1": {
+    "blocks": [
+      "product-summary.shelf#page-home"
+    ],
+    "children": [
+      "slider-layout#recipe"
+    ],
+    "props": {
+      "maxItems": 3,
+      "collection": "9999"
+    }
+  },
+  "slider-layout#recipe": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 3
+      },
+      "infinite": false,
+      "showNavigationArrows": "never",
+      "blockClass": "recipe"
+    }
+  },
+  "info-card#manifest-goldko": {
+    "props": {
+      "id": "info-card-manifest-goldko",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "textMode": "rich-text",
+      "imageUrl": "https://goldko.vtexassets.com/arquivos/manifesto-min.png?v=1",
+      "headline": "### Quem Somos",
+      "subhead": "Somos chocolovers de carteirinha e buscamos resgatar o sabor e a felicidade de comer chocolate todos os dias, o dia todo! E foi assim, seguindo esse propósito, que depois de muitas receitas e testes, lançamos apenas produtos com sabor surreal feitos com nosso elemento surpresa: zero adição de açúcares! Pura magia ![](https://goldko.vtexassets.com/arquivos/emoji-2.png) ![](https://goldko.vtexassets.com/arquivos/emoji-4.png)",
+      "callToActionMode": "none",
+      "blockClass": "info-card-manifest-goldko",
+      "textAlignment": "left"
+    }
+  },
+  "flex-layout.row#promotional-banners-home-1": {
+    "props": {
+      "blockClass": "promotional-banners-home",
+      "colSizing": "auto",
+      "colGap": 7
+    },
+    "children": [
+      "image#promotional-banners-home-1",
+      "image#promotional-banners-home-2"
+    ]
+  },
+  "image#promotional-banners-home-1": {
+    "props": {
+      "src": "https://goldko.myvtex.com/arquivos/banner-1-min.jpg"
+    }
+  },
+  "image#promotional-banners-home-2": {
+    "props": {
+      "src": "https://goldko.myvtex.com/arquivos/banner-2-min.jpg"
+    }
+  },
+  "info-card#receita-da-semana": {
+    "props": {
+      "id": "info-card-receita-da-semana",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "textMode": "rich-text",
+      "imageUrl": "https://goldko.vtexassets.com/arquivos/banner-3-min.jpg",
+      "headline": "Receita da semana\n **Pavê Romeu e julieta**",
+      "subhead": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.",
+      "callToActionText": "Receita completa",
+      "callToActionUrl": "/receita",
+      "blockClass": "info-card-receita-da-semana",
+      "textAlignment": "left"
+    }
+  },
+  // "flex-layout.row#o-que-voce-procura": {
+  //   "props": {
+  //     "blockClass": "o-que-voce-procura"
+  //   },
+  //   "children": [
+  //     "rich-text#o-que-voce-procura",
+  //     "flex-layout.row#o-que-voce-procura-seals"
+  //   ]
+  // },
+  // "rich-text#o-que-voce-procura": {
+  //   "props": {
+  //     "text": "O que você procura?",
+  //     "blockClass": "o-que-voce-procura"
+  //   }
+  // },
+  // "flex-layout.row#o-que-voce-procura-seals": {
+  //   "props": {
+  //     "colSizing": "auto"
+  //   },
+  //   "children": [
+  //     "image#o-que-voce-procura-1",
+  //     "image#o-que-voce-procura-2",
+  //     "image#o-que-voce-procura-3"
+  //   ]
+  // },
+  // "image#o-que-voce-procura-1": {
+  //   "props": {
+  //     "src": "https://goldko.vtexassets.com/arquivos/sem-adicao-de-acucares.png"
+  //   }
+  // },
+  // "image#o-que-voce-procura-2": {
+  //   "props": {
+  //     "src": "https://goldko.vtexassets.com/arquivos/sem-gluten.png"
+  //   }
+  // },
+  // "image#o-que-voce-procura-3": {
+  //   "props": {
+  //     "src": "https://goldko.vtexassets.com/arquivos/veganos.png"
+  //   }
+  // },
+  "flex-layout.row#newsletter": {
+    "props": {
+      "blockClass": "newsletter"
+    },
+    "children": [
+      "flex-layout.col#newsletter",
+      "flex-layout.col#social"
+    ]
+  },
+  "flex-layout.col#social": {
+    "props": {
+      "blockClass": "social"
+    },
+    "children": [
+      "rich-text#social",
+      "social-networks"
+    ]
+  },
+  "rich-text#social": {
+    "props": {
+      "blockClass": "social",
+      "text": "Sempre\n**Juntos**\n\nFIQUE POR DENTRO DOS LANÇAMENTOS E PROMOÇÕES DA GOLDKO"
+    }
+  },
+  "image#bg-newsletter": {
+    "props": {
+      "src": "https://goldko.vtexassets.com/arquivos/banner-main-min.jpg?v=1"
+    }
+  },
+  "flex-layout.col#newsletter": {
+    "children": [
+      "rich-text#title-newsletter",
+      "newsletter-form"
+    ]
+  },
+  "rich-text#title-newsletter": {
+    "props": {
+      "blockClass": "title-newsletter",
+      "text": "FIQUE POR DENTRO DA\n**MAGIA GOLDKO :)**"
+    }
+  },
+  "newsletter-form": {
+    "children": [
+      "newsletter-input-name",
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+  "flex-layout.row#video-home-1": {
+    "props": {
+      "blockClass": "video-home-1"
+    },
+    "children": [
+      "list-context.image-list#video-home"
+    ]
+  },
+  "list-context.image-list#video-home": {
+    "children": [
+      "slider-layout#video-home-images"
+    ],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "https://redfeather.vtexassets.com/arquivos/video-home.png",
+          "mobileImage": "https://redfeather.vtexassets.com/arquivos/video_mobile.jpg?v=1",
+          "description": "Redfeather Campanha 2021",
+          "link": "https://www.youtube.com.br/"
+        }
+      ]
+    }
+  },
+  "slider-layout#video-home-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+  "flex-layout.row#banners-home-1": {
+    "props": {
+      "blockClass": "banners-home-1"
+    },
+    "children": [
+      "image#banner-home-1",
+      "image#banner-home-2"
+    ]
+  },
+  "image#banner-home-1": {
+    "props": {
+      "src": "https://redfeather.vtexassets.com/arquivos/banner-home-1.png",
+      "title": "Camisa Linho Gola Padre",
+      "link": "/Camisas"
+    }
+  },
+  "image#banner-home-2": {
+    "props": {
+      "src": "https://redfeather.vtexassets.com/arquivos/banner-home-2.png",
+      "title": "Conjuntos de Moletom",
+      "link": "/Moletom"
+    }
+  },
+  "rich-text#float-contacts": {
+    "props": {
+      "blockClass": "float-contacts",
+      "text": "[Whatsapp](https://www.google.com) [Lojas](https://www.google.com) [Contato](https://www.google.com)"
+    }
+  },
+  "flex-layout.row#header-sup": {
+    "props": {
+      "blockClass": "header-sup",
+      "colGap": 7
+    },
+    "children": [
+      "link#information-ruler-1",
+      // "link#information-ruler-3",
+      "link#information-ruler-2",
+      "link#information-ruler-44"
+    ]
+  },
+  "link#information-ruler-1": {
+    "props": {
+      "href": "/",
+      "blockClass": "information-ruler"
+    },
+    "children": [
+      "image#information-ruler-1",
+      "rich-text#information-ruler-1"
+    ]
+  },
+  "image#information-ruler-1": {
+    "props": {
+      "src": "https://goldko.myvtex.com/arquivos/car01.png",
+      "alt": "Frete grátis"
+    }
+  },
+  "rich-text#information-ruler-1": {
+    "props": {
+      "text": "**Frete Grátis** Nas compras acima de R$ 200",
+      "blockClass": "information-ruler"
+    }
+  },
+  "link#information-ruler-2": {
+    "props": {
+      "href": "/",
+      "blockClass": "information-ruler"
+    },
+    "children": [
+      "image#information-ruler-2",
+      "rich-text#information-ruler-2"
+    ]
+  },
+  "image#information-ruler-2": {
+    "props": {
+      "src": "https://goldko.myvtex.com/arquivos/lock01.png",
+      "alt": "Compra segura"
+    }
+  },
+  "rich-text#information-ruler-2": {
+    "props": {
+      "text": "**Compra Segura** As melhores tecnologias para sua proteção",
+      "blockClass": "information-ruler"
+    }
+  },
+  "link#information-ruler-3": {
+    "props": {
+      "href": "/",
+      "blockClass": "information-ruler"
+    },
+    "children": [
+      "image#information-ruler-3",
+      "rich-text#information-ruler-3"
+    ]
+  },
+  "image#information-ruler-3": {
+    "props": {
+      "src": "https://goldko.myvtex.com/arquivos/cart-icon01.png"
+    }
+  },
+  "rich-text#information-ruler-3": {
+    "props": {
+      "text": "**10% de desconto** Na sua primeira compra",
+      "blockClass": "information-ruler"
+    }
+  },
+  "link#information-ruler-44": {
+    "props": {
+      "href": "/",
+      "blockClass": "information-ruler"
+    },
+    "children": [
+      "image#information-ruler-44",
+      "rich-text#information-ruler-44"
+    ]
+  },
+  "image#information-ruler-44": {
+    "props": {
+      "src": "https://goldko.myvtex.com/arquivos/map-brazil01.png",
+      "alt": "Entrega nacional"
+    }
+  },
+  "rich-text#information-ruler-44": {
+    "props": {
+      "text": "**Entrega Nacional**  *Exceto região Norte, MT e MS.",
+      "blockClass": "information-ruler"
+    }
+  },
+  "list-context.image-list#main-carousel-category": {
+    "children": [
+      "slider-layout#main-carousel"
+    ],
+    "props": {
+      "images": [
+        {
+          "image": "https://redfeather.vtexassets.com/arquivos/main-banner.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "list-context.image-list#main-carousel": {
+    "children": [
+      "slider-layout#main-carousel"
+    ],
+    "props": {
+      "images": [
+        {
+          "image": "https://goldko.vtexassets.com/arquivos/carousel-home-1-min.png?v=1",
+          "mobileImage": "https://goldko.vtexassets.com/arquivos/carousel-home-1-mobile-min.png?v=1"
+        },
+        {
+          "image": "https://goldko.vtexassets.com/arquivos/carousel-home-2-min.png?v=1",
+          "mobileImage": "https://goldko.vtexassets.com/arquivos/carousel-home-2-mobile-min.png?v=1"
+        }
+      ]
+    }
+  },
+  "flex-layout.row#home-banners-highlight": {
+    "children": [
+      "image#home-banner-highlight-1",
+      "image#home-banner-highlight-2",
+      "image#home-banner-highlight-3"
+    ],
+    "props": {
+      "blockClass": [
+        "home-banners-highlight",
+        "home-banners-highlight-1"
+      ],
+      "colGap": 7,
+      "colSizing": "auto"
+    }
+  },
+  "image#home-banner-highlight-1": {
+    "props": {
+      "blockClass": [
+        "home-banner-highlight"
+      ],
+      "src": "https://goldko.vtexassets.com/arquivos/new-home-01.jpg",
+      "link": "#"
+    }
+  },
+  "image#home-banner-highlight-2": {
+    "props": {
+      "blockClass": [
+        "home-banner-highlight"
+      ],
+      "src": "https://goldko.vtexassets.com/arquivos/new-home-02.jpg",
+      "link": "#"
+    }
+  },
+  "image#home-banner-highlight-3": {
+    "props": {
+      "blockClass": [
+        "home-banner-highlight"
+      ],
+      "src": "https://goldko.vtexassets.com/arquivos/new-home-03.jpg",
+      "link": "#"
+    }
+  },
+  "slider-layout#main-carousel": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carousel-home",
+      "autoplay": {
+        "timeout": "5000"
+      }
+    }
+  },
+  "rich-text#collection-title-1": {
+    "props": {
+      "blockClass": "collection-title",
+      "text": "## PÁSCOA"
+    }
+  },
+  "rich-text#collection-title-2": {
+    "props": {
+      "blockClass": "collection-title",
+      "text": "## OS 10+ GOLDKO"
+    }
+  },
+  "flex-layout.row#home-banners-highlight-2": {
+    "children": [
+      "image#home-banner-highlight-4",
+      "image#home-banner-highlight-5"
+    ],
+    "props": {
+      "blockClass": [
+        "home-banners-highlight",
+        "home-banners-highlight-2"
+      ],
+      "colGap": 7,
+      "colSizing": "auto"
+    }
+  },
+  "image#home-banner-highlight-4": {
+    "props": {
+      "blockClass": [
+        "home-banner-highlight"
+      ],
+      "src": "https://goldko.vtexassets.com/arquivos/new-home-04.jpg",
+      "link": "#"
+    }
+  },
+  "image#home-banner-highlight-5": {
+    "props": {
+      "blockClass": [
+        "home-banner-highlight"
+      ],
+      "src": "https://goldko.vtexassets.com/arquivos/new-home-05.jpg",
+      "link": "#"
+    }
+  },
+  "rich-text#collection-title-10": {
+    "props": {
+      "blockClass": "collection-title",
+      "text": "## COMBOS"
+    }
+  },
+  "rich-text#collection-title-3": {
+    "props": {
+      "blockClass": "collection-title",
+      "text": "### Nome da Coleção \n Lorem ipsum sit dollor met conducteur adiscipling"
+    }
+  },
+  "rich-text#collection-title-4": {
+    "props": {
+      "blockClass": "collection-title",
+      "text": ""
+    }
+  },
+  "flex-layout.row#shelf-1": {
+    "children": [
+      "list-context.product-list#demo-1"
+    ]
+  },
+  "list-context.product-list#demo-1": {
+    "blocks": [
+      "product-summary.shelf#page-home"
+    ],
+    "children": [
+      "slider-layout#main-showcase"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "maxItems": 5,
+      "collection": "140"
+    }
+  },
+  "flex-layout.row#shelf-2": {
+    "children": [
+      "list-context.product-list#demo-2"
+    ]
+  },
+  "list-context.product-list#demo-2": {
+    "blocks": [
+      "product-summary.shelf#page-home"
+    ],
+    "children": [
+      "slider-layout#main-showcase"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "maxItems": 5
+    }
+  },
+  "flex-layout.row#shelf-combos": {
+    "children": [
+      "list-context.product-list#demo-combos"
+    ]
+  },
+  "list-context.product-list#demo-combos": {
+    "blocks": [
+      "product-summary.shelf#page-home"
+    ],
+    "children": [
+      "slider-layout#main-showcase"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "maxItems": 5,
+      "category": "5"
+    }
+  },
+  "flex-layout.row#shelf-3": {
+    "children": [
+      "list-context.product-list#demo-3"
+    ]
+  },
+  "list-context.product-list#demo-3": {
+    "blocks": [
+      "product-summary.shelf#page-home"
+    ],
+    "children": [
+      "slider-layout#main-showcase"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#main-showcase": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 10
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots": "never"
+    }
+  },
+  "slider-layout#main-relatedProducts": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": false,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never"
+    }
+  },
+  "iframe#instagram": {
+    "props": {
+      "src": "https://www.wedigi.com.br/we.digi.tech/api/instagram/wdt-instagram.php?account=uvlineoficial",
+      "width": "1920",
+      "height": "400"
+    }
+  },
+  "rich-text#title-instagram": {
+    "props": {
+      "text": "@uvlineoficial",
+      "blockClass": [
+        "title-instagram"
+      ]
+    }
+  },
+  "rich-text#title-blog": {
+    "props": {
+      "text": "Blog",
+      "blockClass": [
+        "title-instagram"
+      ]
+    }
+  }
+}

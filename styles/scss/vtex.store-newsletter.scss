@@ -1,0 +1,77 @@
+@import "./variables";
+
+.newsletterForm {
+    width: 80%;
+    padding: 0 70px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: $maxMobile) {
+        width: 100%;
+        padding: 0 25px 25px;
+    }
+    .emailInputContainer {
+        width: 60%;
+        margin-bottom: 25px;
+        @media (max-width: $maxMobile) {
+            margin-bottom: 15px;
+            width: 100%; 
+        }
+    }
+    :global(.vtex-input) {
+        :global(.vtex-input-prefix__group) {
+            border: 0;
+            :global(.vtex-styleguide-9-x-input) {
+                color: $darkGrey;
+                padding: 0 15px;
+                border-style: solid !important;
+                border-bottom: 1px solid $lightGrey;
+                background-color: transparent;
+                &:focus {
+                    border-color: $dark;
+                }
+            }
+        }
+    }
+    .nameInputContainer {
+        width: 100%;
+        margin-bottom: 15px;
+        @media (max-width: $maxMobile) {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+    .formSubmitContainer {
+        width: 38%;
+        @media (max-width: $maxMobile) {
+            width: 100%;
+        }
+        :global(.vtex-button) {
+            border-color: $lightBlue;
+            border-radius: 5px;
+            background-color: $lightBlue;
+            @media (max-width: $maxMobile) {
+                width: 100%;
+            }
+            :global(.vtex-button__label) {
+                display: flex;
+                align-items: center;
+                &::before {
+                    content: "\f193";
+                    font-size: $size4;
+                    font-family: $Feather;
+
+                    display: block;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.defaultSuccessMessage {
+    color: $blue;
+    padding: 0 80px 50px;
+    font-weight: $regular;
+}

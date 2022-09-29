@@ -1,0 +1,317 @@
+@import "variables";
+
+.latestPostsBlockContainer {
+    padding: 0 30px;
+    :global(.vtex-card) {
+        color: $dark;
+        text-decoration: none;
+    }
+    .teaserHeader {
+        display: none;
+    }
+    .latestPostsBlockTitle {
+        color: $dark;
+        display: flex;
+        text-align: left;
+        font-size: $size6;
+        align-items: center;
+        font-weight: $extraLight;
+        justify-content: flex-start;
+
+        display: none;
+
+        @media (max-width: $maxMobile) {
+            font-size: $size5;
+        }
+        &::before {
+            width: 38px;
+            color: $dark;
+            height: 44px;
+            display: block;
+            content: "\f125";
+            font-size: $size7;
+            font-family: $flaticon;
+            font-weight: $extraLight;
+            margin-right: 15px;
+
+            @media (max-width: $maxMobile) {
+                width: 29px;
+                height: 33px;
+                font-size: $size6;
+                margin-right: 10px;
+            }
+        }
+    }
+    .latestPostsBlockFlexItem {
+        width: 100%;
+        padding: 0;
+        box-shadow: 0 0 10px rgba(0,0,0,.22);
+        &:first-child {
+            margin-right: 2%;
+        }
+        @media (max-width: $maxMobile) {
+            width: 100%;
+            height: 150px;
+        }
+        .teaserTitle {
+            .teaserTitleLink {
+                color: $dark !important;
+                font-size: $size5;
+                text-decoration: none;
+                font-weight: $extraLight;
+            }
+        }
+    }
+}
+
+.teaserImage {
+    width: 50%;
+    float: left;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    @media (max-width: $maxMobile) {
+        width: 35%;
+        height: 100px;
+    }
+}
+.teaserGradientOverlay {
+    left: 50%;
+    height: 200px;
+    background: unset !important;
+    @media (max-width: $maxMobile) {
+        left: 35%;
+    }
+    .teaserTextOverlay {
+        filter: invert(1);
+        top: 0;
+        margin-top: 20px;
+        margin-right: 20px;
+        bottom: unset !important;
+    }
+}
+
+.searchBlockContainer {
+    padding: 0 30px;
+    margin-top: 60px;
+    @media (max-width: $maxTablet) {
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+    :global(.vtex-input-prefix__group) {
+        border: 0;
+        width: 100%;
+
+        border-radius: 22px;
+        padding: 0 20px;
+        background-color: $lighterGrey;
+
+
+        :global(.vtex-styleguide-9-x-input) {
+            font-family: Charlevoix Pro;
+
+            min-width: 180px;
+            padding: 0;
+            background-color: $lighterGrey;
+
+            @media (min-width: 1025px) and (max-width: 1250px) {
+                min-width: 150px;
+            }
+
+            color: $darkGrey;
+            font-size: 13px;
+            font-weight: $regular;
+
+            border-bottom: 0;
+            border-color: transparent;
+        }
+        :global(.vtex-input__suffix) {
+            padding: 0;
+            background-color: $lighterGrey;
+            :first-child {
+                border-color: transparent;
+            }
+        }
+        :global(.vtex__icon-search) {
+            &::before {
+                content: "\f1a3";
+                width: 20px;
+                height: 20px;
+                color: #1675bf;
+                display: block;
+                font-size: 18px;
+                font-family: "Flaticon";
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.listTitle {
+    color: $blue;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.listContainer {
+    padding: 0 30px;
+    @media (max-width: $maxTablet) {
+        padding: 15px;
+    }
+    :global(.vtex-styleguide-9-x-dropdown) {
+        border: 0;
+        border-color: transparent;
+        :global(.vtex-dropdown__container) {
+            border-radius: 25px;
+            background-color: #00a6dd;
+            border: 0;
+            border-color: transparent;
+
+            :global(.vtex-dropdown__button) {
+                color: #fff;
+                :global(.vtex-dropdown__arrow) {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .listFlex {
+        width: calc(100% + 60px);
+        margin-left: -30px;
+        padding-right: 30px;
+        margin-bottom: 30px;
+        align-items: stretch;
+        @media (max-width: $maxTablet) {
+            width: calc(100% + 30px);
+            margin-left: -15px;
+            padding-right: 15px;
+            margin-bottom: 15px;
+        }
+        .listFlexItem {
+            padding-left: 30px;
+            padding-right: 0;
+            margin-top: 30px;
+            width: 25%;
+            @media (max-width: $maxTablet) {
+                width: 50%;
+                padding-left: 15px;
+                padding-right: 0;
+                margin-top: 15px;
+            }
+            :global(.vtex-card) {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                box-shadow: none !important;
+                .teaserHeader {
+                    padding: 0;
+                    padding-left: 10px;
+                    padding-bottom: 5px;
+                    @media (max-width: $maxTablet) {
+                    }
+                    .teaserCategoryLink {
+                        color: $lightBlue;
+                        display: block;
+                        text-decoration: none;
+                    }
+                    .teaserSeparator {
+                        display: none;
+                    }
+                    .teaserDate {
+                        font-size: 12px;
+                        color: $midGrey;
+                        display: none;
+                    }
+                }
+                .teaserImageContainer {
+                    display: block;
+                    width: 100%;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    .teaserImage {
+                        width: 100%;
+                    }
+                }
+                .teaserTitle {
+                    padding: 0;
+                    padding-top: 15px;
+                    padding-bottom: 10px;
+                    .teaserTitleLink {
+                        width: 100%;
+                        display: block;
+                        font-size: 18px;
+                        text-decoration: none;
+                        color: $blue;
+                    }
+                }
+                .teaserBody {
+                    padding: 0;
+                    font-size: 14px;
+                    @media (max-width: $maxTablet) {
+                        font-size: 12px;
+                    }
+                    :first-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.teaserBody--all-posts {
+    display: none;
+}
+
+.postContainer {
+    margin-top: -30px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: $maxTablet) {
+        padding: 15px;
+        margin-top: -15px;
+    }
+
+    .postTitle {
+        color: $blue;
+        width: 100%;
+        @media (max-width: $maxTablet) {
+            font-size: 32px;
+        }
+    }
+    .postMeta {    
+        width: 100%;
+        @media (max-width: $maxTablet) {
+            font-size: 10px;
+        }
+        :not(:last-child) {
+            :first-child {
+                color: $lightBlue !important;
+            }
+        }
+        :first-child {
+            text-decoration: none;
+            color: $grey;
+        }
+        :last-child {
+            color: $grey;
+        }
+    }
+    .postFeaturedImage {
+        margin-top: 30px;
+        height: 400px;
+        border-radius: 10px;
+        @media (max-width: $maxTablet) {
+        }
+    }
+    .postBody {
+        color: $blue;
+        padding-left: 50px;
+        max-width: 600px;
+        @media (max-width: $maxTablet) {
+            padding-left: 0;
+        }
+    }
+}

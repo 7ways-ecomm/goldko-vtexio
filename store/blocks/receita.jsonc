@@ -1,0 +1,131 @@
+{
+    "store.custom#receita": {
+        "blocks": [
+            "flex-layout.row#receita-1",
+            "flex-layout.row#receita-2",
+            "flex-layout.row#receita-3"
+        ]
+    },
+    "flex-layout.row#receita-1": {
+        "props": {
+            "blockClass": "receita-1"
+        },
+        "children": [
+            "image#receita-1",
+            "flex-layout.col#receita-1"
+        ]
+    },
+    "flex-layout.col#receita-1": {
+        "props": {},
+        "children": [
+            "rich-text#receita-title",
+            "rich-text#receita-subtitle",
+            "flex-layout.row#recipe-seals"
+        ]
+    },
+    "image#receita-1": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/receita.png"
+        }
+    },
+    "rich-text#receita-title": {
+        "props": {
+            "text": "# Cupcake *Goldko*",
+            "blockClass": "receita-title"
+        }
+    },
+    "rich-text#receita-subtitle": {
+        "props": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer orci quam, placerat at tempus non, feugiat eu nulla. Nulla non nisi lorem. Proin metus dui, suscipit in est vitae, facilisis posuere dolor.",
+            "blockClass": "receita-subtitle"
+        }
+    },
+    "flex-layout.row#recipe-seals": {
+        "props": {
+            "colSizing": "auto",
+            "blockClass": "recipe-seals"
+        },
+        "children": [
+            "rich-text#tempo-de-preparo",
+            "rich-text#porcoes"
+        ]
+    },
+    "rich-text#tempo-de-preparo": {
+        "props": {
+            "text": "Tempo de Preparo: **15 minutos**",
+            "blockClass": "tempo-de-preparo"
+        }
+    },
+    "rich-text#porcoes": {
+        "props": {
+            "text": "Rende por receita: **5 porções**",
+            "blockClass": "porcoes"
+        }
+    },
+    "flex-layout.row#receita-2": {
+        "props": {
+            "blockClass": "receita-2"
+        },
+        "children": [
+            "rich-text#ingredientes",
+            "rich-text#mode-de-preparo"
+        ]
+    },
+    "rich-text#ingredientes": {
+        "props": {
+            "text": "## INGREDIENTES \n\n 70g de chocolate Deli Deli ao leite zero açúcar GoldKo\n2 bananas (+ 1/2 para colocar no meio com o chocolate)\n3 ovos\n1 colher de óleo de coco\n1/4 de copo de pasta de castanha de caju/amendoim\n2 copos de farinha de amêndoas\n1 colher de sopa de fermento\nCanela a gosto",
+            "blockClass": "receita"
+        }
+    },
+    "rich-text#mode-de-preparo": {
+        "props": {
+            "text": "## MODO DE PREPARO \n\n Misture todos os ingredientes (menos o fermento) em um recipiente até ficar bem homogêneo.\n\nDepois, adicione o fermento, o chocolate cortado e alguns pedaços de banana e misture um pouco mais.\n\nLeve ao forno já pré-aquecido a 180° por 30 minutos e aproveite!",
+            "blockClass": "receita"
+        }
+    },
+    "flex-layout.row#receita-3": {
+        "props": {
+            "blockClass": "receita-3"
+        },
+        "children": [
+            "flex-layout.col#receita-2",
+            "link#instagram"
+        ]
+    },
+    "flex-layout.row#dica": {
+        "props": {
+            "blockClass": "dica"
+        },
+        "children": [
+            "rich-text#dica",
+            "image#dica"
+        ]
+    },
+    "flex-layout.col#receita-2": {
+        "props": {
+
+        },
+        "children": [
+            "flex-layout.row#dica"
+        ]
+    },
+    "rich-text#dica": {
+        "props": {
+            "text": "## DICA \n\n O nosso Delo Deli branco fica incrível como finalização e decoração",
+            "blockClass": "dica"
+        }
+    },
+    "image#dica": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/dica.png",
+            "link": "https://dev--goldko.myvtex.com/1748-deli--branco-zero-acucar-15g/p"
+        }
+    },
+    "link#instagram": {
+        "props": {
+            "label": "@SMART.LIV",
+            "href": "#",
+            "blockClass": "recipe-instagram"
+        }
+    }
+}

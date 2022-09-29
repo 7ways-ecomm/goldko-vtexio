@@ -1,0 +1,604 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "props": {
+      "blockClass": "container-footer"
+    },
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop"
+    ]
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "/", "name": "Facebook" },
+        { "url": "/", "name": "Instagram"},
+        { "url": "/", "name": "Pinterest"},
+        { "url": "/", "name": "Youtube"}
+      ]
+    }
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "flex-layout.row#logo",
+      "vtex.menu@2.x:menu#institucional",
+      "vtex.menu@2.x:menu#ajuda",
+      "vtex.menu@2.x:menu#minha-conta",
+      "flex-layout.col#atendimento"
+    ],
+    "props": {
+      "blockClass": "menu-footer",
+      "paddingTop": 6,
+      "paddingBottom": 3,
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.row#logo": {
+    "children": [
+      "logo"
+    ],
+    "props": {
+      "blockClass": "logo-footer",
+      "colSizing": "auto"
+    }
+  },
+
+  "rich-text#footer-2-row": {
+    "props": {
+      "text": "![](https://goldko.vtexassets.com/arquivos/payment-methods1.png?v=1)",
+      "blockClass": "seals"
+    }
+  },
+  "flex-layout.row#footer-2-desktop": {
+    "children": [
+      "rich-text#footer",
+      "rich-text#footer-2-row",
+      "rich-text#dev-seals"
+    ],
+    "props": {
+      "blockClass": "credits",
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#footer": {
+    "props": {
+      "text": "Todos os direitos reservados © 2020 por GoldKo - [Política de Privacidade](/politica-de-privacidade)",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#dev-seals": {
+    "props": {
+      "text": "[![](https://goldko.vtexassets.com/arquivos/vtex-logo.png)](https://www.vtex.com.br) [![](https://goldko.vtexassets.com/arquivos/wedigi-logo.png?v=1)](https://www.wedigi.com.br)",
+      "blockClass": "dev-seals"
+    }
+  },
+  "footer-layout.mobile": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#footer-1-mobile",
+      "flex-layout.row#footer-2-mobile"
+    ]
+  },
+  "flex-layout.row#footer-2-mobile": {
+    "children": [
+      "rich-text#footer-2-row",
+      "rich-text#footer",
+      "rich-text#dev-seals"
+    ],
+    "props": {
+      "blockClass": "credits",
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#info-sac-footer": {
+    "props": {
+      "text": "**(11) 3926-1098** [sac@redfeather.com.br](mailto:sac@redfeather.com.br) Rua Engenheiro Aubertin, 170, Loja 1 - LAPA DE BAIXO - SÃO PAULO/SP",
+      "blockClass": "info-sac-footer"
+    }
+  },
+
+  // INIT Mobile com drawer
+  "flex-layout.row#footer-1-mobile": {
+    "children": [
+      "menu-item#institucional",
+      "menu-item#ajuda",
+      "menu-item#minha-conta",
+      "flex-layout.col#atendimento"
+    ],
+    "props": {
+      "blockClass": "menu-footer-mobile",
+      "width": "100%"
+    }
+  },
+
+  "menu-item#institucional": {
+    "props": {
+      "id": "menu-item-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-footer-mobile",
+      "width":"100%",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "institucional",
+        "text": "institucional"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#institucional-mobile-accordion"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#institucional-mobile-accordion": {
+    "props": {
+      "width": "100%",
+      "blockClass": "menu-footer-mobile"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#institucional-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#institucional-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer-mobile-itens",
+      "items": [
+        {
+          "id": "menu-item-por-que-goldko",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/por-que-goldko",
+            "noFollow": false,
+            "tagTitle": "Por que Goldko",
+            "text": "Por que Goldko"
+          }
+        },
+        {
+          "id": "menu-item-receitas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "https://www.goldko.com.br/nossas-receitas/",
+            "noFollow": false,
+            "tagTitle": "Receitas",
+            "text": "Receitas"
+          }
+        },
+        {
+          "id": "menu-item-cupom-de-desconto",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/cupom-de-desconto",
+            "noFollow": false,
+            "tagTitle": "Cupons de Desconto",
+            "text": "Cupons de Desconto"
+          }
+        },
+        {
+          "id": "menu-item-contato",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/contato",
+            "noFollow": false,
+            "tagTitle": "contato",
+            "text": "contato"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#ajuda": {
+    "props": {
+      "id": "menu-item-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-footer-mobile",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "ajuda",
+        "text": "ajuda"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#ajuda-mobile-accordion"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#ajuda-mobile-accordion": {
+    "props": {
+      "width": "100%",
+      "blockClass": "menu-footer-mobile"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#ajuda-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#ajuda-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer-mobile-itens",
+      "items": [
+
+        {
+          "id": "menu-item-duvidas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/faq",
+            "noFollow": false,
+            "tagTitle": "Dúvidas",
+            "text": "Dúvidas"
+          }
+        },
+        {
+          "id": "menu-item-politica-de-privacidade",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/politica-de-privacidade",
+            "noFollow": false,
+            "tagTitle": "Política de privacidade",
+            "text": "Política de privacidade"
+          }
+        }
+      ]
+    }
+  },
+
+
+  "menu-item#minha-conta": {
+    "props": {
+      "id": "menu-item-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-footer-mobile",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Minha Conta",
+        "text": "Minha Conta"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#minha-conta-mobile-accordion"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#minha-conta-mobile-accordion": {
+    "props": {
+      "width": "100%",
+      "blockClass": "menu-footer-mobile"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#minha-conta-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#minha-conta-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer-mobile-itens",
+      "items": [
+        {
+          "id": "menu-item-login-cadastro",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/account",
+            "noFollow": false,
+            "tagTitle": "Login / Cadastre-se",
+            "text": "Login / Cadastre-se"
+          }
+        },
+        {
+          "id": "menu-item-meus-pedidos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/account#/orders",
+            "noFollow": false,
+            "tagTitle": "Meus pedidos",
+            "text": "Meus pedidos"
+          }
+        },
+        {
+          "id": "menu-item-meus-enderecos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/account#/addresses",
+            "noFollow": false,
+            "tagTitle": "Meus endereços",
+            "text": "Meus endereços"
+          }
+        }
+      ]
+    }
+  },
+  "flex-layout.col#atendimento-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#atendimento-mobile"
+      // "rich-text#text-indique-ganhe"
+    ],
+    "props": {
+      "blockClass": "logo-footer",
+      "colSizing": "auto"
+    }
+  },
+  "vtex.menu@2.x:menu#atendimento-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer",
+      "items": [
+      ]
+    },
+    "children": [
+      "rich-text#title-footer-atendimento"
+    ]
+  },
+  "rich-text#text-indique-ganhe": {
+    "props": {
+      "text": "[Indique e ganhe R$20](/)",
+      "blockClass": ["header-sup-ganhe", "header-granhe-20"]
+    }
+  },
+// END Mobile com drawer
+
+
+  "vtex.menu@2.x:menu#institucional": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer",
+      "items": [
+        {
+          "id": "menu-item-por-que-goldko",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/por-que-goldko",
+            "noFollow": false,
+            "tagTitle": "Por que Goldko",
+            "text": "Por que Goldko"
+          }
+        },
+        {
+          "id": "menu-item-receitas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "https://www.goldko.com.br/nossas-receitas/",
+            "noFollow": false,
+            "tagTitle": "Receitas",
+            "text": "Receitas"
+          }        
+        },
+        {
+          "id": "menu-item-contato",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/contato",
+            "noFollow": false,
+            "tagTitle": "contato",
+            "text": "contato"
+          }
+        },
+        {
+          "id": "menu-item-cupom-de-desconto",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/cupom-de-desconto",
+            "noFollow": false,
+            "tagTitle": "Cupons de Desconto",
+            "text": "Cupons de Desconto"
+          }
+        }
+      ]
+    },
+    "children": [
+      "rich-text#title-footer-institucional"
+    ]
+  },
+  "rich-text#title-footer-institucional": {
+    "props": {
+      "text": "Institucional",
+      "blockClass": "menu-footer"
+    }
+  },
+
+  "vtex.menu@2.x:menu#ajuda": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer",
+      "items": [
+        {
+          "id": "menu-item-duvidas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/faq",
+            "noFollow": false,
+            "tagTitle": "Dúvidas",
+            "text": "Dúvidas"
+          }
+        },
+        {
+          "id": "menu-item-politica-de-privacidade",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/politica-de-privacidade",
+            "noFollow": false,
+            "tagTitle": "Politica de privacidade",
+            "text": "Politica de privacidade"
+          }
+        }
+      ]
+    },
+    "children": [
+      "rich-text#title-footer-ajuda"
+    ]
+  },
+  "rich-text#title-footer-ajuda": {
+    "props": {
+      "text": "Ajuda",
+      "blockClass": "menu-footer"
+    }
+  },
+
+  "vtex.menu@2.x:menu#minha-conta": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer",
+      "items": [
+        {
+          "id": "menu-item-login-cadastro",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/account",
+            "noFollow": false,
+            "tagTitle": "Login / Cadastre-se",
+            "text": "Login / Cadastre-se"
+          }
+        },
+        {
+          "id": "menu-item-meus-pedidos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/account#/orders",
+            "noFollow": false,
+            "tagTitle": "Meus pedidos",
+            "text": "Meus pedidos"
+          }
+        },
+        {
+          "id": "menu-item-meus-enderecos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/account#/addresses",
+            "noFollow": false,
+            "tagTitle": "Meus endereços",
+            "text": "Meus endereços"
+          }
+        }
+      ]
+    },
+    "children": [
+      "rich-text#title-footer-minha-conta"
+    ]
+  },
+  "rich-text#title-footer-minha-conta": {
+    "props": {
+      "text": "Minha Conta",
+      "blockClass": "menu-footer"
+    }
+  },
+
+  "flex-layout.col#atendimento": {
+    "children": [
+      "vtex.menu@2.x:menu#atendimento",
+      // "rich-text#text-email-2",
+      "rich-text#text-email",
+      "trustvox-stamp"
+      // "rich-text#text-indique-ganhe"
+    ],
+    "props": {
+      "blockClass": "atendimento-menu-footer",
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#text-email-2": {
+    "props": {
+      "text": "Dúvidas, comentários, sugestões?",
+      "blockClass": "email-text-2"
+    }
+  },
+  "rich-text#text-email": {
+    "props": {
+      "text": "[alo@goldko.com.br](mailto:alo@goldko.com.br)",
+      "blockClass": "email-text"
+    }
+  },
+  "vtex.menu@2.x:menu#atendimento": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer",
+      "items": [
+        // {
+        //   "id": "menu-item-atendimento",
+        //   "type": "custom",
+        //   "iconId": null,
+        //   "highlight": false,
+        //   "itemProps": {
+        //     "type": "internal",
+        //     "noFollow": false,
+        //     "tagTitle": "Dúvidas, comentários, sugestões?",
+        //     "text": "Dúvidas, comentários, sugestões?"
+        //   }
+        // }
+      ]
+    },
+    "children": [
+      "rich-text#title-footer-atendimento"
+    ]
+  },
+  "rich-text#title-footer-atendimento": {
+    "props": {
+      "text": "Atendimento",
+      "blockClass": "menu-footer"
+    }
+  }
+}

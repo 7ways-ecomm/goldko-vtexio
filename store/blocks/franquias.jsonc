@@ -1,0 +1,347 @@
+{
+  "store.custom#franquias": {
+    "blocks": [
+      "flex-layout.row#container-franquias",
+      "flex-layout.row#container-franquias-selos",
+      "flex-layout.row#wdt-mainImage-list",
+      "flex-layout.row#wdt-descriptionColumns",
+      "flex-layout.row#wdt-descriptionFactory",
+      "flex-layout.row#wdt-descriptionVideo"
+    ]
+  },
+  "flex-layout.row#container-franquias": {
+    "props":{
+      "blockClass": "wdt-container-franquias"
+    },
+    "children": [
+      "flex-layout.col#container-franquias-1",
+      "flex-layout.col#container-franquias-2"
+    ]
+  },
+  "flex-layout.col#container-franquias-1": {
+    "props":{
+      "blockClass": "wdt-head-banner"
+    },
+    "children": [
+      "image#form-contact-1"
+    ]
+  },
+  "image#form-contact-1": {
+    "props": {      
+      "src": "https://goldko.vtexassets.com/arquivos/wdt-franqueado-01.jpg",
+      "blockClass": "wdt-head-banner-img" 
+    }
+  },
+  "flex-layout.col#container-franquias-2": {
+    "children": [
+      "flex-layout.row#container-franquias-2-1",
+      "flex-layout.row#container-franquias-2-2"
+    ]
+  },
+  "flex-layout.row#container-franquias-2-1":{
+    "children": [
+      "rich-text#content-franquias-2-1"
+    ]
+  },
+  "rich-text#content-franquias-2-1":{
+    "props": {
+      "blockClass": [
+        "wdt-franquias-2-1"
+      ],
+      "text": "# ENTRE PARA FAMÍLIA DO MELHOR CHOCOLATE \n **ZERO ADIÇÃO DE AÇÚCARES DO MUNDO** \n\n Empreendedor, é o seu momento de investir numa franquia GoldKo. Chocolate para quem ama Chocolate. E com resultados surreais."
+    }
+  },
+  "flex-layout.row#container-franquias-2-2":{
+    "props":{
+      "blockClass":[
+        "wdt-franquias-form-2-2"
+      ]
+    },
+    "children": [
+      //"rich-text#wdt-title-form",
+      "wdt-form-default#franqueado"
+    ]
+  },
+  "rich-text#wdt-title-form":{
+    "props": {
+      "blockClass": [
+        "wdt-title-form"
+      ],
+      "text": "**Quero ser um(a) franqueado(a)** \n Prencha os campos abaixo:"
+    }
+  },
+  "wdt-form-default#franqueado": {
+    "props": {
+      "typeForm": "franqueado",
+      "acronym": "FR",
+      "customClass": "wdt-form-franquias"
+    }
+  },
+  "flex-layout.row#container-franquias-selos":{
+    "props":{
+      "blockClass":[
+        "wdt-franquias-selos"
+      ]
+    },
+    "children": [
+      "flex-layout.col#container-franquias-selos-1",
+      "flex-layout.col#container-franquias-selos-2",
+      "flex-layout.col#container-franquias-selos-3",
+      "flex-layout.col#container-franquias-selos-4",
+      "flex-layout.col#container-franquias-selos-5"
+    ]
+  },
+  "flex-layout.col#container-franquias-selos-1": {
+    "props":{
+      "blockClass": "container-franquias-selos-1"
+    },
+    "children": [
+      "image#content-franquias-selos-1-image",
+      "rich-text#content-franquias-selos-1-text"
+    ]
+  },
+  "image#content-franquias-selos-1-image": {
+    "props": {      
+      "src": "https://goldko.vtexassets.com/arquivos/wdt-franqueado-lista1.jpg"
+    }
+  },
+  "rich-text#content-franquias-selos-1-text":{
+    "props": {
+      "blockClass": "wdt-franquias-selos-2-text",
+      "text": "A GoldKo nasceu no Brasil"
+    }
+  },
+  "flex-layout.col#container-franquias-selos-2": {
+    "props":{
+      "blockClass": "container-franquias-selos-1"
+    },
+    "children": [
+      "image#content-franquias-selos-2-image",
+      "rich-text#content-franquias-selos-2-text"
+    ]
+  },
+  "image#content-franquias-selos-2-image": {
+    "props": {      
+      "src": "https://goldko.vtexassets.com/arquivos/wdt-franqueado-lista2.jpg"
+    }
+  },
+  "rich-text#content-franquias-selos-2-text":{
+    "props": {
+      "blockClass": "wdt-franquias-selos-2-text",
+      "text": "Lançamos nosso e-commerce."
+    }
+  },
+  "flex-layout.col#container-franquias-selos-3": {
+    "props":{
+      "blockClass": "container-franquias-selos-1"
+    },
+    "children": [
+      "image#content-franquias-selos-3-image",
+      "rich-text#content-franquias-selos-3-text"
+    ]
+  },
+  "image#content-franquias-selos-3-image": {
+    "props": {      
+      "src": "https://goldko.vtexassets.com/arquivos/wdt-franqueado-lista3.jpg"
+    }
+  },
+  "rich-text#content-franquias-selos-3-text":{
+    "props": {
+      "blockClass": "wdt-franquias-selos-2-text",
+      "text": "Abrimos nossa primeira loja no Shopping Eldorado em São Paulo."
+    }
+  },
+  "flex-layout.col#container-franquias-selos-4": {
+    "props":{
+      "blockClass": "container-franquias-selos-1"
+    },
+    "children": [
+      "image#content-franquias-selos-4-image",
+      "rich-text#content-franquias-selos-4-text"
+    ]
+  },
+  "image#content-franquias-selos-4-image": {
+    "props": {      
+      "src": "https://goldko.vtexassets.com/arquivos/wdt-franqueado-lista4.jpg"
+    }
+  },
+  "rich-text#content-franquias-selos-4-text":{
+    "props": {
+      "blockClass": "wdt-franquias-selos-2-text",
+      "text": "Inauguramos nossa fábrica em Varginha, MG."
+    }
+  },
+  "flex-layout.col#container-franquias-selos-5": {
+    "props":{
+      "blockClass": "container-franquias-selos-1"
+    },
+    "children": [
+      "image#content-franquias-selos-5-image",
+      "rich-text#content-franquias-selos-5-text"
+    ]
+  },
+  "image#content-franquias-selos-5-image": {
+    "props": {      
+      "src": "https://goldko.vtexassets.com/arquivos/wdt-franqueado-lista5.jpg"
+    }
+  },
+  "rich-text#content-franquias-selos-5-text":{
+    "props": {
+      "blockClass": "wdt-franquias-selos-2-text",
+      "text": "Estamos presentes em mais de 7.000 pontos de venda."
+    }
+  },
+  "flex-layout.row#wdt-mainImage-list":{
+    "props":{
+      "blockClass": "wdt-mainImage-list"
+    },
+    "children": [
+      "image#wdt-mainImage-list-img",
+      "rich-text#wdt-mainImage-list-text",
+      "link.product#wdt-descriptionVideo-link"
+    ]
+  },
+  "image#wdt-mainImage-list-img": {
+    "props": {   
+      "blockClass": "wdt-mainImage-list-img",   
+      "src": "https://goldko.vtexassets.com/arquivos/wdt-franqueado-02.jpg"
+    }
+  },
+  "rich-text#wdt-mainImage-list-text":{
+    "props": {
+      "blockClass": "wdt-mainImage-list-text",
+      "text": "# Porque escolher a goldKo? \n - Uma família de chocolateiros com **mais de 100 anos de know-how em chocolate**. \n - Produtos **100% zero adição de açúcares.** \n - **Produtos inovadores:** primeiro marshmallow zero adição de açúcares do mundo. \n - Única franquia com cafés especiais e proposta de **harmonização de café e chocolate.** \n - **Loja conceito própria:** utilizada para treinamentos e testes de novos produtos. \n - **Fábrica própria com 5000 m<sup>2</sup>** (linha automatizada e centro de distribuição 100% climatizado). \n - **Responsabilidade ambiental:** selo eureciclo. \n - Mais de 7.000 pontos de venda **em todo Brasil.**"
+    }
+  },
+  "flex-layout.row#wdt-descriptionColumns":{
+    "props":{
+      "blockClass": "wdt-descriptionColumns"
+    },
+    "children": [
+      "flex-layout.col#wdt-descriptionColum1",
+      "flex-layout.col#wdt-descriptionColum2",
+      "flex-layout.col#wdt-descriptionColum3"
+    ]
+  },
+  "flex-layout.col#wdt-descriptionColum1":{
+    "children": [
+      "image#wdt-descriptionColum-img1",
+      "rich-text#wdt-descriptionColum-text1"
+    ]
+  },
+  "image#wdt-descriptionColum-img1": {
+    "props": {   
+      "blockClass": "wdt-descriptionColum-img",   
+      "src": "https://goldko.vtexassets.com/arquivos/wdt-franqueado-selo1.jpg"
+    }
+  },
+  "rich-text#wdt-descriptionColum-text1":{
+    "props": {
+      "blockClass": "wdt-descriptionColum-text",
+      "text": "## Investimento com <br> **Resultados Surreais** ## \n\n Investimento*: a partir de R$ 250 mil reais; \n Retorno do investimento: até 48 Meses; \n\n **IMPORTANTE: Investimento mínimo. O valor da franquia poderá sofrer alteração conforme metragem da loja, local, planta, dentre outras variáveis.*"
+    }
+  },
+  "flex-layout.col#wdt-descriptionColum2":{
+    "children": [
+      "image#wdt-descriptionColum-img2",
+      "rich-text#wdt-descriptionColum-text2"
+    ]
+  },
+  "image#wdt-descriptionColum-img2": {
+    "props": {   
+      "blockClass": "wdt-descriptionColum-img",   
+      "src": "https://goldko.vtexassets.com/arquivos/wdt-franqueado-selo2.jpg"
+    }
+  },
+  "rich-text#wdt-descriptionColum-text2":{
+    "props": {
+      "blockClass": "wdt-descriptionColum-text",
+      "text": "## Apoio total <br> **Da franqueadora** \n\n Suporte em todas as etapas da franquia. \n\n **Fase pré inauguração** \n * Apoio na seleção de ponto comercial. \n * Programas de capacitação. \n * Planejamento de implantação da unidade. \n\n<br> **Fase pós inauguração** \n * Seminários. \n * Consultoria de campo. \n * Programas de incentivo. "
+    }
+  },
+  "flex-layout.col#wdt-descriptionColum3":{
+    "children": [
+      "image#wdt-descriptionColum-img3",
+      "rich-text#wdt-descriptionColum-text3"
+    ]
+  },
+  "image#wdt-descriptionColum-img3": {
+    "props": {   
+      "blockClass": "wdt-descriptionColum-img",   
+      "src": "https://goldko.vtexassets.com/arquivos/wdt-franqueado-selo3.jpg"
+    }
+  },
+  "rich-text#wdt-descriptionColum-text3":{
+    "props": {
+      "blockClass": "wdt-descriptionColum-text",
+      "text": "## O mercado brasileiro <br> **De chocolates** \n\n Varejo: movimentou em torno de **15 bilhões de reais** em 2021; \n\n * Mais de 511 mil toneladas produzidas pela indústria brasileira de cocolate em 2021. **44%** de crescimento se comparado à produção de 2020. <br> **Associação Brasileida da Indústria de Chocolates, Amendoim e Balas (Abicab).* \n\n * De acordo com a Kantar, o chocolate fez parte da lista de compras de 82,6% dos brasileiros em 2020. \n\n * Crescimento de consumo de alimentos saudáveis em 2020. Em 2020, as vendas desses produtos somaram **100 bilhões de reais no Brasil**, segundo a Euromonitor Internacional."
+    }
+  },
+  "flex-layout.row#wdt-descriptionFactory":{
+    "props":{
+      "blockClass": "wdt-descriptionFactory"
+    },
+    "children": [
+      "flex-layout.col#wdt-descriptionFactory-col1",
+      "flex-layout.col#wdt-descriptionFactory-col2"
+    ]
+  },
+  "flex-layout.col#wdt-descriptionFactory-col1":{
+    "props":{
+      "blockClass": "wdt-descriptionFactory-col1"
+    },
+    "children": [
+      "rich-text#wdt-descriptionFactory-col1-text"
+    ]
+  },
+  "rich-text#wdt-descriptionFactory-col1-text":{
+    "props":{
+      "blockClass": "wdt-descriptionFactory-col1-text",
+      "text": "## Fábrica e centro de distribuição próprios \n\n **Área total:** 5.000m<sup>2</sup> \n **Linha de produção automatizada;** \n Capacidade de produção de **100 toneladas/mês** \n Centro de distribuição **100% climatizado;** \n **Varginha - MG** \n Produção completamente **zero adição de açúcares** e **sem glúten.**"
+    }
+  },
+  "flex-layout.col#wdt-descriptionFactory-col2":{
+    "props":{
+      "blockClass": "wdt-descriptionFactory-col2"
+    },
+    "children": [
+      "image#wdt-descriptionFactory-col2-img"
+    ]
+  },
+  "image#wdt-descriptionFactory-col2-img": {
+    "props": {   
+      "blockClass": "wdt-descriptionFactory-col2-img",   
+      "src": "https://goldko.vtexassets.com/arquivos/wdt-franqueado-03.jpg"
+    }
+  },
+  "flex-layout.row#wdt-descriptionVideo":{
+    "props":{
+      "blockClass": "wdt-descriptionVideoWrap"
+    },
+    "children": [
+      "video#wdt-descriptionVideo",
+      "link.product#wdt-descriptionVideo-link"
+    ]
+  },
+  "video#wdt-descriptionVideo": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": true,
+      "autoPlay": false,              
+      "src":"https://blog.goldko.com.br/videos/2309_video_quem_somos.mp4",
+      "blockClass": "wdt-descriptionVideo",
+      "controlsType": "native",
+      "poster": "https://www.goldko.com.br/arquivos/wdt-videoPoster.jpg"
+    }
+  },
+  "link.product#wdt-descriptionVideo-link": {
+    "props": {
+      "blockClass": "wdt-descriptionVideo-link",
+      "label": "QUERO SER UM(A) FRANQUEADO(A)",
+      "scrollTo": "#wdt-title-form",
+      "target": "_self",
+      "href": "#wdt-title-form"
+    }
+  }
+}

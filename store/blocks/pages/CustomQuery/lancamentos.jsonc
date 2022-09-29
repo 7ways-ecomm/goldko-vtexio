@@ -1,0 +1,181 @@
+{
+    "store.custom#lancamentos-sem-banner": {
+        "props": {
+            "context": {
+                "simulationBehavior": "skip",
+                "__unstableProductOriginVtex": true
+            }
+        },
+        "blocks": [
+            "search-result-layout.customQuery#1"
+        ]
+    },
+    "store.custom#lancamentos-com-banner": {
+        "blocks": [
+            "search-result-layout.customQuery#2"
+        ]
+    },
+    "search-result-layout.customQuery#1": {
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByScoreDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 8,
+                "simulationBehavior": "default",
+                "__unstableProductOriginVtex": true,
+                "queryField": "Blue Top Retro Camera",
+                "mapField": "ft"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#custom-query-1",
+            "search-result-layout.mobile#custom-query-1",
+            "search-not-found-layout"
+        ]
+    },
+    "search-result-layout.desktop#custom-query-1": {
+        "children": [
+            "rich-text#custom-query-title-1",
+            "flex-layout.row#filter",
+            "flex-layout.row#result"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "preventRouteChange": false,
+            "mobileLayout": {
+                "mode1": "small",
+                "mode2": "normal"
+            }
+        }
+    },
+    "image#custom-query-header-1": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/ALTO%20TEOR%20CACAU.jpg",
+            "width": "100%",
+            "blockClass": "custom-query-header"
+        }
+    },
+    "rich-text#custom-query-title-1": {
+        "props": {
+            "text": "# Lançamentos",
+            "blockClass": "wdt-custom-query-title"
+        }
+    },
+    "search-result-layout.mobile#custom-query-1": {
+        "children": [
+            "flex-layout.row#custom-query-header-mobile-1",
+            "flex-layout.row#filter-mobile",
+            "flex-layout.row#result-mobile"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "mobileLayout": {
+                "mode1": "small",
+                "mode2": "normal"
+            }
+        }
+    },
+    "flex-layout.row#custom-query-header-mobile-1": {
+        "props": {
+            "blockClass": "custom-query-header"
+        },
+        "children": [
+            "rich-text#custom-query-title-1"
+        ]
+    },
+    "image#custom-query-header-mobile-1": {
+        "props": {
+            "src": "https://zenoficial.vtexassets.com/arquivos/categoria-topo-mob.jpg",
+            "width": "100%",
+            "blockClass": "custom-query-header"
+        }
+    },
+    "search-result-layout.customQuery#2": {
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByScoreDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 8,
+                "__unstableProductOriginVtex": true,
+                "simulationBehavior": "default",
+                "queryField": "Blue Top Retro Camera",
+                "mapField": "ft"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#custom-query-2",
+            "search-result-layout.mobile#custom-query-2",
+            "search-not-found-layout"
+        ]
+    },
+    "search-result-layout.desktop#custom-query-2": {
+        "children": [
+            "flex-layout.row#custom-query-header-2",
+            "flex-layout.row#filter",
+            "flex-layout.row#result"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "preventRouteChange": false,
+            "mobileLayout": {
+                "mode1": "small",
+                "mode2": "normal"
+            }
+        }
+    },
+    "flex-layout.row#custom-query-header-2": {
+        "props": {
+            "blockClass": "wdt-custom-query-header",
+            "colSizing": "auto"
+        },
+        "children": [
+            "image#custom-query-header-2",
+            "rich-text#custom-query-title-2"
+
+        ]
+    },
+    "image#custom-query-header-2": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/ALTO%20TEOR%20CACAU.jpg",
+            "width": "100%",
+            "blockClass": "custom-query-header"
+        }
+    },
+    "rich-text#custom-query-title-2": {
+        "props": {
+            "text": "# Lançamentos",
+            "blockClass": ["wdt-custom-query-title", "wdt-custom-query-title-light"]
+        }
+    },
+    "search-result-layout.mobile#custom-query-2": {
+        "children": [
+            "flex-layout.row#custom-query-header-mobile-2",
+            "flex-layout.row#filter-mobile",
+            "flex-layout.row#result-mobile"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "mobileLayout": {
+                "mode1": "small",
+                "mode2": "normal"
+            }
+        }
+    },
+    "flex-layout.row#custom-query-header-mobile-2": {
+        "props": {
+            "blockClass": "wdt-custom-query-header",
+            "colSizing": "auto"
+        },
+        "children": [
+            "rich-text#custom-query-title-2",
+            "image#custom-query-header-mobile-2"
+        ]
+    },
+    "image#custom-query-header-mobile-2": {
+        "props": {
+            "src": "https://goldko.vteximg.com.br/arquivos/ALTOTEOR-MOBILE.jpg",
+            "width": "100%",
+            "blockClass": "custom-query-header"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'VinilaBlack';
+    src: url(assets/fonts/VinilaBlack.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'VinilaBold';
+    src: url(assets/fonts/VinilaBold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'VinilaExtraBold';
+    src: url(assets/fonts/VinilaExtraBold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'VinilaLight';
+    src: url(assets/fonts/VinilaLight.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'VinilaRegular';
+    src: url(assets/fonts/VinilaRegular.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'VinilaThin';
+    src: url(assets/fonts/VinilaThin.ttf);
+    font-weight: bold;
+}

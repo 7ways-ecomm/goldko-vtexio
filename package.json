@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^4.1.0"
+  },
+  "version": "0.0.2",
+  "devDependencies": {
+    "gulp-autoprefixer": "^7.0.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "ie >= 8",
+    "edge >= 15",
+    "ie_mob >= 10",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4",
+    "bb >= 10"
+  ],
+  "scripts": {
+    "v-log": "vtex login goldko",
+    "v-run": "vtex unlink --all && vtex link --clean",
+    "v-gulp": "gulp mount && gulp watch",
+    "v-publish": "vtex use prod --production && vtex publish",
+    "v-deploy": "vtex deploy && vtex promote"
+  }
+}

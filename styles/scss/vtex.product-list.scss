@@ -1,0 +1,52 @@
+@import "./variables";
+
+.removeButtonContainer {
+    .removeButton {
+        &::before {
+            width: 12px;
+            height: 12px;
+            display: block;
+            content: "";
+            background-size: contain;
+            background-image: url($closeIcon);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .deleteIcon {
+            display: none;
+        }
+    }
+}
+.quantitySelectorContainer {
+    width: 70px;
+    .quantityDropdownContainer{
+        :global(.vtex-dropdown__container) {
+            border-radius: 25px;
+            background-color: #00a6dd;
+            border-color: white; 
+
+            :global(.vtex-dropdown__button) {
+                color: #fff;
+                :global(.vtex-dropdown__arrow) {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .quantityInputContainer {
+        :global(.vtex-input-prefix__group) {
+            border-radius: 25px;
+            border-color: white; 
+            background-color: #00a6dd;
+            :global(.vtex-styleguide-9-x-input) {
+                background-color: #00a6dd;
+                color: #fff;
+                font-size: $size3;
+            }
+        }
+        
+    }
+}
+.unitPriceContainer {
+    color: $darkBlue;
+}

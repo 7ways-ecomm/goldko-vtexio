@@ -1,0 +1,80 @@
+{
+  "store.custom#cupom-de-desconto": {
+    "blocks": [
+      "flex-layout.row#banner-cupon",
+      "cupom-de-desconto"
+    ]
+  },
+  
+  "flex-layout.row#banner-cupon": {
+    "props": {
+        "blockClass": "cupom-container"
+        
+        //"colGap": 7
+    },
+    "children": [        
+        //"flex-layout.col#cupom",
+        //"image#border",
+        //"image#bombon"
+        
+        "image#cupom"
+        
+    ]
+},
+"image#border": {
+    "props": {
+        "src": "assets/top-border.png",
+        "blockClass": "imagem-border"
+        
+    }
+},
+"image#bombon": {
+    "props": {
+        "src": "assets/combo-bombon.png",
+        "blockClass": "imagem-bombon"
+        
+    }
+},
+"image#cupom": {
+    "props": {
+        "src": "https://goldko.vtexassets.com/arquivos/header-cupom-banner.png",
+        "blockClass": "imagem-cupom"
+        
+    }
+},
+
+"flex-layout.col#cupom":{
+    "children":[
+        "rich-text#cupom-titulo",
+        "rich-text#cupom-desc"
+    ],
+    "props":{
+        "blockClass":"cupom-desc-container",
+        "preventVerticalStretch":"auto",
+        "width":"40%",
+        "verticalAlign":"middle",
+        "horizontalAlign":"left"
+    }
+},
+"rich-text#cupom-titulo": {
+    "props": {
+        "textAlignment": "left",
+        "width": "100%",
+        "textPosition": "LEFT",
+        "text": "CUPOM DE DESCONTO GOLDKO",
+        "blockClass": "text-cupom-item"
+    }
+},
+
+"rich-text#cupom-desc": {
+    "props": {
+        "textAlignment": "left",
+        "width": "600%",
+        "textPosition": "LEFT",
+        "text": "Temos cupons de desconto e ofertas para a loja.Cupom de desconto é aqui mesmo.",
+        "blockClass": "text-cupom-desc"
+    }
+}
+
+
+}

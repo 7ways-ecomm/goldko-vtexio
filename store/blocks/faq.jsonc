@@ -1,0 +1,965 @@
+{
+    "store.custom#faq": {
+        "children": [
+            "flex-layout.row#faq"
+        ]
+    },
+    "flex-layout.row#faq": {
+        "props": {
+            "blockClass": "faq",
+            "colSizing": "auto"
+        },
+        "children": [
+            "flex-layout.col#faq",
+            "flex-layout.col#faq-image"
+        ]
+    },
+    "flex-layout.col#faq": {
+        "children": [
+            "rich-text#faq1",
+            "disclosure-layout-group#group1",
+            "rich-text#faq2",
+            "disclosure-layout-group#group2"        
+            //"rich-text#faq3",
+            //"disclosure-layout-group#group3"
+        ]
+    },
+    "flex-layout.col#faq-image": {
+        "children": [
+            "image#faq"
+        ]
+    },
+    "image#faq": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/faq.jpg",
+            "blockClass": "faq"
+        }
+    },
+    "rich-text#faq1": {
+        "props": {
+            "text": "# Perguntas Frequentes",
+            "blockClass": "title-faq"
+        }
+    },
+    "rich-text#faq2": {
+        "props": {
+            "text": "## compras e pagamento",
+            "blockClass": "subtitle-faq"
+        }
+    },
+    "rich-text#faq3": {
+        "props": {
+            "text": "## COMPARTILHE E GANHE",
+            "blockClass": "subtitle-faq"
+        }
+    },
+    "disclosure-layout-group#group1": {
+        "children": [
+            "disclosure-layout#1",
+            "disclosure-layout#2",
+            "disclosure-layout#3"
+        ]
+    },
+    "disclosure-layout-group#group2": {
+        "children": [
+            "disclosure-layout#4",
+            "disclosure-layout#5",
+            "disclosure-layout#6",
+            "disclosure-layout#7",
+            "disclosure-layout#8",
+            "disclosure-layout#9",
+            "disclosure-layout#10",
+            "disclosure-layout#11",
+            "disclosure-layout#12"
+        ]
+    },
+    "disclosure-layout-group#group3": {
+        "children": [
+            "disclosure-layout#13",
+            "disclosure-layout#14",
+            "disclosure-layout#15",
+            "disclosure-layout#16",
+            "disclosure-layout#17",
+            "disclosure-layout#18",
+            "disclosure-layout#19",
+            "disclosure-layout#20",
+            "disclosure-layout#21",
+            "disclosure-layout#22"
+        ]
+    },
+    /* ---------------------------- */
+    "disclosure-layout#1": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#1",
+            "disclosure-content#1"
+        ]
+    },
+    "disclosure-trigger#1": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question1"
+        ]
+    },
+    "disclosure-content#1": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer1"
+        ]
+    },
+    "rich-text#question1": {
+        "props": {
+            "text": "QUERO GOLDKO NA MINHA LOJA"
+        }
+    },
+    "rich-text#answer1": {
+        "props": {
+            "text": "Oba! Também queremos! Mande um email com as seguintes informações: Nome da loja + Endereço completo + CNPJ + Telefone para contato para alo@goldko.com.br\n\nSomos uma empresa familiar criada no final de 2016, por um pai, Paulo, e seu dois filhos, Chantal e Gregory 🙂 Nascemos para trazer mais sabor e magia ao mundo dos chocolates com produtos sem açúcar e muuuita tecnologia e inovação.\n\nNossa empresa é 100% independente e não tem qualquer vínculo com outra marca/grupo de chocolate – o que nos permite nos manter 100% fiéis aos nossos princípios e jamais abrir mão de fabricar os melhores produtos!",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#2": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#2",
+            "disclosure-content#2"
+        ]
+    },
+    "disclosure-trigger#2": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question2"
+        ]
+    },
+    "disclosure-content#2": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer2"
+        ]
+    },
+    "rich-text#question2": {
+        "props": {
+            "text": "QUERO GOLDKO NO MEU EVENTO"
+        }
+    },
+    "rich-text#answer2": {
+        "props": {
+            "text": "Oba! Também queremos! Mande um email com as seguintes informações: Nome da loja + Endereço completo + CNPJ + Telefone para contato para alo@goldko.com.br\n\nSomos uma empresa familiar criada no final de 2016, por um pai, Paulo, e seu dois filhos, Chantal e Gregory 🙂 Nascemos para trazer mais sabor e magia ao mundo dos chocolates com produtos sem açúcar e muuuita tecnologia e inovação.\n\nNossa empresa é 100% independente e não tem qualquer vínculo com outra marca/grupo de chocolate – o que nos permite nos manter 100% fiéis aos nossos princípios e jamais abrir mão de fabricar os melhores produtos!",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#3": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#3",
+            "disclosure-content#3"
+        ]
+    },
+    "disclosure-trigger#3": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question3"
+        ]
+    },
+    "disclosure-content#3": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer3"
+        ]
+    },
+    "rich-text#question3": {
+        "props": {
+            "text": "QUERO FAZER PARTE DO TIME GOLDKO"
+        }
+    },
+    "rich-text#answer3": {
+        "props": {
+            "text": "Gostamos de pessoas que adoram chocolate, são bem humoradas, pró-ativas e queiram vestir nossa camisa. Se você tem esta pegada e uma veia inovadora, vamos marcar um papo no nosso GQ! Adoramos novos amigos.",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#4": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#4",
+            "disclosure-content#4"
+        ]
+    },
+    "disclosure-trigger#4": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question4"
+        ]
+    },
+    "disclosure-content#4": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer2"
+        ]
+    },
+    "rich-text#question4": {
+        "props": {
+            "text": "VENDA"
+        }
+    },
+    "rich-text#answer4": {
+        "props": {
+            "text": "As vendas estão sujeitas à disponibilidade de estoque no dia da compra.\n\nOs preços, ofertas e condições podem não ser os mesmos praticados por outras lojas que revendem os nossos produtos.\n\nPara oferecer o melhor atendimento aos clientes, pela loja virtual, não é possível realizar compras por atacado. Por isso, o limite é de 10 unidades em itens selecionados. Para compras via atacado entrar em contato por e-mail alo@goldko.com.br",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#5": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#5",
+            "disclosure-content#5"
+        ]
+    },
+    "disclosure-trigger#5": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question5"
+        ]
+    },
+    "disclosure-content#5": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer5"
+        ]
+    },
+    "rich-text#question5": {
+        "props": {
+            "text": "COMPRA FEITA. E AGORA?"
+        }
+    },
+    "rich-text#answer5": {
+        "props": {
+            "text": "Compra feita. Nosso time vai começar a enviar alguns e-mails. Amamos conversar 🙂<br><br>Primeiro e-mail: Pedido Concluído. Ou seja, recebemos seu pedido, mas o pagamento ainda não foi aprovado. Relaxe que os sistemas de pagamento estão processando seus dados.<br><br>Segundo e-mail: Pagamento concluído. Agora sim suas delicias estão prontas para serem despachadas 🙂 Tudo pronto do nosso lado!",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#6": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#6",
+            "disclosure-content#6"
+        ]
+    },
+    "disclosure-trigger#6": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question6"
+        ]
+    },
+    "disclosure-content#6": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer6"
+        ]
+    },
+    "rich-text#question6": {
+        "props": {
+            "text": "CONFIRMAÇÕES DE PAGAMENTO"
+        }
+    },
+    "rich-text#answer6": {
+        "props": {
+            "text": "**Cartão de Crédito**<br><br>Pagamento Aprovado: Seu pedido foi autorizado pela sua operadora de cartão e já pode ser liberado por nossos chocolateiros.<br><br>Pagamento em Análise: A confirmação de pagamento pode levar até 48 horas. As operadoras pedem este tempo para ter certeza de que os dados fornecidos são de fato os mesmos do cartão. Se houver alguma divergência você será avisado.<br><br>Pagamento Recusado: Seu pedido não foi autorizado pela operadora de cartão. Neste caso ligue para a operadora do seu cartão para entender o que foi que aconteceu. \n\n **Boleto** \n\n A confirmação de pagamento pode levar até 48 horas.",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#7": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#7",
+            "disclosure-content#7"
+        ]
+    },
+    "disclosure-trigger#7": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question7"
+        ]
+    },
+    "disclosure-content#7": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer7"
+        ]
+    },
+    "rich-text#question7": {
+        "props": {
+            "text": "PAGAMENTOS E PRAZOS"
+        }
+    },
+    "rich-text#answer7": {
+        "props": {
+            "text": "Oi! Dúvidas sobre entrega, prazo e pagamento? Você está no lugar certo =]\n\nDelícias escolhidas e carrinho cheio! Vamos ao pagamento.\n\n**Você tem duas opções de pagamento:**\n\nCartão de Crédito (em até 3x sem juros) e Boleto bancário (à vista).",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#8": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#8",
+            "disclosure-content#8"
+        ]
+    },
+    "disclosure-trigger#8": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question8"
+        ]
+    },
+    "disclosure-content#8": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer8"
+        ]
+    },
+    "rich-text#question8": {
+        "props": {
+            "text": "DESISTÊNCIA DA COMPRA COM PEDIDO FEITO"
+        }
+    },
+    "rich-text#answer8": {
+        "props": {
+            "text": "Se você desistiu da sua compra e o seu pedido já está a caminho, envie um e-mail alo@goldko.com.br explicando o seu caso e nos informe seu nome completo e número do pedido. Independente da nossa conversa por email, uma vez que você desistiu da compra é vital que você recuse o recebimento do pedido quando este for entregue, para que os Correios nos tragam de volta a mercadoria.<br><br>Nós entraremos em contato para saber como você deseja proceder em relação a trocas e cancelamento quando recebermos os produtos de volta.<br><br>Caso desista de algum produto, você tem até sete dias úteis, contados a partir da data do recebimento para nos avisar da desistência (ah!!!) – conforme prevê o artigo 49 do Código de Defesa do Consumidor. Neste caso nos envie um email assim que possível para alo@goldko.com.br, com seu nome completo e número do pedido.",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#9": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#9",
+            "disclosure-content#9"
+        ]
+    },
+    "disclosure-trigger#9": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question9"
+        ]
+    },
+    "disclosure-content#9": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer9"
+        ]
+    },
+    "rich-text#question9": {
+        "props": {
+            "text": "OPÇÕES DE ENTREGA"
+        }
+    },
+    "rich-text#answer9": {
+        "props": {
+            "text": "**Transportadora:** Forma expressa e ágil de transporte.\n\nLiberação do rastreamento: O e-mail para rastreamento do pedido é enviado em até 36 horas após a emissão da NF.\n\nNão somos fãs de atrasos, mas dado que algumas etapas são terceirizadas, sabemos que de vez em quando isto pode acontecer (contra nossa vontade). Nosso time está aqui pra te ajudar com isso! Se você estiver com dúvida sobre seu pedido, nos mande um alô! No email coloque o número do seu pedido e seu nome completo.\n\n**Jadlog:** A Transportadora atende praticamente todos os endereços, e quando feita a compra e eleita a opção envio via Transportadora, o rastreio do pedido deverá ser feito no site da JadLog (www.jadlog.com.br), usando o CPF utilizado no momentonda compra.\n\nNo momento não estamos atendendo estados da região Norte do país, nem os estados MT e MS.",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#10": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#10",
+            "disclosure-content#10"
+        ]
+    },
+    "disclosure-trigger#10": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question10"
+        ]
+    },
+    "disclosure-content#10": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer10"
+        ]
+    },
+    "rich-text#question10": {
+        "props": {
+            "text": "FRETE GRÁTIS"
+        }
+    },
+    "rich-text#answer10": {
+        "props": {
+            "text": "O valor a ser pago pelo frete é calculado com base no local de entrega, peso e dimensões dos produtos adquiridos. Este cálculo é informado durante o processo de compra.<br/><br/>O frete grátis é oferecido para compras acima de R$ 200,00, ou seja o valor TOTAL final, depois de aplicados créditos ou cupons precisa ser maior que R$200 para que o frete seja grátis.",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#11": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#11",
+            "disclosure-content#11"
+        ]
+    },
+    "disclosure-trigger#11": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question11"
+        ]
+    },
+    "disclosure-content#11": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer11"
+        ]
+    },
+    "rich-text#question11": {
+        "props": {
+            "text": "TROCAS E DEVOLUÇÕES"
+        }
+    },
+    "rich-text#answer11": {
+        "props": {
+            "text": "**Política de Trocas**\n\n(válido apenas para compras no site da GoldKo de acordo com os termos do art 49 do Código de Defesa do Consumidor)\n\nAssim que vc receber seu pedido confira item por item com a NF em mãos. Tudo certo? Uhuuuuu! Alguma divergência? Não precisa entrar em pânico, olha só:\n\nCaso você abra sua caixa de delícias e o pedido não esteja perfeito, do jeito que você montou ou seja, itens faltando, embalagem violada, produto avariado, itens que você não solicitou, nos avise que vamos resolver pra você 🙂 Estes custos de envio ficam por nossa conta.\n\nMande um email pra gente assim que receber seu pedido com as seguintes informações: Nome completo + Número do pedido + Detalhes do que aconteceu. Pode escrever para alo@goldko.com.br\n\nExistem situações em que não podemos nos responsabilizar pelo re-envio. São elas: Entrega no local errado por conta de erro de preenchimento do formulário de cadastro.\n\nÉ importante que, no ato de recebimento da mercadoria, você verifique se há erro na quantidade ou alguma outra especificação em relação ao que foi solicitado. Neste caso, você deve recusar a entrega e avisar um de nossos canais de atendimento, que nossa equipe dará andamento no processo de troca para você.\n\nSerão aceitas trocas somente nestas situações:\n\n**Devoluções:** Se o produto estiver nas mesmas condições em que estava quando foi enviado, ou seja, na embalagem original, sem nenhum consumo ou modificação à embalagem. E a mercadoria deverá ser devolvida acompanhada da Nota Fiscal.\n\n**Trocas:** É possível efetuar trocas somente no caso de a mercadoria estar em desacordo com as especificações do pedido. A solicitação de troca deve ser feita no prazo de 30 dias, contados a partir da data de recebimento dos itens escolhidos.\n\nCaso o produto desejado para troca não esteja disponível em nosso estoque, você deverá escolher outro ou optar pela devolução do dinheiro.\n\n**Trocas:** Você tem direito a trocas no valor original da compra. Caso o valor da troca exceda o valor original, você deverá assumir a diferença.\n\nAs despesas de envio de trocas fora do prazo de sete dias do recebimento são de responsabilidade do cliente.\n\nAs despesas de envio de devoluções dentro do prazo de sete dias do recebimento são de responsabilidade nossa.",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#12": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#12",
+            "disclosure-content#12"
+        ]
+    },
+    "disclosure-trigger#12": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question12"
+        ]
+    },
+    "disclosure-content#12": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer12"
+        ]
+    },
+    "rich-text#question12": {
+        "props": {
+            "text": "CUPONS E DESCONTOS"
+        }
+    },
+    "rich-text#answer12": {
+        "props": {
+            "text": "Os cupons não são cumulativos, e cada cupom é valido somente uma vez por usuário. O campo cupons fica inativo sempre que houver uma promoção grande no site, por exemplo durante GoldKo week.\n\nOs cupons podem dar descontos apenas para produtos específicos e a política pode mudar sem aviso prévio, conforme a campanha que estiver no ar.",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#13": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#13",
+            "disclosure-content#13"
+        ]
+    },
+    "disclosure-trigger#13": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question13"
+        ]
+    },
+    "disclosure-content#13": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer13"
+        ]
+    },
+    "rich-text#question13": {
+        "props": {
+            "text": "BASICAMENTE FUNCIONA ASSIM"
+        }
+    },
+    "rich-text#answer13": {
+        "props": {
+            "text": "Ao se cadastrar nesse mecanismo de indique e ganhe o site vai gerar um código que será só seu, pra sempre. Então ainda que você peça um cupom novo a cada dia, o código será sempre o mesmo. O desconto de 15% é válido para compras ACIMA de R$150 (+ valor do frete). Para cada compra bem-sucedida de amigos seus ou seja, compras acima de R$150 mais valor do frete, usando seu cupom, você recebe R$20 de crédito para usar aqui no nosso site.",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#14": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#14",
+            "disclosure-content#14"
+        ]
+    },
+    "disclosure-trigger#14": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question14"
+        ]
+    },
+    "disclosure-content#14": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer14"
+        ]
+    },
+    "rich-text#question14": {
+        "props": {
+            "text": "PARA INDICAR AMIGOS EU PRECISO TER UMA CONTA NA GOLDKO?"
+        }
+    },
+    "rich-text#answer14": {
+        "props": {
+            "text": "Sim, precisa.",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#15": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#15",
+            "disclosure-content#15"
+        ]
+    },
+    "disclosure-trigger#15": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question15"
+        ]
+    },
+    "disclosure-content#15": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer15"
+        ]
+    },
+    "rich-text#question15": {
+        "props": {
+            "text": "QUEM POSSO INDICAR? POSSO USAR MEU PRÓPRIO CUPOM PARA TER DESCONTO NA MINHA COMPRA?"
+        }
+    },
+    "rich-text#answer15": {
+        "props": {
+            "text": "Pode indicar quem você quiser, menos você mesmo! Rs! O cupom é valido uma vez por CPF, então as indicações têm que ser para pessoas diferentes. Quanto mais amigos usarem seu cupom, mais você ganha e cada um recebe desconto de 15% na primeira compra.",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#16": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#16",
+            "disclosure-content#16"
+        ]
+    },
+    "disclosure-trigger#16": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question16"
+        ]
+    },
+    "disclosure-content#16": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer16"
+        ]
+    },
+    "rich-text#question16": {
+        "props": {
+            "text": "MANDEI MEU CUPOM PRA GALERA TODA, E AGORA? QUANDO POSSO USAR MEUS CRÉDITOS GOLDKO?"
+        }
+    },
+    "rich-text#answer16": {
+        "props": {
+            "text": "Depois de aprovado o meio de pagamento do pedido do seu amigo, os créditos aparecem na sua área MINHA CONTA em até 48h. Lá você consegue ver quantos R$ em crédito você já tem disponível para usar.Os créditos ficam dentro da sua área MINHA CONTA no site e o saldo disponível aparece sempre no seu check-out, então o site vai descontar do seu pedido a quantidade de R$ que você tiver na sua conta. Se o pedido for menor que o seu saldo de créditos, o valor que sobrar volta pra sua conta para ser usado na próxima compra.<br>Os créditos NÃO são validos para pagamento de frete, só para pagamento de produtos, então você sempre será cobrado pelo frete.",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#17": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#17",
+            "disclosure-content#17"
+        ]
+    },
+    "disclosure-trigger#17": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question17"
+        ]
+    },
+    "disclosure-content#17": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer17"
+        ]
+    },
+    "rich-text#question17": {
+        "props": {
+            "text": "QUAL É MEU LIMITE DE CRÉDITOS GOLDKO?"
+        }
+    },
+    "rich-text#answer17": {
+        "props": {
+            "text": "Para cada amigo que realizar uma compra acima de R$150 (+ valor do frete) usando o seu cupom você ganha R$20 de créditos GoldKo, não há limite para a quantidade de créditos que você pode acumular.",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#18": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#18",
+            "disclosure-content#18"
+        ]
+    },
+    "disclosure-trigger#18": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question18"
+        ]
+    },
+    "disclosure-content#18": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer18"
+        ]
+    },
+    "rich-text#question18": {
+        "props": {
+            "text": "POSSO DAR MEUS CRÉDITOS PARA AMIGOS?"
+        }
+    },
+    "rich-text#answer18": {
+        "props": {
+            "text": "Não pode. Os créditos são pessoais e intransferíveis e ficam sempre na área MINHA CONTA.",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#19": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#19",
+            "disclosure-content#19"
+        ]
+    },
+    "disclosure-trigger#19": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question19"
+        ]
+    },
+    "disclosure-content#19": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer19"
+        ]
+    },
+    "rich-text#question19": {
+        "props": {
+            "text": "OS CRÉDITOS TÊM VALIDADE?"
+        }
+    },
+    "rich-text#answer19": {
+        "props": {
+            "text": "Não expiram.<br>CUPOM não cumulativo e sem prazo de validade.<br>Cada cupom é válido somente uma vez por cpf.",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#20": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#20",
+            "disclosure-content#20"
+        ]
+    },
+    "disclosure-trigger#20": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question20"
+        ]
+    },
+    "disclosure-content#20": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer20"
+        ]
+    },
+    "rich-text#question20": {
+        "props": {
+            "text": "FIZ TUDO ISSO E NÃO RECEBI CRÉDITOS?"
+        }
+    },
+    "rich-text#answer20": {
+        "props": {
+            "text": "Isso pode acontecer se a compra do seu amigo não for aprovada pelo meio de pagamento. Se a compra for abaixo de R$150 o crédito também não entra pra você e o cupom de desconto não funciona pro amigo.",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#21": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#21",
+            "disclosure-content#21"
+        ]
+    },
+    "disclosure-trigger#21": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question21"
+        ]
+    },
+    "disclosure-content#21": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer21"
+        ]
+    },
+    "rich-text#question21": {
+        "props": {
+            "text": "CLIQUEI NO LINK COMPARTILHADO POR UM AMIGO. COMO EU ATIVO O MEU DESCONTO?"
+        }
+    },
+    "rich-text#answer21": {
+        "props": {
+            "text": "Boa! Entre no nosso site, encha seu carrinho de delícias, lembre que para usar o cupom de desconto de 15% o valor total de produtos no carrinho precisa ser superior a R$150 (+ frete) , aí é só copiar e colar o cupom do amigo no campo CUPOM e o desconto de 15% será automaticamente aplicado.",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-layout#22": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#22",
+            "disclosure-content#22"
+        ]
+    },
+    "disclosure-trigger#22": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator",
+            "rich-text#question22"
+        ]
+    },
+    "disclosure-content#22": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#answer22"
+        ]
+    },
+    "rich-text#question22": {
+        "props": {
+            "text": "O DESCONTO DE 15% PODE SER USADO EM DATAS PROMOCIONAIS?"
+        }
+    },
+    "rich-text#answer22": {
+        "props": {
+            "text": "Pode sim, mas sempre respeitando as regras: Válido uma vez por CPF + Pedido acima de R$150 (+ valor do frete). Único momento em que o cupom fica inativo é durante a GoldKo Week (conforme item CUPOM + FRETE descrito na seção acima).",
+            "blockClass": "faq-content"
+        }
+    },
+    /* ---------------------------- */
+    "disclosure-state-indicator": {
+        "props": {
+            "Show": "icon-caret#down",
+            "Hide": "icon-caret#up"
+        }
+    },
+    "icon-caret#down": {
+        "props": {
+            "orientation": "down"
+        }
+    },
+    "icon-caret#up": {
+        "props": {
+            "orientation": "up"
+        }
+    }
+}

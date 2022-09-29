@@ -1,0 +1,94 @@
+@import "variables";
+
+.minicartWrapperContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    :first-child {
+        width: auto;
+        height: 100%;
+    }
+    .minicartContainer {
+        .openIconContainer {
+            padding: 0;
+            @media (max-width: $maxMobile) {
+                padding: 0 15px 0 0;
+            }
+            :global(.vtex-button) {
+                border: 0;
+                :global(.vtex-button__label) {
+                    padding: 0;
+                    .minicartIconContainer {
+                        &::before {
+                            width: 26px;
+                            height: 26px;
+                            content: " ";
+                            display: block;
+                            background-image: url($minicartIcon);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: 26px;
+                        }
+
+                        .cartIcon {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.minicartTitle {
+    display: none;
+}
+.minicartQuantityBadge {
+    top: -30%;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: $orange;
+    line-height: normal;
+    color: $light;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+    align-items: baseline;
+}
+.opened {
+    @media (min-width: $maxMobile) {
+        max-width: 35% !important;
+    }
+    :global(.vtex-product-list-0-x-productName) {
+        font-size: 14px;
+    }
+    :global(.vtex-product-list-0-x-productVariationsItem),
+    :global(.vtex-product-list-0-x-productVariationsItem) {
+        font-size: 13px;
+    }
+}
+.closeIcon {
+    color: $blue;
+}
+.minicartProductListContainer {
+    :global(.vtex-product-list-0-x-productBrandName),
+    :global(.vtex-product-list-0-x-price) {
+        color: $blue;
+    }
+}
+.minicartCheckoutButton {
+    :global(.vtex-button) {
+        border: 0;
+        border-radius: 5px;
+        background-size: 280px;
+        background-color: $orange;
+        &:hover {
+        }
+        :global(.vtex-button__label) {
+            font-size: $size1;
+            font-weight: $regular;
+        }
+    }
+}
+:global(.vtex-checkout-summary-0-x-summarySmallDisclaimer) {
+    color: $blue;
+}

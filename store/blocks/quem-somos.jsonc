@@ -1,0 +1,241 @@
+{
+    "store.custom#por-que-goldko": {
+        "blocks": [
+            "list-context.image-list#main-por-que-goldko-1",
+            "flex-layout.row#por-que-gk",
+            // "flex-layout.row#propositos",
+            "flex-layout.row#historia",
+            "flex-layout.row#quem-somos-banner-full-1",
+            "flex-layout.row#quem-somos-banner-full-2",
+            "flex-layout.row#quem-somos-container-banners-1"
+        ]
+    },
+    "list-context.image-list#main-por-que-goldko-1": {
+        "children": [
+            // "slider-layout#main-institucionais"
+        ],
+        "props": {
+            "images": [
+                {
+                    "image": "https://goldko.vtexassets.com/arquivos/quem-somos-banner-min.png",
+                    "mobileImage": "https://goldko.vtexassets.com/arquivos/quem-somos-banner-min-mobile.jpg"
+                }
+            ]
+        }
+    },
+    "flex-layout.row#por-que-gk": {
+        "props": {
+            "blockClass": "por-que-goldko-banner"
+        },
+        "children": [
+            "quem-somos-video",
+            "rich-text#por-que-gk-text"
+        ]
+    },
+    "video#background": {
+        "props": {
+          "width": "100%",
+          "height": "600px",
+          "loop": true,
+          "autoPlay": true,              
+          "src":"https://blog.goldko.com.br/videos/2309_video_quem_somos.mp4",
+          "blockClass": "videoEl"
+        }
+    },
+    "image#por-que-gk-banner": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/banner-quem-somos.png?v=1",
+            "blockClass": "por-que-gk-banner",
+            "maxHeight": "400px"
+        }
+    },
+    "rich-text#por-que-gk-text": {
+        "props": {
+            "width": "40%",
+            "textAlignment": "left",
+            "textPosition": "CENTER",
+            "text": "# Amamos chocolate e queremos dividir com vocês um mundo mágico de sabores surreais e texturas ultracremosas, zero adição de açúcares! \n Chocolate é emoção, é afeto, é um abraço, é tão mágico! Chocolate é rico em nutrientes, antioxidantes e traz diversos benefícios para a saúde. Mas dá pra comer chocolate todos os dias? Com a GoldKo, a resposta é: SIM! Além dos nossos chocolates, criamos o que parecia impossível, o primeiro marshmallow zero adição de açúcares do planeta! Cremoso, fonte de fibras, mega versátil e absolutamente delicioso! E temos também nossos blends de cafés especiais, pra completar essa experiência de sabores em nosso dia a dia. \n [EU QUERO!](/chocolates)",
+            "blockClass": "por-que-gk-text"
+        }
+    },
+    "flex-layout.row#propositos": {
+        "props": {
+            "colSizing": "auto",
+            "blockClass": "propositos-container"
+        },
+        "children": [
+            "flex-layout.col#missao",
+            "flex-layout.col#visao",
+            "flex-layout.col#valores"
+        ]
+    },
+    "flex-layout.col#missao": {
+        "props": {
+            "blockClass": "propositos-item-container",
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "image#missao",
+            "rich-text#missao"
+        ]
+    },
+    "flex-layout.col#visao": {
+        "props": {
+            "blockClass": "propositos-item-container",
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "image#visao",
+            "rich-text#visao"
+        ]
+    },
+    "flex-layout.col#valores": {
+        "props": {
+            "blockClass": "propositos-item-container",
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "image#valores",
+            "rich-text#valores"
+        ]
+    },
+    "image#missao": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/card01-quem-somos-min.jpg",
+            "blockClass": "image-item"
+        }
+    },
+    "image#visao": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/card02-quem-somos-min.jpg",
+            "blockClass": "image-item"
+        }
+    },
+    "image#valores": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/card03-quem-somos-min.jpg",
+            "blockClass": "image-item"
+        }
+    },
+    "rich-text#missao": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**MISSÃO**\n Criar um novo mundo de chocolates, uma mordida mágica de cada vez. Unimos saúde, sabor, inovação e muita tecnologia.",
+            "blockClass": "text-item"
+        }
+    },
+    "rich-text#visao": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**VISÃO**\n Construir com nossos consumidores uma rotina saudável e balanceada com chocolate de verdade.",
+            "blockClass": "text-item"
+        }
+    },
+    "rich-text#valores": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**VALORES**\n Nascemos do desejo de trazer felicidade por onde passamos. Com transparência e tecnologia norteamos nossa construção, entregando produtos surpreendentes e inovadores.",
+            "blockClass": "text-item"
+        }
+    },
+    "flex-layout.row#historia": {
+        "props": {
+            "blockClass": "historia-container",
+            "colGap": 7
+        },
+        "children": [
+            "image#historia",
+            "rich-text#historia"
+        ]
+    },
+    "image#historia": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/goldko-nos1.png",
+            "blockClass": "imagem-historia",
+            "maxHeight": 300
+        }
+    },
+    "rich-text#historia": {
+        "props": {
+            "textAlignment": "left",
+            "width": "65%",
+            "textPosition": "CENTER",
+            "text": "![](https://goldko.vtexassets.com/arquivos/emoji-2.png) ![](https://goldko.vtexassets.com/arquivos/emoji-3.png) ![](https://goldko.vtexassets.com/arquivos/emoji-4.png) \n Nosso chocolateiro alquimista ficou testando centenas de receitas por mais de dois anos, até que, no fim de 2016, lançamos a primeira versão do nosso chocolate com sabor surreal, zero adição de açúcares e muita cremosidade. Desde então, estamos construindo um mundo mágico de chocolates, marshmallow & cafés especiais.",
+            "blockClass": "text-historia-item"
+        }
+    },
+    "image#quem-somos-banner-1": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/quem-somos%20(4).jpg",
+            "blockClass": "quem-somos-banners-full"
+        }
+    },
+    "image#quem-somos-banner-2": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/quem-somos%20(5).jpg",
+            "blockClass": "quem-somos-banners-full"
+        }
+    },
+    "flex-layout.row#quem-somos-banner-full-1": {
+      "children": [
+        "image#quem-somos-banner-1"
+      ],
+      "props": {
+        "blockClass": ["quem-somos-banner-full"]
+      }
+    },
+    "flex-layout.row#quem-somos-banner-full-2": {
+      "children": [
+        "image#quem-somos-banner-2"
+      ],
+      "props": {
+        "blockClass": ["quem-somos-banner-full"]
+      }
+    },
+    "flex-layout.row#quem-somos-container-banners-1": {
+      "children": [
+        "image#quem-somos-banner-3",
+        "image#quem-somos-banner-4",
+        "image#quem-somos-banner-5",
+        "image#quem-somos-banner-6",
+        "image#quem-somos-banner-7"
+      ],
+      "props": {
+        "blockClass": "quem-somos-container-banners-1",
+        "colGap": 7
+      }
+    },
+    "image#quem-somos-banner-3": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/quem-somos%20(2).jpg",
+            "blockClass": "quem-somos-banners"
+        }
+    },
+    "image#quem-somos-banner-4": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/quem-somos%20(6).jpg",
+            "blockClass": "quem-somos-banners"
+        }
+    },
+    "image#quem-somos-banner-5": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/quem-somos%20(7).jpg",
+            "blockClass": "quem-somos-banners"
+        }
+    },
+    "image#quem-somos-banner-6": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/quem-somos%20(8).jpg",
+            "blockClass": "quem-somos-banners"
+        }
+    },
+    "image#quem-somos-banner-7": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/quem-somos%20(1).jpg",
+            "blockClass": "quem-somos-banners"
+        }
+    }
+}

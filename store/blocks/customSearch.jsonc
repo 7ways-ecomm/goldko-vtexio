@@ -1,0 +1,79 @@
+{
+    "store.custom#custom-query": {
+        "blocks": [
+            "flex-layout.row#customQuery"
+        ]
+    },
+    "flex-layout.row#customQuery": {
+        "children": [
+            "search-result-layout.customQuery#customSearch"
+        ]
+    },
+    "search-result-layout.customQuery#customSearch": {
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 8,
+                "queryField": "",
+                "mapField": "ft"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#customSearch",
+            "search-result-layout.mobile#customSearch",
+            "search-not-found-layout"
+        ]
+    },
+    "search-result-layout.desktop#customSearch": {
+        "children": [
+            "flex-layout.row#title-banner-custom-query",
+            "flex-layout.row#filter",
+            "flex-layout.row#result"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "preventRouteChange": false,
+            "mobileLayout": {
+                "mode1": "small",
+                "mode2": "normal"
+            }
+        }
+    },
+    "flex-layout.row#title-banner-custom-query": {
+        "children": [
+            "rich-text#title-custom-query",
+            "image#customSearch"
+        ],
+        "props": {
+            "blockClass": "title-text-custom-query",
+            "width": "100%",
+            "colSizing": "auto"
+        }
+    },
+    "image#customSearch": {
+        "props": {
+            "src": "https://via.placeholder.com/1920x600/1675bf/1675bf"
+        }
+    },
+    "rich-text#title-custom-query": {
+        "props": {
+            "text": "Custom Query Title",
+            "blockClass": "custom-query-title"
+        }
+    },
+    "search-result-layout.mobile#customSearch": {
+        "children": [
+            "flex-layout.row#title-banner-custom-query",
+            "flex-layout.row#filter-mobile",
+            "flex-layout.row#result-mobile"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "mobileLayout": {
+                "mode1": "small",
+                "mode2": "normal"
+            }
+        }
+    }
+}

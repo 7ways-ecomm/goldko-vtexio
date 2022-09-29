@@ -1,0 +1,47 @@
+{
+    "store.custom#contato": {
+        "path": "/contato"
+    },
+    "store.custom#cadastre-se": {
+        "path": "/cadastre-se"
+    },
+    "store.custom#por-que-goldko": {
+        "path": "/por-que-goldko"
+    },
+    "store.custom#politica-de-privacidade": {
+        "path": "/politica-de-privacidade"
+    },
+    "store.custom#faq": {
+        "path": "/faq"
+    },
+    "store.custom#our-stores": {
+        "path": "/nossas-lojas"
+    },
+    "store.custom#landing-page": {
+        "path": "/lp"
+    },
+    "store.blog-home": {
+        "path": "/blog"
+    },
+    "store.blog-category": {
+        "path": "/blog/category/:categoryslug_id"
+    },
+    "store.blog-post": {
+        "path": "/blog/post/:slug_id"
+    },
+    "store.blog-search-result": {
+        "path": "/blog/search/:term_id"
+    },
+    "store.custom#lancamentos-com-banner": {
+        "path": "/lancamentos"
+    },
+    "store.custom#revendedor": {
+        "path": "/seja-um-revendedor"
+    },
+    "store.custom#cupom-de-desconto": {
+        "path": "/cupom-de-desconto"
+    },
+    "store.custom#franquias": {
+        "path": "/franquias"
+    }
+}

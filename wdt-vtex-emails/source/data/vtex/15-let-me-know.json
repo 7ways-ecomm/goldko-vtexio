@@ -1,0 +1,32 @@
+{
+	"skuId": "9920",
+	"email": "luiz.henrique@wedigi.com.br",
+	"name": "Luiz Henrique",
+	"skuName": "Saída com Proteção Solar UV.LINE Bola Estampa Brigitte",
+	"skuImage": "https://uvline.vtexassets.com/arquivos/ids/162932-800-auto?width=800&height=auto&aspect=true",
+	"skuUrl": "https://www.uvline.com.br/sp-chemise-bola-brigitte-v21-mc-fem/p?skuId=9920",
+	"_accountInfo": {
+		"MainAccountName": "uvline",
+		"AccountName": "uvline",
+		"Cnpj": "06021902000190",
+		"Id": "a8c9334b-d4af-4713-a7c7-69a6a4644be5",
+		"IsActive": true,
+		"IsOperating": true,
+		"CreationDate": "2018-05-18T20:33:48",
+		"OperationDate": "2018-09-14T13:23:47",
+		"CompanyName": "UVLINE COM E SERV DE ART DE PROT SOLAR LTDA",
+		"TradingName": "uvline",
+		"City": "São Paulo",
+		"Complement": null,
+		"Country": "Brasil",
+		"State": "SP",
+		"Address": "Rua Cleia",
+		"District": "Aguá Branca",
+		"Number": "1039",
+		"PostalCode": "05042-000",
+		"Licences": null,
+		"ParentAccountName": null,
+		"InactivationDate": null,
+		"Platform": "vtex"
+	}
+}

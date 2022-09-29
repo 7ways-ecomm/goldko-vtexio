@@ -1,0 +1,76 @@
+@import "variables";
+
+.listContainer {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .listItem {
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        position: relative;
+
+        padding: 0 12px;
+
+        :global(.vtex-button) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0;
+            :global(.vtex-button__label) {
+                color: $blue;
+                font-weight: $bold;
+                font-size: $size2;
+                padding: 0;
+                padding-bottom: 0 !important;
+            }
+        }
+        &.listItemActive {
+            border-bottom: 1px solid $blue;
+            :global(.vtex-button) {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.contentItem--measures,
+.contentItem--composition {
+    color: $grey;
+    padding: 15px;
+    font-size: $size2;
+}
+.container--submenu-chocolates {
+    .contentContainer {
+        .contentItem {
+            :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: $maxMobile) {
+    .container--product-description-pdp {
+        .listItem {
+            :global(.vtex-button) {
+                color: $grey;
+                max-height: 40px;
+                min-height: 40px;
+                background-color: transparent;
+                :global(.vtex-button__label) {
+                    font-size: 13px;
+                    padding: 0 12px !important;
+                }
+            }
+            &.listItemActive {
+                :global(.vtex-button) {
+                    color: $dark;
+                }
+            }
+        }
+    }
+}

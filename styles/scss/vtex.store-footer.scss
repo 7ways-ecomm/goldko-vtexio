@@ -1,0 +1,99 @@
+@import "variables";
+
+.socialNetworkWrapper {
+    .socialNetworksContainer {
+        width: min-content;
+        margin: 15px 0 0;
+        .socialNetworkLink {
+            margin-right: 20px;
+            transition: .5s ease;
+            &:hover {
+                transform: scale(1.1);
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .socialNetworkLink--facebook {
+
+            &::before {
+                content: "";
+                width: 35px;
+                height: 35px;
+                @media (max-width: $maxMobile) {
+                    width: 25px;
+                    height: 25px;
+                }
+                display: block;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url($facebookIcon);
+            }
+            .socialNetworkImage {
+                display: none;
+            }
+        }
+        .socialNetworkLink--instagram {
+
+            &::before {
+                content: "";
+                width: 35px;
+                height: 35px;
+                @media (max-width: $maxMobile) {
+                    width: 25px;
+                    height: 25px;
+                }
+                display: block;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url($instagramIcon);
+            }
+            .socialNetworkImage {
+                display: none;
+            }
+        }
+        .socialNetworkLink--youtube {
+
+            &::before {
+                content: "";
+                width: 35px;
+                height: 35px;
+                @media (max-width: $maxMobile) {
+                    width: 25px;
+                    height: 25px;
+                }
+                display: block;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url($youtubeIcon);
+            }
+            .socialNetworkImage {
+                display: none;
+            }
+        }
+        .socialNetworkLink--pinterest {
+
+            &::before {
+                content: "";
+                width: 35px;
+                height: 35px;
+                @media (max-width: $maxMobile) {
+                    width: 25px;
+                    height: 25px;
+                }
+                display: block;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url($pinterestIcon);
+            }
+            .socialNetworkImage {
+                display: none;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,374 @@
+@import 'variables';
+
+.container {
+    @media (max-width: $maxTablet) {
+        margin-right: 15px;
+    }
+    :global(.vtex-button) {
+        border: 0;
+        :global(.vtex-button__label) {
+            padding: 0 !important;
+            .label,
+            .profile {
+                padding: 0;
+                font-size: 0;
+                &::before {
+                    content: ' ';
+                    width: auto;
+                    height: 27px;
+                    display: block;
+                    background-image: url($loginIcon);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+.inputContainerEmail {
+    :global(.vtex-input-prefix__group) {
+        border-width: 1px;
+        border-radius: 0;
+    }
+}
+
+.options {
+    .formTitle {
+        margin-top: 0;
+        font-size: $size1;
+        text-transform: uppercase;
+    }
+    .optionsList {
+        margin-top: 8px;
+        margin-bottom: 0;
+        :global(.vtex-button) {
+            border-radius: 0;
+        }
+    }
+}
+
+.sendButton {
+    :global(.vtex-button) {
+        border-radius: 0;
+        :global(.vtex-button__label) {
+            font-size: $size1;
+            text-transform: uppercase;
+        }
+    }
+}
+.inputContainerPassword {
+    :global(.vtex-input-prefix__group) {
+        border-width: 1px;
+        border-radius: 0;
+    }
+}
+
+.inputContainerAccessCode {
+    :global(.vtex-input-prefix__group) {
+        border-width: 1px;
+        border-radius: 0;
+        :global(.vtex-styleguide-9-x-input) {
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+}
+
+.formTitle {
+    margin-top: 0;
+    font-size: $size1;
+    font-weight: $regular;
+    text-transform: uppercase;
+}
+
+.formFooter {
+    border: 0;
+}
+
+.accessCodeOptionBtn,
+.emailPasswordOptionBtn,
+.facebookOptionBtn,
+.googleOptionBtn {
+    :global(.vtex-button) {
+        background-color: #fff;
+        :global(.vtex-button__label) {
+            padding: 0;
+            font-size: 12px;
+            color: $blue;
+        }
+    }
+}
+
+.arrowUp {
+    display: none;
+}
+
+.contentForm {
+    padding: 0;
+    .accountOptions {
+        .button {
+            padding: 0;
+        }
+        :global(.vtex-button__label) {
+            padding: 0;
+        }
+    }
+}
+.content--accountOptions {
+    padding: 6px 12px;
+}
+:global(.vtex-my-account-1-x-menu),
+:global(.vtex-account__page) {
+    @media (min-width: 1025px) {
+        margin-top: 0;
+    }
+}
+
+:global(.vtex-account) {
+    color: $blue;
+}
+
+:global(.vtex-my-orders-app-3-x-productName) {
+    color: $blue;
+    text-decoration: none;
+}
+
+.oauthLabel {
+    color: $blue;
+    font-size: $size0;
+    .oauthProvider {
+        font-weight: normal;
+    }
+}
+
+:global(.vtex-styleguide-9-x-input) {
+    color: $dark;
+    font-size: $size1;
+}
+
+.box {
+    top: 20px;
+    .contentContainer {
+        box-shadow: unset;
+        .content {
+            background-color: $lightBlue;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            .formTitle {
+                color: $light;
+                .formSubtitle {
+                    font-size: $size2;
+                    color: $light;
+                }
+            }
+            .inputContainer {
+                :first-child {
+                    color: $light;
+                }
+                :global(.vtex-styleguide-9-x-input) {
+                    color: $blue;
+                }
+            }
+            .optionsList {
+                .optionsListItem {
+                    .button {
+                        :global(.vtex-button) {
+                            border: 0;
+                            border-radius: 100px;
+                            &:hover {
+                                background-color: $light;
+                            }
+                            :global(.vtex-button__label) {
+                                color: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+            .sendButton {
+                :global(.vtex-button) {
+                    border: 0;
+                    border-radius: 100px;
+                    background-color: $light;
+                    :global(.vtex-button__label) {
+                        color: $darkBlue;
+                    }
+                }
+            }
+            :global(.vtex-input) {
+                :global(.vtex-input-prefix__group) {
+                    border: 0;
+                    :global(.vtex-styleguide-9-x-input) {
+                        border-radius: 100px;
+                        font-family: $CharlevoixPro;
+                    }
+                }
+            }
+            :global(.vtex-input__suffix) {
+                background-color: $lightBlue;
+            }
+            .eyeSightIcon,
+            .forgotPasswordLink,
+            .dontHaveAccount {
+                color: $light;
+            }
+            .backButton {
+                :global(.vtex-button) {
+                    :global(.vtex-button__label) {
+                        color: $light;
+                    }
+                }
+            }
+            .accountOptions {
+                display: flex;
+                align-items: center;
+                .button {
+                    color: $lightBlue;
+                    padding: 10px 15px;
+                    border-radius: 100px;
+                    background-color: $light;
+                }
+                :global(.vtex-button) {
+                    :global(.vtex-button__label) {
+                        color: $light;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contentInitialScreen,
+.contentAlwaysWithOptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-height: unset;
+
+    .optionsSticky {
+        @media (max-width: $maxMobile) {
+            width: 100%;
+            padding: 30px 0;
+        }
+        .formTitle {
+            color: $blue;
+            font-size: 16px;
+        }
+        .optionsList {
+            .optionsListItem {
+                .button {
+                    :global(.vtex-button) {
+                        border-radius: 5px;
+                        border: 2px solid #1675bf;
+                        height: 40px;
+                        color: #1675bf;
+                        text-transform: uppercase;
+                        font-weight: $regular;
+                    }
+                    .oauthLabel,
+					.oauthProvider {
+                        color: #1675bf;
+                        font-weight: $regular;
+					}
+                }
+            }
+        }
+    }
+    .contentFormVisible {
+        margin-left: 30px;
+        @media (max-width: $maxMobile) {
+            width: 100%;
+            padding-top: 30px;
+            margin-left: 0px;
+        }
+        .emailAndPasswordForm,
+        .emailForm,
+        .codeConfirmation,
+        .emailVerification  {
+            .formTitle {
+                color: $blue;
+                font-size: 16px;
+                .formSubtitle {
+                    font-size: 14px;
+                }
+            }
+            .inputContainer {
+                :global(.vtex-input-prefix__group) {
+                    border: none;
+                    border-bottom: 1px solid #dedede;
+                    :global(.vtex-styleguide-9-x-input) {
+                        border: 0;
+                        outline: 0;
+                        width: 100%;
+                        height: 34px;
+                        color: #1675bf;
+                        padding: 15px 10px;
+                        font-size: 14px;
+                        border-radius: 0;
+                        font-weight: lighter;
+                        background-color: transparent;
+                        font-family: $CharlevoixPro;
+                    }
+                }
+            }
+            .formLinkContainer {
+                .forgotPasswordLink {
+                    color: $blue;
+                }
+            }
+            .formFooter {
+				.sendButton {
+					:global(.vtex-button) {
+						border-radius: 5px;
+						background-color: #00a6dd;
+						color: #fff;
+						text-transform: uppercase;
+						border: none;
+						height: 40px;
+						&:hover {
+							background-color: $orange;
+						}
+	
+						:first-child {
+							text-transform: uppercase;
+							font-weight: $bold;
+							font-size: $size0;
+						}
+						:global(.vtex-button__label) {
+						}
+					}
+				}
+				.backButton {
+					:global(.vtex-button) {
+						border-radius: 5px;
+						border: 2px solid $blue;
+						color: $blue;
+						background-color: transparent;
+						text-transform: uppercase;
+						height: 40px;	
+					}
+					:first-child {
+						text-transform: uppercase;
+						font-weight: $bold;
+						font-size: $size0;
+					}
+				}
+            }
+        }
+        .tooltipContainer {
+            background: $blue;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+            :first-child {
+                color: $light;
+            }
+            &::after {
+                border-color: transparent transparent transparent $blue;
+            }
+        }
+    }
+}

@@ -1,0 +1,455 @@
+@import "variables";
+
+.gallery {
+    padding-left: 0;
+    .galleryItem {
+        @media (min-width: $maxMobile) {
+            padding: 0 0 25px;
+        }
+        @media (max-width: $maxMobile) {
+            padding: 0 0 15px;
+        }
+        :global(.vtex-product-summary-2-x-container) {
+            //max-width: unset !important;
+            :global(.vtex-product-summary-2-x-image) {
+                height: auto !important;
+                max-height: unset !important;
+            }
+        }
+    }
+}
+.accordionFilterItemTag--horizontal {
+    :global(.vtex-tag) {
+        background-color: $blue;
+    }
+}
+.accordionFilterContainer--marca {
+    display: none;
+}
+.filters--layout {
+    width: 100%;
+}
+.filtersWrapper {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    align-items: flex-start;
+    flex-direction: column;
+    .filter__container--title {
+        .filterMessage {
+            font-size: 0;
+            &::before {
+                font-size: $size2;
+                content: "Filtrar por:";
+                text-transform: uppercase;
+            }
+        }
+    }
+    .filter__container {
+        border: 0;
+        width: 100%;
+        .filter {
+            width: 100%;
+        }
+        .filterTitle {
+            font-size: $size1;
+            text-transform: uppercase;
+            .filterIcon {
+                padding: 0 5px;
+                .caretIcon {
+                    width: 8px;
+                    height: 8px;
+                    color: $blue;
+                }
+            }
+        }
+    }
+    .filter__container--title,
+    .filter__container--departamento,
+    .filter__container--especificacoes-tecnicas,
+    .filter__container--medidas,
+    .filter__container--netshoesproductgroup,
+    .filter__container--marca,
+    .filter__container--brand,
+    .filter__container--category-1, // Departamento
+    .filter__container--category-2 { // Categoria
+        display: none;
+    }
+}
+.filtersWrapperMobile {
+    .filterPopupButton {
+        background-color: $blue;
+        border-radius: 5px;
+        border: none;
+        padding: 0 25px;
+        .filterPopupTitle {
+            color: $light;
+            text-transform: uppercase;
+            font-weight: $bold;
+        }
+        .filterPopupArrowIcon {
+            &::before {
+                width: 16px;
+                height: 16px;
+                display: block;
+                content: "";
+                background-size: contain;
+                background-image: url("https://goldko.vtexassets.com/arquivos/filter-icon.png");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .filterIcon {
+                display: none;
+            }
+        }
+    }
+}
+.filtersWrapper--selecteds {
+    left: 145px;
+    width: calc(100% - 145px);
+    padding: 0 25px;
+    z-index: 1;
+    position: absolute;
+    overflow-x: auto;
+    .filter__container {
+        display: none;
+        &.filter__container--selectedFilters {
+            display: block;
+            .filterSelected--selecteds {
+                display: none;
+            }
+            .filterTitle { display: none }
+
+            .filterTemplateOverflow {
+                display: flex;
+                align-items: center;
+                padding-top: 1rem;
+                justify-content: flex-start;
+                .filterItem {
+                    width: auto;
+                    border: 1px solid $lightGrey;
+                    margin: 0 15px 0 0;
+                    padding: 10px 15px;
+                    background-color: $lighterGrey;
+                    :global(.vtex-checkbox__line-container) {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: row-reverse;
+                        :global(.vtex-checkbox__container) {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            margin-left: 5px;
+                            margin-right: 0;
+                            justify-content: center;
+                            &::before {
+                                width: 8px;
+                                height: 8px;
+                                content: "";
+                                display: block;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-image: url("data:image/svg+xml,%3Csvg height='329pt' viewBox='0 0 329.26933 329' width='329pt' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0'/%3E%3C/svg%3E");
+                            }
+                            :global(.vtex-checkbox__inner-container), :global(.vtex-checkbox__box-wrapper) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.filtersWrapper--horizontal {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    .filter__container {
+        width: auto;
+        margin-right: 25px;
+        .filter {
+            .filterTitle {
+                color: $blue;
+                font-size: $size1;
+                .filterIcon {
+                    margin-left: 5px;
+                    &::before {
+                        width: 10px;
+                        height: 10px;
+                        display: block;
+                        content: "";
+                        background-size: contain;
+                        background-image: url($iconArrowDown);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    .caretIcon {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .filterTemplateOverflow {
+            z-index: 1;
+            padding: 0;
+            opacity: 1;
+            position: absolute;
+            margin-top: 6px;
+            background-color: $lightBlue;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            max-height: unset !important;
+            .filterContent--horizontal {
+                padding: 15px 20px;
+                .filterItem {
+                    padding: 0 0 10px;
+                    &:last-child {
+                        padding: 0;
+                    }
+                    :global(.vtex-checkbox__container) {
+                        :global(.vtex-checkbox__inner-container) {
+                            border-color: $light;
+                        }
+                        :global(.vtex-checkbox__box-wrapper) {
+                            background-color: $light;
+                            :global(.vtex__icon-check) {
+                                color: $blue;
+                            } 
+                        }
+                    }
+                    :global(.vtex-checkbox__label) {
+                        color: $light;
+                    }
+                }
+            }
+        }
+    }
+    .filter__container--selectedFilters,
+    .filter__container--priceRange {
+        display: none;
+    }
+}
+.orderByButton {
+    padding: 13px;
+    margin-left: auto;
+    width: auto !important;
+    // border: 1px solid $lightGrey;
+    border-radius: 0;
+    @media (max-width: $maxMobile) {
+        margin: 0;
+        padding: 10px 15px;
+    }
+    .filterPopupTitle {
+        display: flex;
+        font-size: $size0;
+        align-items: flex-start;
+        flex-direction: column;
+        text-transform: initial;
+        justify-content: flex-start;
+        @media (max-width: $maxMobile) {
+            font-size: 14px;
+        }
+        color: $blue;
+        font-size: $size2;
+        font-weight: $regular;
+        .orderByText {
+            color: $blue;
+            font-size: $size0;
+            font-weight: $extraLight;
+            text-transform: uppercase;
+        }
+    }
+    .filterPopupArrowIcon {
+        padding-right: 0;
+        height: 8px;
+        line-height: .6;
+        padding-left: 8px;
+        .caretIcon {
+            width: 8px;
+            height: 8px;
+        }
+    }
+}
+.buttonShowMore--layout {
+    margin-bottom: 20px;
+    .buttonShowMore {
+        margin: 15px 0;
+        :global(.vtex-button) {
+            border-radius: 5px;
+            background-color: transparent;
+            :global(.vtex-button__label) {
+                font-size: $size1;
+                color: #1675bf;
+                font-weight: bold;
+                font-size: $size3;
+                padding: 15px 30px;
+            }
+        }
+    }
+}
+
+.sidebar {
+    .filterBreadcrumbsText {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .filterBreadcrumbsItem {
+        .caretIcon {
+            color: $blue;
+            margin-left: 8px;
+        }
+        .filterBreadcrumbsItemName {
+            color: $blue;
+            font-size: 16px;
+        }
+    }
+    .accordionFilterContainer {
+        padding-left: 15px;
+        padding-right: 15px;
+        .accordionFilterItem {
+            height: auto;
+            .accordionFilterContent {
+                padding: 0;
+            }
+        }
+        .accordionFilterItemTitle {
+            font-size: 14px;
+        }
+        .accordionFilterItemIcon {
+            .caretIcon {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+    .filterAccordionItemBox {
+        height: auto;
+        padding: 10px 0;
+    }
+    .filterApplyButtonWrapper {
+        :global(.vtex-button) {
+            background-color: $blue;
+            border-radius: 5px;
+            color: white;
+        }
+    }
+}
+
+.filterPopupButton {
+    padding: 13px;
+    margin-left: auto;
+    width: auto !important;
+    border: 1px solid $lighterGrey;
+    background-color: $lighterGrey;
+    border-radius: 0;
+
+    display: flex;
+    align-items: center;
+    @media (max-width: $maxMobile) {
+        margin: 0;
+        padding: 10px 15px;
+    }
+    .filterPopupTitle {
+        font-size: $size0;
+        text-transform: initial;
+        @media (max-width: $maxMobile) {
+            font-size: 14px;
+        }
+        .orderByText {
+            color: $grey;
+            font-weight: $regular;
+        }
+    }
+    .filterPopupArrowIcon {
+        padding-right: 0;
+    }
+}
+
+.notFound--layout,
+.searchNotFound  {
+    padding: 100px 0;
+    .searchNotFoundWhatToDoDotsContainer {    
+        padding-left: 20px;
+    }
+}
+@media (max-width: $maxMobile) {
+    .notFound--layout,
+    .searchNotFound  {
+        padding: 50px 0;
+
+        .searchNotFoundInfo {
+            text-align: center;
+            padding: 30px;
+            .searchNotFoundWhatToDoDotsContainer {
+                text-align: left;
+                padding-left: 40px;
+                .searchNotFoundWhatToDoDots{
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+:global(.vtex-checkbox__label) {
+    font-size: $size1;
+}
+
+.galleryTitle--layout {
+    color: $light;
+    margin: 0 auto 25px;
+    padding: 0;
+    font-size: $size7;
+    font-weight: $regular;
+    text-transform: uppercase;
+    @media (max-width: $maxMobile) {
+        margin: 40px auto;
+        font-size: $size6;
+    }
+}
+.layoutSwitcher {
+    padding: 0;
+    :global(.vtex-button) {
+        border: 0;
+        :global(.vtex-button__label) {
+            padding: 8px;
+            padding-right: 0;
+        }
+    }
+}
+.singleGridIcon, .gridIcon {
+    color: $dark;
+}
+.filterPopupButton {
+    height: 40px;
+    padding: 10px 15px;
+}
+.orderByDropdown {
+    padding: 0;
+}
+
+:global(.vtex-search-1-x-searchBanner--top-banner) {
+    :first-child {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+:global(.vtex-search-1-x-searchBanner--top-banner-mobile) {
+    :first-child {
+        height: auto;
+        @media (min-width: 768px) and (max-width: 1024px) {
+            width: 100% !important;
+            height: auto;
+        }
+    }
+}
+
+.filterItem--horizontal {
+    :global(.vtex-checkbox__line-container) {
+        display: flex;
+        align-items: center;
+    }   
+}

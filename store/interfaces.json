@@ -1,0 +1,90 @@
+{
+    "custom-filter": {
+        "component": "Filter"
+    },
+    "cupom-de-desconto": {
+        "component": "CupomDeDesconto"
+    },
+    "milk-integration": {
+        "component": "Milk"
+    },
+    "quem-somos-video": {
+        "component": "QuemSomosVideo"
+    },
+    "custom-product-images": {
+        "component": "ProductImages"
+    },
+    "contato": {
+        "component": "Contato"
+    },
+    "flags": {
+        "component": "Flag"
+    },
+    "flag-product": {
+        "component": "FlagProduct"
+    },
+    "blog-preview": {
+        "component": "Blog"
+    },
+    "custom-product-installments": {
+        "component": "ProductInstallments"
+    },
+    "tags": {
+        "component": "Tags"
+    },
+    "category-text-seo": {
+        "component": "CategoryTextSEO"
+    },
+    "our-stores": {
+        "component": "OurStores"
+    },
+    "category-top": {
+        "component": "CategoryTop"
+    },
+    "category-bot": {
+        "component": "CategoryBot"
+    },
+    "available-quantity": {
+        "component": "AvailableQuantity"
+    },
+    "accept-cookies": {
+        "component": "AcceptCookies"
+    },
+    "wdt-custom-product-nutritional-table": {
+        "component": "NutritionalTable"
+    },
+    "wdt-custom-product-first-purchase": {
+        "component": "FirstPurchase"
+    },
+    "wdt-data-layer": {
+        "component": "DataLayer"
+    },
+    "trustvox": {
+        "component": "Trustvox"
+    },
+    "trustvox-stars": {
+        "component": "TrustvoxStars"
+    },
+    "trustvox-store-note": {
+        "component": "TrustvoxSliderStoreNote"
+    },
+    "trustvox-stamp": {
+        "component": "TrustvoxStamp"
+    },
+    "wdt-form-default": {
+        "component": "FormDefault"
+    },
+    "wdt-add-to-minicart-and-open": {
+        "component": "AddToMinicartButton"
+    },
+    "cadastro": {
+        "component": "Cadastro"
+    },
+    "custom-code-bar": {
+        "component": "CustomCodeBar",
+        "composition": "children"
+    },
+    "flag-feature": {
+        "component": "FlagFeature"
+    }
+}

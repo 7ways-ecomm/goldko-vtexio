@@ -1,0 +1,34 @@
+{
+    "store.custom#cadastre-se": {
+        "blocks": [
+            "image#cadastre-se",
+            "flex-layout.row#cadastro-1"
+        ]
+    },
+    "image#cadastre-se": {
+        "props": {
+            "src": "https://goldko.vtexassets.com/arquivos/quem-somos-banner-min.png",
+            "blockClass": "cadastre-se"
+        }
+    },
+    "flex-layout.row#cadastro-1": {
+        "props": {
+            "blockClass": "cadastro-1"
+        },
+        "children": [
+            "flex-layout.col#cadastro-1"
+        ]
+    },
+    "flex-layout.col#cadastro-1": {
+        "children": [
+            "rich-text#cadastro-content-1",
+            "cadastro"
+        ]
+    },
+    "rich-text#cadastro-content-1": {
+        "props": {
+            "blockClass": "cadastro-content-1",
+            "text": "# Cadastre-se"
+        }
+    }
+}

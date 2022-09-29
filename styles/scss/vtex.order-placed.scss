@@ -1,0 +1,259 @@
+@import "./variables.scss";
+.orderPlacedWrapper {
+    @media (min-width: 1025px) {
+        margin-top: 0;  //175px;
+    }
+    padding-top: 40px;
+}
+.confirmationTitle {
+    font-weight: 300;
+    color: $blue;
+    font-size: $size5;
+    text-transform: uppercase;
+    font-size: 0;
+    &::before {
+        content: "Agradecemos sua compra.";
+        font-size: 24px;
+    }   
+}
+.orderPlacedWrapper,
+.confirmationMessage,
+.orderDatetime,
+.orderSoldBy,
+.customerInfoListContainer {
+    color: $blue;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--confirmationButtons) {
+    margin: 25px 0;
+    @media (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+    }
+    :global(.vtex-button) {
+        border-width: 1px;
+        border-radius: 5px;
+        border: 2px solid;
+        font-size: $size1;
+        font-weight: $bold;
+        &:focus {
+            border: 2px solid;
+            outline: unset;
+        }
+    }
+}
+.section--confirmation {
+    margin-bottom: 40px;
+}
+.noticesList {
+    display: flex;
+    padding: 0 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    @media (max-width: 1025px) {
+        margin-top: -2%;
+        // justify-content: center;
+    }
+    @media (max-width: 767px) {
+        padding: 0 15px;
+    }
+    background-color: $light;
+    .noticeListItem {
+        width: 22%;
+        @media (max-width: 1025px) {
+            width: 48%;
+            margin-top: 4%;
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+        color: $light;
+        padding: 15px 25px;
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 5px;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $lightBlue;
+        font-size: 14px;
+        &:last-child {
+            margin-right: 0;
+        }
+        :global(.vtex-button) {
+            border-radius: 5px;
+            background-color: transparent;
+            border-color: #fff;
+            font-weight: bold;
+            :global(.vtex-button__label) {
+                font-size: $size1;
+            }
+        }
+    }
+}
+.orderPlacedMainWrapper {
+    margin-top: 0;
+    padding: 0 40px;
+    @media (max-width: 767px) {
+        padding: 0 15px;
+    }
+    width: 100% !important;
+}
+.orderNumber {
+    font-weight: 300;
+    color: $blue;
+    font-size: $size5;
+    text-transform: uppercase;
+}
+.orderOptionsWrapper {
+    @media (max-width: 1025px) {
+        margin-top: 32px;
+        justify-content: flex-start;
+    }
+    :global(.vtex-button) {
+        border-width: 1px;
+        border-radius: 5px;
+        border: 2px solid;
+        font-size: 14px;
+        :global(.vtex-button__label) {
+            padding: 6px 12px;
+            font-weight: $bold;
+            font-size: $size1;
+        }
+    }
+}
+.section--paymentMethods {
+    border: 0;
+    .orderPaymentWrapper {
+        .orderPaymentItem {
+            margin: 0;
+            padding: 0;
+            :global(.vtex-button) {
+                border-radius: 5px;
+                background: transparent;
+                :global(.vtex-button__label) {
+                    padding: 6px 12px;
+                    color: $blue;
+                    font-size: $size1;
+                    font-weight: $bold;
+                }
+            }
+        }
+    }
+}
+.section--deliveryPackages {
+    border: 0;
+    .package {
+        margin-bottom: 30px;
+    }
+}
+.productWrapper {
+    @media (max-width: 767px) {
+        display: flex;
+    }
+    position: relative;
+    .productPrice {
+        right: 0;
+        bottom: 0;
+        display: flex;
+        position: absolute;
+        align-items: flex-end;
+    }
+    .productImageColumn {
+        @media (max-width: 767px) {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            margin: 0 !important;
+            justify-content: center;
+        }
+    }
+    .productInfoColumn {
+        @media (max-width: 767px) {
+            display: flex;
+            .productName, .productQuantity {
+                text-align: left;
+            }
+            .productName {
+                font-size: $size2;
+            }
+        }
+    }
+    .productImageWrapper {
+        @media (max-width: 767px) {
+            width: auto;
+            height: auto;
+        }
+    }
+}
+.package--delivery {
+    justify-content: flex-start !important;
+    .productList {
+        width: 40% !important;
+        @media (max-width: 1025px) {
+            width: 70% !important
+        }
+        @media (max-width: 767px) {
+            width: 100% !important
+        }
+    }
+}
+
+.section--bank-invoice {
+    .barCodeWrapper {
+        border: 2px solid $blue;
+        .barCodeNumber {
+            font-weight: $bold;
+        }
+        .barCodeCopyButtonWrapper {
+            border-color: 2px solid $blue;
+            :global(.vtex-button) {
+                :global(.vtex-button__label) {
+                    color: $blue;
+                    font-size: $size1;
+                    font-weight: $bold;
+                }
+            }
+        }
+    }
+}
+
+.section--confirmation {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 40px;
+    flex-direction: column;
+    @media (max-width: 767px) {
+        align-items: center;
+        padding-left: 15px;
+        margin-bottom: 0;
+        padding-right: 15px;
+    }
+    .confirmationMessage {
+        text-align: left;
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+    }
+}
+
+.section--bank-invoice {
+    padding-bottom: 0;
+    .printHintWrapper {
+        margin-bottom: 25px;
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 0;
+        .printHintWrapper {
+            margin-bottom: 23px;
+        }
+    }
+}
+ 
+@media(max-width: 991px) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--bol-invert-mob) {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+}

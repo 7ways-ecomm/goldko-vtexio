@@ -1,0 +1,29 @@
+{
+    "store.blog-home":{
+        "blocks": [
+            "flex-layout.row#blog-search",
+            "blog-all-posts.wordpress-all-posts#blog-home"
+          ]
+        },
+
+        "flex-layout.row#blog-search":{
+            "children":[
+                "blog-search.wordpress-search"
+            ]
+        },
+        
+        "blog-search.wordpress-search": {
+          "props": {
+            "placeholder": "Buscar artigos..."
+          }
+        },
+
+        "blog-all-posts.wordpress-all-posts#blog-home": {
+          "props": {
+            "showCategories": false,
+            "showDates": false,
+            "blockClass": "all-posts"
+          }
+        }
+    
+}

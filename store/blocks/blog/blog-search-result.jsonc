@@ -1,0 +1,7 @@
+{
+    "store.blog-search-result":{
+        "blocks":[
+            "blog-search-list.wordpress-search-list"
+        ]
+    }
+}

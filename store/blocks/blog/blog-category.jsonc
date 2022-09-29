@@ -1,0 +1,8 @@
+{
+    "store.blog-category":{
+        "blocks":[
+            "flex-layout.row#blog-search",
+            "blog-category-list.wordpress-category-list"
+        ]
+    }
+}

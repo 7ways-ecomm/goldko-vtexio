@@ -1,0 +1,27 @@
+{
+    "store.blog-post": {
+        "blocks": [
+            "blog-post-details.wordpress-post-details",
+            "rich-text#collection-recipe",
+            "list-context.product-list#recipe-page"
+        ]
+    },
+    "rich-text#collection-recipe": {
+        "props": {
+            "blockClass": "collection-title",
+            "text": ""
+        }
+    },
+    "list-context.product-list#recipe-page": {
+        "blocks": [
+            "product-summary.shelf#horizontal"
+        ],
+        "children": [
+            "slider-layout#recipe"
+        ],
+        "props": {
+            "maxItems": 3,
+            "collection": "9999"
+        }
+    }
+}

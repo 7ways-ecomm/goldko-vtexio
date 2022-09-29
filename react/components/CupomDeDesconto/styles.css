@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:wght@100;400;500;700&display=swap');
+
+.container{    
+    width: 100%;    
+    margin:1rem 0;
+}
+
+.desconto {
+    width: 90%;
+    margin:auto;
+    display:flex;        
+    padding:15px 0;    
+    justify-content: center;   
+    align-items:center; 
+    margin-bottom: 1rem;
+}
+
+.ofertas {
+    width: 80%;      
+    text-align:left;
+    margin:auto;       
+    padding: 15px;
+}
+
+.ofertas p {
+    font-family: 'Roboto' Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;    
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: 2rem;
+}
+
+.cupom {
+    width: 15%;     
+    margin-right:0.5rem;
+    text-align:center;    
+    position:relative;             
+}
+
+.rectangulo {
+    position:relative;
+    width:100%;
+    height: auto;       
+}
+
+.desc {
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+    text-align: center;    
+
+}
+.cupom img {
+    width:100%;
+    display:block;
+    height: auto;        
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));    
+      filter: blur(10px) brightness(-100);  
+    /* -webkit-filter: blur(10px) brightness(0); opacity: 1;   */
+       
+}
+
+/* .cupom::after {
+    content:"15%";
+    position:absolute;
+    top:10px;
+    font-family: 'Roboto' Condensed;
+    width:102px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    letter-spacing: -1px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px; 
+    color: #FFFFFF;
+} */
+
+
+.banner {
+    width: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;       
+    
+    border-radius:10px;    
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    text-align:center;
+    height: 140px;    
+}
+
+.banner h2 {
+    font-family: 'Roboto' Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 14px;    
+    text-align: center;
+    color: #000000;    
+    margin-bottom: 1rem;
+}
+
+
+.banner span {    
+    font-weight: bold;    
+}
+.banner .buttonColor1 {
+    background: #F46110;
+}
+.banner .buttonColor2 {
+    background: #1780CC;
+}
+.banner .buttonColor3 {
+    background: #00A6DD;
+}
+
+.banner button {
+    text-transform: uppercase;    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;   
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    border:none;
+    cursor: pointer;
+    padding: 10px 80px;    
+    font-weight: bold;        
+    color: #FFFFFF;
+}
+
+.banner p {
+    font-family: 'Roboto' Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    color: rgba(0, 0, 0, 0.63);
+}
+
+.banner img{
+    width: 100%;
+}
+
+@media screen and (max-width:767px){
+ .banner {
+     width: 237px;
+     height: 100px;
+ }   
+ .ofertas p{
+     margin-left: 0;
+ }
+ 
+ .desconto{
+     width:100%;
+     padding: 15px ;
+ }
+
+ .cupom {
+    width: 40%;
+    margin-right: 5px;
+ }
+ 
+ .banner h2 {
+     font-size: 12px;
+     line-height:14.06px;
+ }
+ .banner span {
+     font-size: 10px;
+ }
+ .banner button {
+     font-size: 12px;
+     padding: 8px 30px;
+
+ }
+}
