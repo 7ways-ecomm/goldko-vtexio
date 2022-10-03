@@ -38,7 +38,7 @@ function NutritionalTable() {
         <>
             {imageData.length !== 0 && (
                 <S.Container>
-                    <div className="button" onClick={handleModalToggle}>{categoryId === "14" ? 'Tabela de Medidas' : 'Informação Nutricional'} </div>
+                    <div className="button" onClick={handleModalToggle}>{categoryId === "14" ? 'Tabela de Medidas' : 'Informação Nutricional.'} </div>
                     <Modal
                         centered
                         isOpen={isOpen.isModalOpen}
