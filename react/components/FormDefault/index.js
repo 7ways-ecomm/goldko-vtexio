@@ -9,6 +9,7 @@ function FormDefault(props) {
     const [error, setError] = useState(false);
     const [success, setSuccess] = useState(false);
     const [typeForm, setTypeForm] = useState()
+    const [isTextAreaVisible, setIsTextAreaVisible] = useState(false)
 
     const {
         revendedor,
@@ -23,6 +24,7 @@ function FormDefault(props) {
         console.log(data);
 
         const url = `/api/dataentities/${props.acronym}/documents`;
+        console.log(props.acronym)
         const settings = {
             method: "POST",
             headers: {
@@ -49,8 +51,11 @@ function FormDefault(props) {
     const changeHandler = ev => {
         let name = ev.currentTarget.name;
         let value = ev.currentTarget.value;
-
         setData({ ...data, [name]: value });
+
+        if(name === 'franqueado') {
+            value === 'Não' ? setIsTextAreaVisible(false) : setIsTextAreaVisible(true)
+        }
     }
 
     useEffect(() => {
@@ -99,7 +104,14 @@ function FormDefault(props) {
                             return (
                                 <div className="wdt-wrap-radio">
                                     <label className="wdt-input-label" style={{display: "none"}}>{`${typeForm[key].placeholder}`}</label>
-                                    {typeForm[key].options.map(option => <div class="wdt-radio-value"><input name={key} type="radio" id={option} value={option} onChange={changeHandler}></input><label for={option}>{option}</label></div>)}
+                                    {typeForm[key].options.map(option => 
+                                            <div class="wdt-radio-value">
+                                                <input name={key} type="radio" id={option} value={option} onChange={changeHandler} />
+                                                <label for={option}>{option === "Sim" ? "Sim (Qual?)" : option}</label>
+                                            </div>
+                                        )
+                                    }
+                                    {typeForm[key].hasTextArea && isTextAreaVisible && <textarea className={style.wdt_text_area} id="franquiaAtual" name="franquiaAtual" required="required" onChange={changeHandler}/>}
                                 </div>
                             )
                         }

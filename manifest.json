@@ -1,7 +1,7 @@
 {
   "vendor": "goldko",
   "name": "goldko-theme",
-  "version": "1.1.1",
+  "version": "1.0.37",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -73,6 +73,7 @@
     "vtex.formatted-price": "0.x",
     "vtex.device-detector": "0.x",
     "vtex.order-manager": "0.x",
+    "vtex.order-items": "0.x",
     "vtex.store-video": "1.x",
     "vtex.order-placed-graphql": "1.x"
   },

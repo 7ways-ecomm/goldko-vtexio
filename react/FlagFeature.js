@@ -6,8 +6,6 @@ function FlagFeatures() {
     const productSummary = useProductSummary()
     const product = productSummary
 
-    console.log(product.product.properties)
-
     return (
         <>
             {

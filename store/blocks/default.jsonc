@@ -62,9 +62,20 @@
       "stack-layout#prodsum",
       "flex-layout.row#shelf-container-name-stars-home",
       "product-rating-summary",
-      "flex-layout.row#list-and-selling-price-summary",
+      "wdt-list-buy-component"
+      //"flex-layout.row#list-and-selling-price-summary",
       // "product-installments",
       // "product-installments-list",
+      //"custom-product-installments",
+      //"flex-layout.row#summary-buy-button"
+    ]
+  },
+  "wdt-list-buy-component": {
+    "props": {
+      "blockClass": "summary-buy-button"
+    },
+    "children":[
+      "flex-layout.row#list-and-selling-price-summary",
       "custom-product-installments",
       "flex-layout.row#summary-buy-button"
     ]
@@ -100,11 +111,12 @@
       "stack-layout#prodsum",
       "flex-layout.row#shelf-container-name-stars-search",
       "product-rating-summary",
-      "flex-layout.row#list-and-selling-price-summary",
+      "wdt-list-buy-component"
+      // "flex-layout.row#list-and-selling-price-summary",
       // "product-installments",
       // "product-installments-list",
-      "custom-product-installments",
-      "flex-layout.row#summary-buy-button"
+      // "custom-product-installments",
+      // "flex-layout.row#summary-buy-button"
     ]
   },
   "flex-layout.row#shelf-container-name-stars-search": {

@@ -37,7 +37,7 @@ export default {
             placeholder: "Nome da Loja"
         },
     },
-    franqueado: {
+    franqueado: { 
         name: {
             width: "100",
             type: "input",
@@ -74,12 +74,20 @@ export default {
             required: true,
             placeholder: "Cidade"
         },
+        franqueado: {
+            width: "100",
+            type: "radio",
+            required: true,
+            placeholder: "Você já opera alguma franquia?",
+            options:["Não", "Sim"],
+            hasTextArea: true,
+        },
         investment: {
             width: "100",
             type: "radio",
             required: true,
             placeholder: "Capital para investimento",
-            options:["Entre R$ 200.000 e R$ 250.000", "Entre R$ 250.000 e R$ 300.000", "Acima de R$ 300.000"]
+            options:["Entre R$ 200.000 e R$ 250.000", "Entre R$ 250.000 e R$ 300.000", "Acima de R$ 300.000"],
         }
     }
 };

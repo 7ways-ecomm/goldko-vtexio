@@ -422,13 +422,22 @@
       "flex-layout.row#share-and-starts",
       "vtex.store-components:product-name",
       // "flex-layout.row#product-page-seals",
-      "wdt-custom-product-nutritional-table",
+      "flex-layout.row#nutritional-and-tags",
+      // "wdt-custom-product-nutritional-table",
       "sku-selector#pdp",
-      "tags",
+      // "tags",
       // "rich-text#product-description",
       "condition-layout.product#is-product-available"
-      
-
+    ]
+  },
+  "flex-layout.row#nutritional-and-tags": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": ["justify-start", "nutritional-and-tags"]
+    },
+    "children": [
+      "wdt-custom-product-nutritional-table",
+      "tags"
     ]
   },
   "sku-selector#pdp": {
@@ -456,11 +465,16 @@
           "subject": "isProductAvailable"
         }
       ],
-      "Then": "flex-layout.col#right-col-available-item",
+      "Then": "flex-layout.col#right-col-available-item1",
       "Else": "flex-layout.col#right-col-unavailable-item"
     }
   },
-  "flex-layout.col#right-col-available-item": {
+  "flex-layout.col#right-col-available-item1": {
+    "children": [
+      "wdt-buy-component"
+    ]
+  },
+  "wdt-buy-component": {
     "children": [
       "flex-layout.row#container-price-buy-button",
       "flex-layout.row#shipping"

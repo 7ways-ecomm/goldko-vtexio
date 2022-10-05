@@ -86,5 +86,13 @@
     },
     "flag-feature": {
         "component": "FlagFeature"
+    },
+    "wdt-buy-component": {
+        "component": "BuyComponent",
+        "composition": "children"
+    },
+    "wdt-list-buy-component": {
+        "component": "ListBuyComponent",
+        "composition": "children"
     }
 }

@@ -197,3 +197,14 @@
 .formDefault select {
     color: #1675bf !important;
 }
+
+.formDefault .wdt_text_area {
+    font-family: 'VinilaRegular';
+    font-size: 14px;
+    color: #1675bf !important;
+    resize: none;
+    height: 60px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}

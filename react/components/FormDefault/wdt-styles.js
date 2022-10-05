@@ -36,11 +36,11 @@ export const Container = styled.div`
     }
     .goldko-goldko-theme-1-x-buttonEnv {
         background: #f46110;
-        border-radius: 20px;
+        border-radius: 10px;
         font-size: 0;
         width: auto;
         margin: 20px auto 0px;
-        padding: 20px 30px;
+        padding: 10px 30px;
         height: initial;
         line-height: initial;
         font-family: 'VinilaBold';
@@ -52,7 +52,7 @@ export const Container = styled.div`
         font-size: 20px;
     }
     .wdt-wrap-radio {
-        width: 100%;
+        width: 48%;
         margin-top: 10px;
         display: flex;
         flex-wrap: wrap;
@@ -72,6 +72,7 @@ export const Container = styled.div`
             color: #fff;
             font-size: 19px !important;
             margin-bottom: 10px;
+            width: 100%;
             line-height: initial;
             font-family: 'VinilaRegular';
 
@@ -100,6 +101,9 @@ export const Container = styled.div`
             input:checked{
                 background: #f46111;
             }
+        }
+        @media (max-width: 768px) {
+            width: 100%;
         }
     }
 

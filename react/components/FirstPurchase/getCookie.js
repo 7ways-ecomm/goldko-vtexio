@@ -6,5 +6,7 @@ export default function getCookie(param) {
     });
 
     result = result.toString().trim();
-    return result;
+
+
+    return result && result.length > 0 ? result : false;
 }
