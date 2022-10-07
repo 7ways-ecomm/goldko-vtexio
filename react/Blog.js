@@ -6,7 +6,7 @@ export default function Blog() {
     const [posts, setPosts] = useState("")
     const [thumb, setThumb] = useState("")
     useEffect(() => {
-        fetch("https://blog.goldko.com.br/wp-json/wp/v2/posts?_embed")
+        fetch("https://goldko1.websiteseguro.com/blog/wp-json/wp/v2/posts?_embed")
             .then(res => res.json())
             .then(res => {
                 let thumbs = []
