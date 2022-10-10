@@ -14,7 +14,7 @@ export default function Blog() {
                     let a = post.content.rendered.split("<").filter(function(x) {
                         return x.indexOf("img") != -1
                     })
-                    thumbs.push(post._embedded["wp:featuredmedia"][0].source_url);
+                    thumbs.push(post._embedded["wp:featuredmedia"][0].media_details.sizes["thumbnail"].source_url);
                 })
                 setThumb(thumbs)
                 setPosts(res)
