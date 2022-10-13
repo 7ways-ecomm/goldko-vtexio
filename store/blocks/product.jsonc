@@ -542,7 +542,7 @@
   "rich-text#shipping-modal": {
     "props": {
       "blockClass": "frete-gratis",
-      "text": "Frete grátis para compras acima de R$200,00."
+      "text": "Frete grátis para compras acima de R$299,00."
     }
   },
   "rich-text#product-description": {

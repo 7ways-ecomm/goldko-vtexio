@@ -74,7 +74,7 @@
   },
   "rich-text#dev-seals": {
     "props": {
-      "text": "[![](https://goldko.vtexassets.com/arquivos/vtex-logo.png)](https://www.vtex.com.br) [![](https://goldko.vtexassets.com/arquivos/wedigi-logo.png?v=1)](https://www.wedigi.com.br)",
+      "text": "[![](https://goldko.vtexassets.com/arquivos/vtex-logo.png)](https://www.vtex.com.br)",
       "blockClass": "dev-seals"
     }
   },
