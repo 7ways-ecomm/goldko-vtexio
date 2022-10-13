@@ -287,8 +287,12 @@
         flex-wrap: nowrap;
         align-items: baseline;
     }
+    .link:last-child {
+        display: none !important;
+    }
     .image {
         max-width: 70px;
+
         &:first-child {
             margin-right: 15px;
         }
