@@ -185,7 +185,7 @@
       "menu-item#combos-mobile",
       // "menu-item#displays-mobile", 
       "menu-item#presentes-mobile",
-      "menu-item#lifestyle-mobile",
+      // "menu-item#lifestyle-mobile",
       "menu-item#por-que-goldko-mobile"
     ]
   },
@@ -407,23 +407,23 @@
       }
     }
   },
-  "menu-item#lifestyle-mobile": {
-    "title": "Menu Lifestyle",
-    "props": {
-      "id": "menu-item-lifestyle-mobile",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "blockClass": "menu-header-mobile",
-      "itemProps": {
-        "type": "internal",
-        "href": "/lifestyle",
-        "noFollow": false,
-        "tagTitle": "Lifestyle",
-        "text": "Lifestyle"
-      }
-    }
-  },
+  // "menu-item#lifestyle-mobile": {
+  //   "title": "Menu Lifestyle",
+  //   "props": {
+  //     "id": "menu-item-lifestyle-mobile",
+  //     "type": "custom",
+  //     "iconId": null,
+  //     "highlight": false,
+  //     "blockClass": "menu-header-mobile",
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/lifestyle",
+  //       "noFollow": false,
+  //       "tagTitle": "Lifestyle",
+  //       "text": "Lifestyle"
+  //     }
+  //   }
+  // },
   "menu-item#por-que-goldko-mobile": {
     "props": {
       "id": "menu-item-por-que-goldko-mobile",
@@ -453,7 +453,7 @@
       "menu-item#combos",
       // "menu-item#displays",
       "menu-item#presentes",
-      "menu-item#lifestyle",
+      // "menu-item#lifestyle",
       "menu-item#por-que-goldko"
     ]
   },
@@ -1363,23 +1363,23 @@
       }
     }
   },
-  "menu-item#lifestyle": {
-    "title": "Menu Lifestyle",
-    "props": {
-      "id": "menu-item-lifestyle",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "blockClass": "menu-header-lifestyle",
-      "itemProps": {
-        "type": "internal",
-        "href": "/lifestyle",
-        "noFollow": false,
-        "tagTitle": "lifestyle",
-        "text": "lifestyle"
-      }
-    }
-  },
+  // "menu-item#lifestyle": {
+  //   "title": "Menu Lifestyle",
+  //   "props": {
+  //     "id": "menu-item-lifestyle",
+  //     "type": "custom",
+  //     "iconId": null,
+  //     "highlight": false,
+  //     "blockClass": "menu-header-lifestyle",
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/lifestyle",
+  //       "noFollow": false,
+  //       "tagTitle": "lifestyle",
+  //       "text": "lifestyle"
+  //     }
+  //   }
+  // },
   "menu-item#por-que-goldko": {
     "props": {
       "id": "menu-item-por-que-goldko",
