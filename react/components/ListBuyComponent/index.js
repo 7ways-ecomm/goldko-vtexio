@@ -42,6 +42,7 @@ function ListBuyComponent({ children }) {
 
   function handleAddToCart(option) {
     const { items } = product;
+    document.querySelector('.vtex-minicart-2-x-openIconContainer').click()
 
     if (items && items.length > 0) {
       addItems([

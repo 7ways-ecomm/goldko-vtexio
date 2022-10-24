@@ -1,11 +1,6 @@
 {
     "store.custom#custom-query": {
         "blocks": [
-            "flex-layout.row#customQuery"
-        ]
-    },
-    "flex-layout.row#customQuery": {
-        "children": [
             "search-result-layout.customQuery#customSearch"
         ]
     },
@@ -16,7 +11,7 @@
                 "hideUnavailableItems": true,
                 "maxItemsPerPage": 8,
                 "queryField": "",
-                "mapField": "ft"
+                "mapField": "productClusterIds"
             }
         },
         "blocks": [

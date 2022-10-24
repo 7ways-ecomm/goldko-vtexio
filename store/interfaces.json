@@ -94,5 +94,8 @@
     "wdt-list-buy-component": {
         "component": "ListBuyComponent",
         "composition": "children"
+    },
+    "modal-off": {
+        "component": "ModalOff"
     }
 }
