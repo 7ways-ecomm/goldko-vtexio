@@ -163,7 +163,7 @@
     background-color: #FFFFFF;
     color: #00b6e4;
     background-image: url("/arquivos/bg-modal-off.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
 }
@@ -194,27 +194,32 @@
 
 
 @media (max-width: 400px) {
+    .ModalOff .modal_box .first .box_all .left_box .form_box .form_modal .error_message {
+        font-size: 8px;
+    }
+
     .ModalOff .modal_box {
         width: 90% !important;
     }
 
     .ModalOff .modal_box .thanks {
-        max-height: 600px;
+        max-height: 500px;
     }
 
     .ModalOff .modal_box .first .box_all .left_box .texts .title {
-        font-size: 16px;
-        margin-top: 1px;
-        line-height: 25px;
+        font-size: 15px;
+        margin-top: 0px;
+        line-height: 21px;
     }
 
     .ModalOff .modal_box .first .box_all .left_box .texts .descr {
-        margin: 12px 0;
+        margin: 11px 0;
+        font-size: 12px;
     }
 
     .ModalOff .modal_box .first .box_all .left_box .form_box .form_modal input {
         width: 85%;
-        padding: 6px 10px;
+        padding: 3px 10px;
     }
 
     .ModalOff .modal_box .first .box_all .left_box .form_box .form_modal label {
@@ -222,8 +227,32 @@
         margin-bottom: 3px;
     }
 
+    .ModalOff .modal_box .first .box_all .left_box .form_box .form_modal .btn_submit {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
     .ModalOff .modal_box .first .box_all .right_box {
-        top: -156px;
-        left: 151px;
+        top: -135px;
+        left: 155px;
+    }
+
+    .ModalOff .modal_box .first .box_all .right_box p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 300px) {
+    .ModalOff .modal_box .thanks {
+        max-height: 450px;
+    }
+
+    .ModalOff .modal_box .first .box_all .right_box {
+        top: -95px;
+        left: 118px;
+    }
+
+    .ModalOff .modal_box .thanks .box .texts .descr .cupom {
+        font-size: 13px;
     }
 }

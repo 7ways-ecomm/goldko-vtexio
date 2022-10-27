@@ -18,11 +18,27 @@ function ModalOff() {
         }
     }
 
+    const mask_DDDFONEFAX9_v1 = function (ev) {
+        let v = ev.currentTarget.value;
+        v = v.replace(/\D/g, "") //Remove tudo o que não é dígito
+        v = v.replace(/^(\d{2})(\d)/g, "($1)$2"); //Coloca parênteses em volta dos dois primeiros dígitos
+        if (v.substr(4, 1) == 9)
+            v = v.replace(/(\d{5})(\d)/, "$1-$2");
+        else {
+            v = v.replace(/(\d{4})(\d)/, "$1-$2");
+            v = v.substr(0, 13);
+        }
+        ev.currentTarget.value = v;
+    };
+
     const mySubmitHandler = (event) => {
         event.preventDefault();
         let tel = document.getElementById('tel').value;
         let email = document.getElementById('email').value;
         let nome = document.getElementById('name').value;
+        tel = tel.replace("(","");
+        tel = tel.replace(")","")
+        tel = tel.replace("-","")
 
         console.log(tel)
 
@@ -103,7 +119,7 @@ function ModalOff() {
                                         required="required" />
 
                                     <label for="tel">Celular:</label>
-                                    <input type="text" id="tel" className={style.tel} name="tel" placeholder="" required="required" />
+                                    <input type="text" id="tel" className={style.tel} name="tel" onChange={mask_DDDFONEFAX9_v1} onKeyPress={mask_DDDFONEFAX9_v1} onBlur={mask_DDDFONEFAX9_v1} placeholder="" required="required" />
 
                                     <b className={style.error_message} id="error_message"> Erro no envio, por favor contate o administrador </b>
 
