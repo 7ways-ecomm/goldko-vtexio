@@ -256,3 +256,25 @@
         font-size: 13px;
     }
 }
+
+@media (max-width: 270px) {
+    .ModalOff .modal_box .thanks .box .texts .descr .cupom {
+        font-size: 9px !important;
+    }
+
+    .ModalOff .modal_box .thanks {
+        max-height: 330px !important;
+    }
+
+    .ModalOff .modal_box .thanks .box .texts .title {
+        font-size: 12px;
+    }
+
+    .ModalOff .modal_box .thanks .box .texts .descr {
+        font-size: 10px;
+    }
+
+    .ModalOff .modal_box .thanks .box .texts .descr .cupom {
+        padding: 7px 10px;
+    }
+}

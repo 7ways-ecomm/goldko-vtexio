@@ -36,9 +36,9 @@ function ModalOff() {
         let tel = document.getElementById('tel').value;
         let email = document.getElementById('email').value;
         let nome = document.getElementById('name').value;
-        tel = tel.replace("(","");
-        tel = tel.replace(")","")
-        tel = tel.replace("-","")
+        tel = tel.replace("(", "");
+        tel = tel.replace(")", "")
+        tel = tel.replace("-", "")
 
         console.log(tel)
 
@@ -111,15 +111,13 @@ function ModalOff() {
                             <div className={style.form_box}>
                                 <form className={style.form_modal} onSubmit={mySubmitHandler}>
                                     <label for="name">Nome:</label>
-                                    <input type="text" id="name" className={style.name} name="name" placeholder=""
-                                        required="required" />
+                                    <input type="text" id="name" className={style.name} name="name" placeholder="" />
 
                                     <label for="email">Email:</label>
-                                    <input type="email" id="email" className={style.email} name="email" placeholder=""
-                                        required="required" />
+                                    <input type="email" id="email" className={style.email} name="email" placeholder="" required="required" />
 
                                     <label for="tel">Celular:</label>
-                                    <input type="text" id="tel" className={style.tel} name="tel" onChange={mask_DDDFONEFAX9_v1} onKeyPress={mask_DDDFONEFAX9_v1} onBlur={mask_DDDFONEFAX9_v1} placeholder="" required="required" />
+                                    <input type="text" id="tel" className={style.tel} name="tel" onChange={mask_DDDFONEFAX9_v1} onKeyPress={mask_DDDFONEFAX9_v1} onBlur={mask_DDDFONEFAX9_v1} placeholder="" />
 
                                     <b className={style.error_message} id="error_message"> Erro no envio, por favor contate o administrador </b>
 

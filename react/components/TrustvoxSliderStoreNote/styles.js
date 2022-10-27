@@ -14,6 +14,10 @@ export const Container = styled.div`
     .ts-audited {
       margin-top: 15px;
       color: #1675bf;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 100%;
     }
     .ts-trust-stars span.ts-active-star {
       background-image: url('https://goldko.vtexassets.com/arquivos/sprite.svg?v=2');
