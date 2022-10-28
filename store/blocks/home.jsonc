@@ -20,8 +20,8 @@
       "responsive-layout.desktop#recipe",
       "responsive-layout.mobile#recipe",
       "info-card#manifest-goldko",
-      "flex-layout.row#newsletter",
-      "modal-off"
+      "flex-layout.row#newsletter"
+      // "modal-off"
     ]
   },
   "rich-text#home-page-title-SEO": {

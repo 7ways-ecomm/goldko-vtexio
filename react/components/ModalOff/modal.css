@@ -155,7 +155,7 @@
 }
 
 .ModalOff .modal_box .thanks {
-    height: 650px;
+    height: 480px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -192,6 +192,15 @@
     font-size: 18px;
 }
 
+@media (max-width: 768px) {
+    .ModalOff .modal_box {
+        max-width: 350px;
+    }
+
+    .ModalOff .modal_box .thanks {
+        max-width: 350px;
+    }
+}
 
 @media (max-width: 400px) {
     .ModalOff .modal_box .first .box_all .left_box .form_box .form_modal .error_message {

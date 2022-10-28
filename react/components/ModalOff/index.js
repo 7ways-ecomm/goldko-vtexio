@@ -7,12 +7,12 @@ function ModalOff() {
         url = url.indexOf("teste7ways");
         if (url > 0) {
             document.getElementById("ModalOff").classList.add("testeways");
-            console.log("teste7ways")
         }
 
         let currentLocal = localStorage.getItem('close-modal');
+        let currentSessi = sessionStorage.getItem('close-modal');
         if (currentLocal == "sim") { } else {
-            if (document.getElementById('ModalOff').classList.contains("testeways")) {
+            if (currentSessi == "sim") { } else {
                 document.getElementById('ModalOff').style.display = "flex";
             }
         }
@@ -56,7 +56,10 @@ function ModalOff() {
                 const response = JSON.parse(this.response);
                 if (xhr.status == 201 || xhr.status == 200) {
                     document.getElementById("first").style.display = "none";
-                    document.getElementById("thanks").style.display = "flex";
+                    setTimeout(() => {
+                        document.getElementById("thanks").style.display = "flex";
+                    }, 200);
+
                     localStorage.setItem("close-modal", "sim");
                 } else {
                     document.getElementById("error_message").style.opacity = "1";
@@ -76,11 +79,12 @@ function ModalOff() {
 
     const ModalClose = () => {
         document.getElementById('ModalOff').style.display = "none";
+        sessionStorage.setItem("close-modal", "sim");
     }
 
     setTimeout(() => {
         openModal();
-    }, 3000);
+    }, 500);
 
     return (
         <div className={style.ModalOff} style={{ display: "none" }} id="ModalOff">
