@@ -27,20 +27,25 @@ function BuyComponent({ children }) {
       clusterHighlights.filter(
         (clusterHighlight) => clusterHighlight.name.startsWith('kit com')
       );
+    console.log("TESTE KITS CONSOLE LOG")
+    console.log(hasclusterHighlights);
+    console.log(clusterHighlights);
+    console.log(product)
+    console.log(product.priceRange.sellingPrice.highPrice)
 
     if (benefits?.length > 0 && hasclusterHighlights?.length > 0) {
-        const myDiscount = Number(hasclusterHighlights[0].name.split("-")[1].split(" ")[3].replace("%",""))
-        const myQuantityDiscount = Number(hasclusterHighlights[0].name.split("-")[1].split(" ")[1])
-        const installments = product.items[0].sellers[0].commertialOffer.Installments[0].NumberOfInstallments;
+      const myDiscount = Number(hasclusterHighlights[0].name.split("-")[1].split(" ")[3].replace("%", ""))
+      const myQuantityDiscount = Number(hasclusterHighlights[0].name.split("-")[1].split(" ")[1])
+      const installments = product.items[0].sellers[0].commertialOffer.Installments[0].NumberOfInstallments;
 
-        setInstallments(installments)
-        setDiscount(myDiscount)
-        setQuantityToGetDiscount(myQuantityDiscount)
-        setHasBenefit(true);
-        sethighlightName(hasclusterHighlights[0].name.toString().toUpperCase());
-        setKitQuantity(hasclusterHighlights[0].name.toString().split(" ")[2]);
-        setQuantityToGetDiscount(myQuantityDiscount)
-      }
+      setInstallments(installments)
+      setDiscount(myDiscount)
+      setQuantityToGetDiscount(myQuantityDiscount)
+      setHasBenefit(true);
+      sethighlightName(hasclusterHighlights[0].name.toString().toUpperCase());
+      setKitQuantity(hasclusterHighlights[0].name.toString().split(" ")[2]);
+      setQuantityToGetDiscount(myQuantityDiscount)
+    }
   }, [product]);
 
   function handleAddToCart() {
@@ -66,6 +71,8 @@ function BuyComponent({ children }) {
   }
 
   if (!hasBenefit) {
+    console.log(children[1])
+    console.log("________TESTE________")
     return (
       <>
         <S.ProductPrice>{children[0]}</S.ProductPrice>
@@ -81,17 +88,15 @@ function BuyComponent({ children }) {
           <>
             <S.OptionsContainer>
               <S.QuantityButton
-                className={`${
-                  quantityOption === "unity" && "quantityButtonActive"
-                }`}
+                className={`${quantityOption === "unity" && "quantityButtonActive"
+                  }`}
                 onClick={() => setQuantityOption("unity")}
               >
                 UNIDADE
               </S.QuantityButton>
               <S.QuantityButton
-                className={`${
-                  quantityOption === "kit" && "quantityButtonActive"
-                }`}
+                className={`${quantityOption === "kit" && "quantityButtonActive"
+                  }`}
                 onClick={() => setQuantityOption("kit")}
               >
                 {highlightName && highlightName.split('-')[0]}
@@ -102,13 +107,13 @@ function BuyComponent({ children }) {
               {product && (
                 <S.PriceInfo>
                   <S.Discount>
-                   <FormattedPrice value={(product.priceRange.sellingPrice.highPrice * kitQuantity)} />
+                    <FormattedPrice value={(product.priceRange.listPrice.highPrice * kitQuantity)} />
                   </S.Discount>
                   <S.Price>
-                    <FormattedPrice value={((product.priceRange.sellingPrice.highPrice * kitQuantity) - (product.priceRange.sellingPrice.highPrice * quantityToGetDiscount * (discount/100)))} />
+                    <FormattedPrice value={((product.priceRange.listPrice.highPrice * kitQuantity) - (product.priceRange.listPrice.highPrice * quantityToGetDiscount * (discount / 100)))} />
                   </S.Price>
                   <S.PricePayment>
-                    {`em até ${installments}x de ${formatCurrency((product.priceRange.sellingPrice.highPrice * kitQuantity - product.priceRange.sellingPrice.highPrice) / installments)} sem juros`}
+                    {`em até ${installments}x de ${formatCurrency((product.priceRange.listPrice.highPrice * kitQuantity - product.priceRange.listPrice.highPrice) / installments)} sem juros`}
                   </S.PricePayment>
                 </S.PriceInfo>
               )}
@@ -138,17 +143,15 @@ function BuyComponent({ children }) {
           <>
             <S.OptionsContainer>
               <S.QuantityButton
-                className={`${
-                  quantityOption === "unity" && "quantityButtonActive"
-                }`}
+                className={`${quantityOption === "unity" && "quantityButtonActive"
+                  }`}
                 onClick={() => setQuantityOption("unity")}
               >
                 UNIDADE
               </S.QuantityButton>
               <S.QuantityButton
-                className={`${
-                  quantityOption === "kit" && "quantityButtonActive"
-                }`}
+                className={`${quantityOption === "kit" && "quantityButtonActive"
+                  }`}
                 onClick={() => setQuantityOption("kit")}
               >
                 {highlightName && highlightName.split('-')[0]}

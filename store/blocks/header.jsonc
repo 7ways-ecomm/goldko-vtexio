@@ -1417,7 +1417,8 @@
       "flex-layout.row#accept-cookies",
       // "wdt-custom-product-first-purchase",
       "flex-layout.row#mobile",
-      "wdt-data-layer"
+      "wdt-data-layer",
+      "modal-off"
     ]
   },
   "flex-layout.row#mobile": {
