@@ -2,7 +2,7 @@
     "store.custom#lancamentos-sem-banner": {
         "props": {
             "context": {
-                "simulationBehavior": "skip",
+                "simulationBehavior": "default",
                 "__unstableProductOriginVtex": true
             }
         },

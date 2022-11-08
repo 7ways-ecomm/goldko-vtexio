@@ -112,7 +112,7 @@
       "flex-layout.row#shelf-container-name-stars-search",
       "product-rating-summary",
       "wdt-list-buy-component"
-      // "flex-layout.row#list-and-selling-price-summary",
+      //"flex-layout.row#list-and-selling-price-summary"
       // "product-installments",
       // "product-installments-list",
       // "custom-product-installments",
