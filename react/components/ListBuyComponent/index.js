@@ -72,6 +72,9 @@ function ListBuyComponent({ children }) {
           <h3 className={styles.optionTitle}>UNIDADE</h3>
           <div className={styles.priceContainer} style={{ justifyContent: 'center' }}>
             <span className={styles.currentPrice}>
+              <span className={styles.listItem}>
+                <FormattedPrice value={(product.priceRange.listPrice.highPrice)} />
+              </span>
               <FormattedPrice value={(product.priceRange.sellingPrice.highPrice)} />
             </span>
           </div>
