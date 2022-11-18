@@ -144,11 +144,18 @@
 .link--franqueado-revendedor {
     display: block;
     margin: auto 0;
+    width: 120% !important;
+    background: white;
+    padding: 6px 10px 7px 10px;
+    border-radius: 4px;
+
     .label {
         display: block;
         font-size: 14px;
-        color: #fff;
+        color: #00a6dd;
         white-space: nowrap;
+        font-weight: bold;
+        letter-spacing: 1px;
     }
 }
 .link--wdt-descriptionVideo-link {

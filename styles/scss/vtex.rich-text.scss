@@ -137,6 +137,15 @@
         .paragraph {
             margin: 10px 0;
             display: flex;
+
+            // .link:first-child{
+            //     position: absolute;
+            //     bottom: 60px;
+            //     width: 100%;
+            //     padding-top: 15px;
+            //     border-top: 1px solid $lightGrey;
+            // }
+
             .link {
                 color: $blue;
                 width: 50%;
