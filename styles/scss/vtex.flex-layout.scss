@@ -1577,7 +1577,7 @@
     position: relative;
     .stretchChildrenWidth {
         &:first-child {
-            position: absolute;
+            // position: absolute;
             width: 100% !important;
             height: 100%;
             z-index: 1;

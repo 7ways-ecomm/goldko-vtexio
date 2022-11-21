@@ -122,10 +122,10 @@
   },
   "flex-layout.row#title-banner": {
     "children": [
-      "flex-layout.col#text",
+      // "flex-layout.col#text",
       "search-banner#one"
     ],
-    "props": {
+    "props": { 
       "blockClass": "title-text-search",
       "width": "100%"
     }
