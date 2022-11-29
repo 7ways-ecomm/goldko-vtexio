@@ -17,8 +17,8 @@
       // "wdt-custom-product-first-purchase",
       "flex-layout.row#header-sup-1",
       "flex-layout.row#desktop",
-      "wdt-data-layer"
-      // "modal-off"
+      "wdt-data-layer",
+      "modal-off"
     ]
   },
   "flex-layout.row#accept-cookies": {
@@ -1434,8 +1434,8 @@
       "flex-layout.row#accept-cookies",
       // "wdt-custom-product-first-purchase",
       "flex-layout.row#mobile",
-      "wdt-data-layer"
-      // "modal-off"
+      "wdt-data-layer",
+      "modal-off"
     ]
   },
   "flex-layout.row#mobile": {
