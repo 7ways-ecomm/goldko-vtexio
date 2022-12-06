@@ -70,8 +70,8 @@ function ModalOff() {
         xhr.open("POST", "/api/dataentities/MC/documents");
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.setRequestHeader("Accept", "application/vnd.vtex.ds.v10+json");
-        xhr.setRequestHeader("x-vtex-api-appKey", "vtexappkey-goldko-AJYLNK");
-        xhr.setRequestHeader("x-vtex-api-appToken", "KPZXQVJBWTNCJWUALFTWTBURERSXYAMTKRGKEVYZZMWMEFEYKAGCOGLIVITZCLDVHTRSQJWPHTWHFHNYMTNYUKEEFXOVCZXNIAFKOMIADRUVJDDOUUNIYFBWPMMTUANI");
+        xhr.setRequestHeader("x-vtex-api-appKey", "vtexappkey-goldko-TUQXBH");
+        xhr.setRequestHeader("x-vtex-api-appToken", "IMPFYZQECAMFLJBVIDZLEOYDQKKPUGFOJWIDXTKLAKADOBAVKVEJWDVOWTYBHONFVNPSSBDTNZARVPPKHWLUWUTNTNDRKAEHDPNARANAUJVQEYTGJNSJMONLZAICCGQW");
         xhr.setRequestHeader("Cookie", "janus_sid=273883d0-216b-4e9c-b20a-7fd3bf9473cf");
 
         xhr.send(data);
